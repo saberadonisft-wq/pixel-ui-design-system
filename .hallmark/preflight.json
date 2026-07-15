@@ -1,0 +1,7 @@
+{
+  "date": "2026-07-16",
+  "signals": "Empty repository; full Hallmark stack introduced",
+  "framework": "Vite + React monorepo",
+  "spacing": "4px pixel grid",
+  "motion": "motion-cut with functional state transitions"
+}

@@ -1,0 +1,12 @@
+*, *::before, *::after { box-sizing: border-box; }
+html, body { overflow-x: clip; }
+body { margin: 0; color: var(--text-primary); background: var(--surface-dark); font-family: var(--font-body); font-size: 1rem; line-height: 1.55; }
+button, input, textarea, select { font: inherit; }
+button, [role="tab"] { white-space: nowrap; }
+svg { display: block; flex: none; }
+:focus-visible { outline: var(--px-border-medium) solid var(--state-warning); outline-offset: var(--space-1); }
+::selection { color: var(--accent-ink); background: var(--accent-main); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+}

@@ -1,0 +1,52 @@
+:root {
+  --px-grid: 4px;
+  --px-border-thin: 1px;
+  --px-border-medium: 2px;
+  --px-border-thick: 4px;
+  --px-corner-cut: 8px;
+  --px-notch-size: 4px;
+  --px-shadow-offset: 4px;
+  --px-icon-size: 24px;
+  --space-1: calc(var(--px-grid) * 1);
+  --space-2: calc(var(--px-grid) * 2);
+  --space-3: calc(var(--px-grid) * 3);
+  --space-4: calc(var(--px-grid) * 4);
+  --space-6: calc(var(--px-grid) * 6);
+  --space-8: calc(var(--px-grid) * 8);
+  --surface-dark: oklch(14% 0.018 230);
+  --surface-mid: oklch(20% 0.022 230);
+  --surface-light: oklch(28% 0.028 230);
+  --frame-shadow: oklch(7% 0.012 230);
+  --frame-base: oklch(48% 0.045 220);
+  --frame-highlight: oklch(78% 0.07 200);
+  --accent-dark: oklch(48% 0.12 185);
+  --accent-main: oklch(78% 0.16 185);
+  --accent-light: oklch(90% 0.09 185);
+  --accent-ink: oklch(13% 0.025 210);
+  --text-primary: oklch(94% 0.015 190);
+  --text-secondary: oklch(72% 0.035 205);
+  --state-success: oklch(76% 0.15 145);
+  --state-warning: oklch(82% 0.15 82);
+  --state-danger: oklch(67% 0.2 28);
+  --motion-fast: 100ms;
+  --motion-medium: 180ms;
+  --press-offset: 2px;
+  --hover-offset: -1px;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --font-display: "Tomorrow", "Arial Narrow", sans-serif;
+  --font-body: "IBM Plex Sans", "Segoe UI", sans-serif;
+  --font-data: "JetBrains Mono", "Cascadia Mono", monospace;
+  --px-component-height-sm: 44px;
+  --px-component-height-md: 48px;
+  --px-component-height-lg: 56px;
+}
+
+[data-px-grid="2"] { --px-grid: 2px; --px-corner-cut: 4px; --px-shadow-offset: 2px; }
+[data-px-grid="8"] { --px-grid: 8px; --px-corner-cut: 16px; --px-shadow-offset: 8px; }
+[data-px-density="low"] { --px-decoration-opacity: 0.35; --px-frame-gap: var(--space-1); }
+[data-px-density="medium"] { --px-decoration-opacity: 0.65; --px-frame-gap: var(--space-2); }
+[data-px-density="high"] { --px-decoration-opacity: 1; --px-frame-gap: var(--space-3); }
+[data-px-size="sm"] { --px-control-height: var(--px-component-height-sm); --px-control-pad: var(--space-2); --px-control-font: 0.875rem; }
+[data-px-size="md"] { --px-control-height: var(--px-component-height-md); --px-control-pad: var(--space-3); --px-control-font: 0.9375rem; }
+[data-px-size="lg"] { --px-control-height: var(--px-component-height-lg); --px-control-pad: var(--space-4); --px-control-font: 1rem; }

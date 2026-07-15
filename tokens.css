@@ -1,0 +1,26 @@
+/* Hallmark · pre-emit critique: P5 H4 E5 S5 R5 V4 */
+/* Hallmark · genre: modern-minimal · macrostructure: Workbench · theme: Terminal · enrichment: none · nav: N8 · footer: Ft4 */
+:root {
+  --color-paper: oklch(13% 0.018 230);
+  --color-paper-2: oklch(17% 0.021 230);
+  --color-ink: oklch(94% 0.018 185);
+  --color-muted: oklch(72% 0.035 205);
+  --color-accent: oklch(80% 0.16 175);
+  --color-focus: oklch(88% 0.18 105);
+  --font-display: "Tomorrow", "Arial Narrow", sans-serif;
+  --font-body: "IBM Plex Sans", "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", "Cascadia Mono", monospace;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --text-base: 1rem;
+  --text-lg: 1.25rem;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms;
+  --dur-short: 180ms;
+  --rule-pixel: 2px;
+  --radius-none: 0px;
+}

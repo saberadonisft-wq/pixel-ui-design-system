@@ -1,0 +1,12 @@
+{
+  "name": "@pixel-ui/core",
+  "version": "0.1.0",
+  "type": "module",
+  "sideEffects": ["*.css", "src/*.css"],
+  "exports": {
+    ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" },
+    "./styles.css": "./src/index.css",
+    "./tokens.css": "./src/tokens.css"
+  },
+  "scripts": { "build": "tsc -p tsconfig.json" }
+}

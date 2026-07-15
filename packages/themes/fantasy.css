@@ -1,0 +1,21 @@
+[data-px-theme="fantasy"] {
+  color-scheme: dark;
+  --surface-dark: oklch(17% 0.025 62);
+  --surface-mid: oklch(24% 0.035 66);
+  --surface-light: oklch(34% 0.055 70);
+  --frame-shadow: oklch(10% 0.025 55);
+  --frame-base: oklch(51% 0.09 72);
+  --frame-highlight: oklch(83% 0.105 88);
+  --accent-dark: oklch(49% 0.12 77);
+  --accent-main: oklch(79% 0.15 86);
+  --accent-light: oklch(91% 0.08 90);
+  --accent-ink: oklch(18% 0.035 58);
+  --text-primary: oklch(94% 0.035 88);
+  --text-secondary: oklch(76% 0.055 83);
+  --state-success: oklch(70% 0.13 142);
+  --state-warning: oklch(80% 0.15 80);
+  --state-danger: oklch(63% 0.19 29);
+  --font-display: "Cinzel", "Palatino Linotype", serif;
+  --font-data: "IBM Plex Sans", "Segoe UI", sans-serif;
+}
+[data-px-theme="fantasy"] .px-frame { clip-path: polygon(var(--space-2) 0, calc(100% - var(--space-2)) 0, calc(100% - var(--space-2)) var(--space-1), 100% var(--space-1), 100% calc(100% - var(--space-1)), calc(100% - var(--space-2)) calc(100% - var(--space-1)), calc(100% - var(--space-2)) 100%, var(--space-2) 100%, var(--space-2) calc(100% - var(--space-1)), 0 calc(100% - var(--space-1)), 0 var(--space-1), var(--space-2) var(--space-1)); }

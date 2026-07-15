@@ -1,0 +1,4 @@
+interface:
+  display_name: "Pixel UI Design System"
+  short_description: "Design and build production-ready pixel interfaces"
+  default_prompt: "Use $pixel-ui-design-system to design and implement a reusable pixel-art interface."

@@ -1,0 +1,12 @@
+.px-cut {
+  clip-path: polygon(var(--px-corner-cut) 0, calc(100% - var(--px-corner-cut)) 0, 100% var(--px-corner-cut), 100% calc(100% - var(--px-corner-cut)), calc(100% - var(--px-corner-cut)) 100%, var(--px-corner-cut) 100%, 0 calc(100% - var(--px-corner-cut)), 0 var(--px-corner-cut));
+}
+.px-step-corners {
+  clip-path: polygon(var(--px-notch-size) 0, calc(100% - var(--px-notch-size)) 0, calc(100% - var(--px-notch-size)) var(--px-notch-size), 100% var(--px-notch-size), 100% calc(100% - var(--px-notch-size)), calc(100% - var(--px-notch-size)) calc(100% - var(--px-notch-size)), calc(100% - var(--px-notch-size)) 100%, var(--px-notch-size) 100%, var(--px-notch-size) calc(100% - var(--px-notch-size)), 0 calc(100% - var(--px-notch-size)), 0 var(--px-notch-size), var(--px-notch-size) var(--px-notch-size));
+}
+.px-grid-surface {
+  background-color: var(--surface-dark);
+  background-image: linear-gradient(to right, color-mix(in oklch, var(--frame-base) 15%, transparent) var(--px-border-thin), transparent var(--px-border-thin)), linear-gradient(to bottom, color-mix(in oklch, var(--frame-base) 15%, transparent) var(--px-border-thin), transparent var(--px-border-thin));
+  background-size: calc(var(--px-grid) * 4) calc(var(--px-grid) * 4);
+}
+.px-data { font-family: var(--font-data); font-variant-numeric: tabular-nums; }

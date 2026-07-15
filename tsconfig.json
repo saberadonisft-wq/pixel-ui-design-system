@@ -1,0 +1,12 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./packages/core" },
+    { "path": "./packages/react" },
+    { "path": "./packages/themes" },
+    { "path": "./examples/sci-fi-hud" },
+    { "path": "./examples/fantasy-ui" },
+    { "path": "./examples/terminal-ui" },
+    { "path": "./examples/component-lab" }
+  ]
+}
