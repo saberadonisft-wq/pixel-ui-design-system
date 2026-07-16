@@ -1,11 +1,11 @@
 *, *::before, *::after { box-sizing: border-box; }
 html, body { overflow-x: clip; }
-body { margin: 0; color: var(--text-primary); background: var(--surface-dark); font-family: var(--font-body); font-size: 1rem; line-height: 1.55; }
+body { margin: 0; color: var(--px-text-primary); background: var(--px-canvas); font-family: var(--px-font-body); font-size: var(--px-font-md); line-height: var(--px-line-md); }
 button, input, textarea, select { font: inherit; }
 button, [role="tab"] { white-space: nowrap; }
 svg { display: block; flex: none; }
-:focus-visible { outline: var(--px-border-medium) solid var(--state-warning); outline-offset: var(--space-1); }
-::selection { color: var(--accent-ink); background: var(--accent-main); }
+:focus-visible { outline: var(--px-border-thin) solid var(--px-warning); outline-offset: var(--space-1); }
+::selection { color: var(--px-accent-ink); background: var(--px-accent); }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }

@@ -7,6 +7,8 @@ export function cx(...values: Array<string | false | null | undefined>) {
 export function pixelData(props: PixelStyleProps) {
   return {
     "data-px-theme": props.theme,
+    "data-px-mode": props.mode,
+    "data-px-grid": props.grid,
     "data-px-variant": props.variant,
     "data-px-tone": props.tone,
     "data-px-density": props.density,

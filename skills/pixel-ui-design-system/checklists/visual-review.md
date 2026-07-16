@@ -1,17 +1,32 @@
-# Visual review checklist
+# Pixel UI visual review
 
-- [ ] Silhouette rõ và có thể nhận ra khi bỏ nội dung?
-- [ ] Frame có đủ lớp cho density đã chọn?
-- [ ] Highlight và shadow theo cùng một hướng ánh sáng?
-- [ ] Spacing, cuts, notches, icon và shadow bám grid?
-- [ ] Icon cùng grid, stroke/fill weight và detail density?
-- [ ] Text thật trong DOM, dễ đọc, line-height ổn định?
-- [ ] Glow có được giới hạn vào tín hiệu có nghĩa?
-- [ ] Component có bị stretch hoặc mất nhịp corner cut?
-- [ ] Không dùng screenshot crop, background tham chiếu hay asset ghép?
-- [ ] Hover, active, focus-visible, selected, disabled và loading rõ?
-- [ ] State không chỉ dựa vào màu?
-- [ ] Frame không vỡ tại 320, 375, 414 và 768px?
-- [ ] Click target đủ 44×44px và label không wrap?
-- [ ] UI thật sự là pixel UI, không phải dashboard thường thêm font/border?
-
+- [ ] Category is declared: retro-inspired, pixel-art, low-resolution game, fantasy RPG, or modern retro-colored web UI.
+- [ ] One of seven style families is declared from explicit language and reference evidence; Tactical is never the silent default.
+- [ ] Grid, sprite scale, density, palette, typography, and light direction are declared.
+- [ ] Silhouette still reads as pixel-built without content or color.
+- [ ] Spacing, cuts, notches, borders, shadows, sprites, and translations align to grid/half-grid tokens.
+- [ ] No fractional geometry, subpixel transform, smooth radius, blur, bloom, glass, or soft shadow.
+- [ ] Frame uses family-appropriate discrete depth with one light direction; Ornamental prominent modules have purposeful silhouette, structure, accent, and center layers.
+- [ ] Palette uses limited semantic ramps; components do not interpolate new shades.
+- [ ] Any gradient is a deliberate hard band or repeating pixel tile, not smooth interpolation.
+- [ ] Text scale is integer-valued; real Vietnamese diacritics render without clipping and use a tested fallback.
+- [ ] Long copy uses a readable fallback; pixel font is not treated as proof of pixel art.
+- [ ] Raster sprites have intrinsic dimensions, `image-rendering: pixelated`, and integer scale.
+- [ ] SVG uses integer grid, crisp edges, block forms, no curves, and no round caps/joins.
+- [ ] Generic icon-library placeholders are labelled and have a concrete sprite replacement plan.
+- [ ] Texture is a small aligned tile, remains quiet behind text, and is not generic diagonal stripes.
+- [ ] Ornamental centers remain calm; prominent icons occupy roughly 15–25% of their module and use coherent ramps.
+- [ ] Formal nine-slice corners never stretch; edges scale only on their declared axis; dynamic content remains live DOM.
+- [ ] Frame variants change hardware or silhouette, not color alone.
+- [ ] Account, primary action, navigation, content, and compact frame families differ in proportion, depth, hardware, and interior composition.
+- [ ] Idle, hover, focus, active, selected, disabled, loading, and error states are clear.
+- [ ] Pressed controls move exactly one grid and reduce bottom/right shadow.
+- [ ] State is reinforced by shape, position, pattern, icon, or text—not color alone.
+- [ ] Motion uses `steps()` or frame swaps and respects `prefers-reduced-motion`.
+- [ ] Layout recomposes at 320, 375, 414, 768, and desktop near 1440px instead of continuously shrinking.
+- [ ] Sprites never scale fractionally; frames do not crop or stretch.
+- [ ] Touch targets meet 44×44px (48×48px on 8px grid), focus is visible, and keyboard behavior matches semantics.
+- [ ] No screenshot crop, screenshot background, baked dynamic text, stretched sprite, or assembled screenshot asset.
+- [ ] Grayscale review preserves hierarchy and pixel character.
+- [ ] Final output is clearly not a modern SaaS dashboard with retro colors.
+- [ ] Ornamental output is clearly not a tactical debug screen, DOS window, flat colored outline, or generic brown fantasy dashboard.

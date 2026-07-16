@@ -1,24 +1,24 @@
 import { StrictMode, useState } from "react";
 import { createRoot } from "react-dom/client";
-import { PixelButton, PixelIconButton, PixelPanel, PixelTab } from "@pixel-ui/react";
+import { PixelButton, PixelIconButton, PixelPanel, PixelTab, PixelTabList } from "@pixel-ui/react";
 import "@pixel-ui/core/styles.css";
 import "@pixel-ui/react/styles.css";
 import "@pixel-ui/themes/sci-fi.css";
 import "./styles.css";
 
 function RadarIcon() {
-  return <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 12h4m8 0h4M12 4v4m0 8v4"/><rect x="8" y="8" width="8" height="8"/><path d="m12 12 5-5"/></svg>;
+  return <svg viewBox="0 0 16 16" shapeRendering="crispEdges" aria-hidden="true" fill="currentColor"><path d="M7 0H9V4H7ZM7 12H9V16H7ZM0 7H4V9H0ZM12 7H16V9H12ZM5 5H11V11H5ZM9 3H13V5H11V7H9Z" /></svg>;
 }
 
 function App() {
   const [tab, setTab] = useState("Overview");
   return (
-    <main className="hud px-grid-surface" data-px-theme="sci-fi" data-px-density="high">
+    <main className="hud px-grid-surface" data-px-theme="sci-fi" data-px-mode="tactical-hud" data-px-grid="4" data-px-density="high">
       <header className="hud-nav">
         <div className="brand"><span className="brand-mark" aria-hidden="true" />ORBIT LEDGER</div>
-        <nav className="px-tablist" role="tablist" aria-label="HUD sections">
+        <PixelTabList label="HUD sections">
           {["Overview", "Assets", "Routes"].map((item) => <PixelTab key={item} selected={tab === item} onClick={() => setTab(item)} controls="hud-view">{item}</PixelTab>)}
-        </nav>
+        </PixelTabList>
         <PixelIconButton label="Run radar scan" tone="accent"><RadarIcon /></PixelIconButton>
       </header>
 

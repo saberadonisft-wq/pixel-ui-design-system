@@ -1,10 +1,11 @@
-import { access } from "node:fs/promises";
+import { access, mkdir } from "node:fs/promises";
 import path from "node:path";
 import process from "node:process";
 import puppeteer from "puppeteer-core";
 import { createServer } from "vite";
 
 const root = process.cwd();
+const captureDir = process.env.PIXEL_CAPTURE_DIR;
 const demos = [
   { name: "sci-fi", root: "examples/sci-fi-hud", port: 5273 },
   { name: "fantasy", root: "examples/fantasy-ui", port: 5274 },
@@ -16,10 +17,11 @@ const viewports = [
   { label: "375px", width: 375, height: 900 },
   { label: "414px", width: 414, height: 900 },
   { label: "768px", width: 768, height: 900 },
+  { label: "desktop-1440", width: 1440, height: 1000, only: "fantasy" },
   { label: "landscape", width: 812, height: 375 },
   { label: "text-125", width: 375, height: 900, rootFontSize: "20px" }
 ];
-const themes = ["sci-fi", "fantasy", "cyberpunk", "terminal", "arcade", "industrial", "minimal"];
+const themes = ["ornamental", "sci-fi", "fantasy", "cyberpunk", "terminal", "arcade", "industrial", "minimal"];
 const chromeCandidates = [
   process.env.CHROME_PATH,
   "C:/Program Files/Google/Chrome/Application/chrome.exe",
@@ -40,6 +42,7 @@ let browser;
 let failed = false;
 
 try {
+  if (captureDir) await mkdir(captureDir, { recursive: true });
   for (const demo of demos) {
     const server = await createServer({ root: path.join(root, demo.root), logLevel: "error", server: { host: "127.0.0.1", port: demo.port, strictPort: true } });
     await server.listen();
@@ -49,6 +52,7 @@ try {
   browser = await puppeteer.launch({ executablePath: await findBrowser(), headless: true });
   for (const viewport of viewports) {
     for (const demo of demos) {
+      if (viewport.only && viewport.only !== demo.name) continue;
       const page = await browser.newPage();
       await page.setViewport({ width: viewport.width, height: viewport.height, deviceScaleFactor: 1 });
       await page.goto(`http://127.0.0.1:${demo.port}`, { waitUntil: "networkidle0" });
@@ -73,12 +77,33 @@ try {
           scrollWidth: document.documentElement.scrollWidth,
           wrapRisk,
           touchRisk,
-          focusWidth: focusSurface ? getComputedStyle(focusSurface).outlineWidth : "n/a"
+          focusWidth: focusSurface ? getComputedStyle(focusSurface).outlineWidth : "n/a",
+          radiusRisk: [...document.querySelectorAll(".px-frame,.px-control,.px-slot,.px-field__control,.px-modal")].filter((element) => getComputedStyle(element).borderRadius !== "0px").map((element) => element.className),
+          pixelAlignmentRisk: [...document.querySelectorAll(".px-frame,.px-control,.px-slot,.px-sprite,.px-meter__cells,.px-meter__cells i")].filter((element) => {
+            const rect = element.getBoundingClientRect();
+            return [rect.x, rect.y, rect.width, rect.height].some((value) => Math.abs(value - Math.round(value)) > 0.01);
+          }).map((element) => `${element.className}:${JSON.stringify(element.getBoundingClientRect().toJSON())}`),
+          spriteRisk: [...document.querySelectorAll(".px-sprite")].filter((element) => {
+            const sourceWidth = Number(element.getAttribute("data-px-source-width"));
+            const sourceHeight = Number(element.getAttribute("data-px-source-height"));
+            const scale = Number(element.getAttribute("data-px-sprite-scale"));
+            const rect = element.getBoundingClientRect();
+            return getComputedStyle(element).imageRendering !== "pixelated" || rect.width !== sourceWidth * scale || rect.height !== sourceHeight * scale;
+          }).map((element) => element.getAttribute("src")),
+          svgRisk: [...document.querySelectorAll("svg")].filter((element) => getComputedStyle(element).shapeRendering.toLowerCase() !== "crispedges").map((element) => element.outerHTML.slice(0, 80)),
+          typeRisk: [...document.querySelectorAll("h1,h2,h3,button,label,.px-badge,.px-status")].filter((element) => {
+            const style = getComputedStyle(element);
+            return !Number.isInteger(Number.parseFloat(style.fontSize)) || !Number.isInteger(Number.parseFloat(style.lineHeight));
+          }).map((element) => `${element.tagName}:${element.textContent?.trim().slice(0, 24)}`)
         };
       });
-      const pass = result.clientWidth === result.scrollWidth && result.wrapRisk.length === 0 && result.touchRisk.length === 0 && result.focusWidth !== "0px";
+      const pass = result.clientWidth === result.scrollWidth && result.wrapRisk.length === 0 && result.touchRisk.length === 0 && result.focusWidth !== "0px" && result.radiusRisk.length === 0 && result.pixelAlignmentRisk.length === 0 && result.spriteRisk.length === 0 && result.svgRisk.length === 0 && result.typeRisk.length === 0;
       failed ||= !pass;
       console.log(`${pass ? "PASS" : "FAIL"} ${demo.name} ${viewport.label}`, result);
+      if (captureDir && ["375px", "768px", "desktop-1440"].includes(viewport.label)) {
+        await page.evaluate(() => { if (document.activeElement instanceof HTMLElement) document.activeElement.blur(); });
+        await page.screenshot({ path: path.join(captureDir, `${demo.name}-${viewport.label}.png`), fullPage: true });
+      }
       await page.close();
     }
   }
@@ -93,9 +118,16 @@ try {
       await tabs[1].click();
       pass = await tabs[1].evaluate((element) => element.getAttribute("aria-selected") === "true");
     } else if (demo.name === "fantasy") {
-      const options = await page.$$("[role=option]");
+      const options = await page.$$(".module-nav .px-ornate-control:not(:disabled)");
       await options[1].click();
-      pass = await options[1].evaluate((element) => element.getAttribute("aria-selected") === "true");
+      pass = await options[1].evaluate((element) => {
+        const root = element.closest("[data-px-mode]");
+        return element.getAttribute("aria-pressed") === "true"
+          && root?.getAttribute("data-px-mode") === "ornamental"
+          && document.querySelectorAll(".px-nine__slice").length >= 48
+          && document.querySelector(".module-readout h2")?.textContent === "Xưởng Nghiên Cứu"
+          && getComputedStyle(root).backgroundImage === "none";
+      });
     } else if (demo.name === "terminal") {
       const before = (await page.$$("ol li")).length;
       await page.click("form button[type=submit]");
@@ -138,10 +170,10 @@ try {
       const style = getComputedStyle(document.querySelector(".lab"));
       const token = (name) => style.getPropertyValue(name).trim();
       return {
-        primary: contrast(token("--text-primary"), token("--surface-dark")),
-        secondary: contrast(token("--text-secondary"), token("--surface-dark")),
-        accent: contrast(token("--accent-ink"), token("--accent-main")),
-        boundary: contrast(token("--frame-base"), token("--surface-dark"))
+        primary: contrast(token("--px-text-primary"), token("--px-canvas")),
+        secondary: contrast(token("--px-text-muted"), token("--px-canvas")),
+        accent: contrast(token("--px-accent-ink"), token("--px-accent")),
+        boundary: contrast(token("--px-border-base"), token("--px-canvas"))
       };
     });
     const pass = ratios.primary >= 4.5 && ratios.secondary >= 4.5 && ratios.accent >= 4.5 && ratios.boundary >= 3;

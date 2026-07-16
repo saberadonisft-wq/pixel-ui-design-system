@@ -1,25 +1,25 @@
 [data-px-theme="arcade"] {
   color-scheme: dark;
-  --surface-dark: oklch(16% 0.05 265);
-  --surface-mid: oklch(23% 0.075 265);
-  --surface-light: oklch(32% 0.1 265);
-  --frame-shadow: oklch(8% 0.035 265);
-  --frame-base: oklch(52% 0.13 263);
-  --frame-highlight: oklch(88% 0.08 96);
-  --accent-dark: oklch(55% 0.15 90);
-  --accent-main: oklch(86% 0.18 96);
-  --accent-light: oklch(94% 0.1 98);
-  --accent-ink: oklch(18% 0.05 265);
-  --text-primary: oklch(95% 0.035 98);
-  --text-secondary: oklch(77% 0.07 252);
-  --state-success: oklch(76% 0.18 150);
-  --state-warning: oklch(86% 0.18 96);
-  --state-danger: oklch(67% 0.22 29);
-  --font-display: "Tomorrow", "Arial Narrow", sans-serif;
-  --font-data: "Tomorrow", "Arial Narrow", sans-serif;
-  --px-shadow-offset: 8px;
+  --px-canvas: #0d102a;
+  --px-panel-dark: #151943;
+  --px-panel-mid: #242a66;
+  --px-panel-light: #3b4492;
+  --px-border-dark: #050611;
+  --px-border-base: #5965b5;
+  --px-border-light: #a9b3ff;
+  --px-backdrop: #050611;
+  --px-text-primary: #fff6ce;
+  --px-text-muted: #c7c8ed;
+  --px-accent-dark: #a66c10;
+  --px-accent: #ffd33d;
+  --px-accent-highlight: #fff1a3;
+  --px-accent-ink: #1d1805;
+  --px-selected: #ff6fae;
+  --px-disabled: #66698c;
+  --px-success: #61d681;
+  --px-warning: #ffd33d;
+  --px-danger: #ff5c66;
+  --px-shadow-offset: var(--px-shadow-offset-lg);
+  --px-font-display: "Press Start 2P", "Cascadia Mono", monospace;
 }
-
-[data-px-theme="arcade"] .px-frame {
-  clip-path: polygon(var(--space-2) 0, calc(100% - var(--space-2)) 0, calc(100% - var(--space-2)) var(--space-2), 100% var(--space-2), 100% calc(100% - var(--space-2)), calc(100% - var(--space-2)) calc(100% - var(--space-2)), calc(100% - var(--space-2)) 100%, var(--space-2) 100%, var(--space-2) calc(100% - var(--space-2)), 0 calc(100% - var(--space-2)), 0 var(--space-2), var(--space-2) var(--space-2));
-}
+[data-px-theme="arcade"] .px-frame { clip-path: polygon(var(--space-2) 0, calc(100% - var(--space-2)) 0, calc(100% - var(--space-2)) var(--space-2), 100% var(--space-2), 100% calc(100% - var(--space-2)), calc(100% - var(--space-2)) calc(100% - var(--space-2)), calc(100% - var(--space-2)) 100%, var(--space-2) 100%, var(--space-2) calc(100% - var(--space-2)), 0 calc(100% - var(--space-2)), 0 var(--space-2), var(--space-2) var(--space-2)); }

@@ -24,7 +24,7 @@ function App() {
     setCommand("");
   }
   return (
-    <main className="terminal px-grid-surface" data-px-theme="terminal" data-px-density="medium">
+    <main className="terminal px-grid-surface" data-px-theme="terminal" data-px-mode="cyber" data-px-grid="4" data-px-density="medium">
       <header className="term-nav" aria-label="Command navigation"><pre><span>&gt;</span> linewatch <a href="#console">--console</a> <a href="#logs">--logs</a> <a href="#status">--status</a><b aria-hidden="true">▮</b></pre></header>
       <section className="term-layout">
         <div className="term-main">

@@ -1,26 +1,5 @@
 [data-px-assets="pixel-ui-sheet"] {
   color-scheme: dark;
-  --px-half-grid: 2px;
-  --px-border-thin: 2px;
-  --px-border-thick: 4px;
-  --px-press-offset: 4px;
-  --px-font-xs: 12px;
-  --px-font-sm: 14px;
-  --px-font-md: 16px;
-  --px-font-lg: 20px;
-  --px-font-xl: 24px;
-  --px-line-xs: 16px;
-  --px-line-sm: 20px;
-  --px-line-md: 24px;
-  --px-line-lg: 28px;
-  --px-line-xl: 32px;
-  --px-control-sm: 44px;
-  --px-control-md: 48px;
-  --px-control-lg: 56px;
-  --px-content-standard: 1216px;
-  --px-text-measure: 640px;
-  --px-motion-step: 96ms;
-  --px-ease-step: steps(1, end);
   --px-backdrop: #010204;
   --px-canvas: #050609;
   --px-panel-dark: #090b10;

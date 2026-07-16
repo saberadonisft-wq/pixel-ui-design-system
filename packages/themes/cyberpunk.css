@@ -1,29 +1,25 @@
 [data-px-theme="cyberpunk"] {
   color-scheme: dark;
-  --surface-dark: oklch(10% 0.025 325);
-  --surface-mid: oklch(16% 0.045 325);
-  --surface-light: oklch(24% 0.075 325);
-  --frame-shadow: oklch(5% 0.018 325);
-  --frame-base: oklch(50% 0.13 330);
-  --frame-highlight: oklch(77% 0.2 335);
-  --accent-dark: oklch(48% 0.19 337);
-  --accent-main: oklch(70% 0.25 338);
-  --accent-light: oklch(88% 0.14 340);
-  --accent-ink: oklch(11% 0.03 325);
-  --text-primary: oklch(94% 0.025 330);
-  --text-secondary: oklch(75% 0.06 320);
-  --state-success: oklch(78% 0.2 145);
-  --state-warning: oklch(84% 0.17 86);
-  --state-danger: oklch(68% 0.23 27);
-  --font-display: "Tomorrow", "Arial Narrow", sans-serif;
-  --font-data: "JetBrains Mono", "Cascadia Mono", monospace;
+  --px-canvas: #120912;
+  --px-panel-dark: #1c0d1d;
+  --px-panel-mid: #311333;
+  --px-panel-light: #56235a;
+  --px-border-dark: #070307;
+  --px-border-base: #9b3a91;
+  --px-border-light: #f07ee2;
+  --px-backdrop: #070307;
+  --px-text-primary: #fff0fb;
+  --px-text-muted: #d2a6cb;
+  --px-accent-dark: #9e276d;
+  --px-accent: #f14ba6;
+  --px-accent-highlight: #ffb8df;
+  --px-accent-ink: #200513;
+  --px-selected: #b8f23d;
+  --px-disabled: #74556f;
+  --px-success: #80e34f;
+  --px-warning: #ffd34d;
+  --px-danger: #ff5868;
+  --px-font-display: "Pixel Operator", "Cascadia Mono", monospace;
 }
-
-[data-px-theme="cyberpunk"] .px-frame {
-  clip-path: polygon(var(--space-4) 0, 72% 0, calc(72% + var(--space-3)) var(--space-3), 100% var(--space-3), 100% calc(100% - var(--space-2)), calc(100% - var(--space-2)) 100%, var(--space-4) 100%, 0 calc(100% - var(--space-4)), 0 var(--space-4));
-}
-
-[data-px-theme="cyberpunk"] .px-frame::after {
-  inset-inline-end: 28%;
-  box-shadow: calc(var(--space-8) * -1) 0 0 var(--frame-highlight);
-}
+[data-px-theme="cyberpunk"] .px-frame { clip-path: polygon(var(--space-4) 0, 72% 0, calc(72% + var(--space-3)) var(--space-3), 100% var(--space-3), 100% calc(100% - var(--space-2)), calc(100% - var(--space-2)) 100%, var(--space-4) 100%, 0 calc(100% - var(--space-4)), 0 var(--space-4)); }
+[data-px-theme="cyberpunk"] .px-frame::after { inset-inline-end: 28%; box-shadow: calc(var(--space-8) * -1) 0 0 var(--px-border-light); }

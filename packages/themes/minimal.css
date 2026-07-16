@@ -1,24 +1,27 @@
 [data-px-theme="minimal"] {
   color-scheme: light;
-  --surface-dark: oklch(96% 0.012 235);
-  --surface-mid: oklch(92% 0.016 235);
-  --surface-light: oklch(86% 0.022 235);
-  --frame-shadow: oklch(35% 0.03 235);
-  --frame-base: oklch(58% 0.035 235);
-  --frame-highlight: oklch(99% 0.008 235);
-  --accent-dark: oklch(41% 0.13 238);
-  --accent-main: oklch(50% 0.17 238);
-  --accent-light: oklch(78% 0.1 235);
-  --accent-ink: oklch(98% 0.008 235);
-  --text-primary: oklch(20% 0.025 235);
-  --text-secondary: oklch(39% 0.035 235);
-  --state-success: oklch(47% 0.14 145);
-  --state-warning: oklch(52% 0.14 75);
-  --state-danger: oklch(52% 0.18 28);
-  --font-display: "Tomorrow", "Arial Narrow", sans-serif;
-  --font-data: "IBM Plex Sans", "Segoe UI", sans-serif;
-  --px-shadow-offset: 2px;
+  --px-canvas: #eef2f2;
+  --px-panel-dark: #e1e7e8;
+  --px-panel-mid: #d3dcde;
+  --px-panel-light: #f9fbfb;
+  --px-border-dark: #29363b;
+  --px-border-base: #667b83;
+  --px-border-light: #ffffff;
+  --px-backdrop: #29363b;
+  --px-text-primary: #182328;
+  --px-text-muted: #405158;
+  --px-accent-dark: #285f83;
+  --px-accent: #2f739d;
+  --px-accent-highlight: #8ec9e8;
+  --px-accent-ink: #ffffff;
+  --px-selected: #9d6b00;
+  --px-disabled: #869297;
+  --px-success: #267d45;
+  --px-warning: #8a6100;
+  --px-danger: #a83439;
+  --px-shadow-offset: var(--px-half-grid);
+  --px-font-display: "Cascadia Mono", monospace;
+  --px-font-data: "Cascadia Mono", monospace;
 }
-
-[data-px-theme="minimal"] .px-frame::after { opacity: 0.35; }
-[data-px-theme="minimal"] .px-frame__surface { box-shadow: inset var(--px-border-thin) var(--px-border-thin) 0 var(--frame-highlight); }
+[data-px-theme="minimal"] .px-frame::after { visibility: hidden; }
+[data-px-theme="minimal"] .px-frame__surface { box-shadow: inset var(--px-border-thin) var(--px-border-thin) 0 var(--px-border-light); }

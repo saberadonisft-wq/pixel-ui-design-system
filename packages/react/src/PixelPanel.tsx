@@ -10,11 +10,11 @@ export interface PixelPanelProps extends Omit<HTMLAttributes<HTMLElement>, "titl
 }
 
 export const PixelPanel = forwardRef<HTMLElement, PixelPanelProps>(function PixelPanel(
-  { className, children, title, headerAction, as: Element = "section", theme, variant, tone, density, size, selected, loading, ...props },
+  { className, children, title, headerAction, as: Element = "section", theme, mode, grid, variant, tone, density, size, selected, loading, ...props },
   ref
 ) {
   return (
-    <PixelFrame theme={theme} variant={variant} tone={tone} density={density} size={size} selected={selected} loading={loading}>
+    <PixelFrame theme={theme} mode={mode} grid={grid} variant={variant} tone={tone} density={density} size={size} selected={selected} loading={loading}>
       <Element ref={ref} className={cx("px-panel", className)} {...props}>
         {(title || headerAction) && (
           <header className="px-panel__header">

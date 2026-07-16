@@ -1,4 +1,4 @@
 interface:
   display_name: "Pixel UI Design System"
-  short_description: "Design and build production-ready pixel interfaces"
-  default_prompt: "Use $pixel-ui-design-system to design and implement a reusable pixel-art interface."
+  short_description: "Build authentic pixel UI across seven style families"
+  default_prompt: "Use $pixel-ui-design-system to resolve the correct pixel style family from my brief and references, then build a responsive interface from shared grid-aligned primitives. Prefer Ornamental Pixel Game UI when references show large decorated frames, hard-lit accent edges, mechanical ornaments, premium buttons, and large pixel typography."

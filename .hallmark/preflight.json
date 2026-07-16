@@ -1,7 +1,7 @@
 {
   "date": "2026-07-16",
-  "signals": "Empty repository; full Hallmark stack introduced",
+  "signals": "Existing Vite + React monorepo with shared core, React adapters, semantic themes, visual audit, and a 4px token scale",
   "framework": "Vite + React monorepo",
   "spacing": "4px pixel grid",
-  "motion": "motion-cut with functional state transitions"
+  "motion": "motion-cut with step-based presses, one-shot particles, and reduced-motion fallbacks"
 }

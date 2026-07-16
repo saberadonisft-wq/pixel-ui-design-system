@@ -1,57 +1,142 @@
 .px-frame {
   position: relative;
   min-width: 0;
-  padding: var(--px-border-medium);
-  color: var(--text-primary);
-  background: var(--frame-base);
-  box-shadow: var(--px-shadow-offset) var(--px-shadow-offset) 0 var(--frame-shadow);
-  clip-path: polygon(var(--px-corner-cut) 0, calc(100% - var(--px-corner-cut)) 0, 100% var(--px-corner-cut), 100% calc(100% - var(--px-corner-cut)), calc(100% - var(--px-corner-cut)) 100%, var(--px-corner-cut) 100%, 0 calc(100% - var(--px-corner-cut)), 0 var(--px-corner-cut));
+  padding: var(--px-frame-padding);
+  color: var(--px-text-primary);
+  background: var(--px-border-base);
+  box-shadow: var(--px-frame-shadow);
+  clip-path: polygon(
+    var(--px-corner-cut) 0,
+    calc(100% - var(--px-corner-cut)) 0,
+    100% var(--px-corner-cut),
+    100% calc(100% - var(--px-corner-cut)),
+    calc(100% - var(--px-corner-cut)) 100%,
+    var(--px-corner-cut) 100%,
+    0 calc(100% - var(--px-corner-cut)),
+    0 var(--px-corner-cut)
+  );
 }
-.px-frame::before, .px-frame::after { content: ""; position: absolute; pointer-events: none; z-index: 2; }
-.px-frame::before { inset: var(--px-border-medium); border-block-start: var(--px-border-thin) solid var(--frame-highlight); border-inline-start: var(--px-border-thin) solid var(--frame-highlight); border-block-end: var(--px-border-thin) solid var(--frame-shadow); border-inline-end: var(--px-border-thin) solid var(--frame-shadow); }
-.px-frame::after { inline-size: calc(var(--px-grid) * 3); block-size: var(--px-border-thick); inset-block-start: 0; inset-inline-end: calc(var(--px-corner-cut) + var(--space-2)); background: var(--accent-main); opacity: var(--px-decoration-opacity, 0.65); box-shadow: calc(var(--px-grid) * -4) 0 0 var(--frame-shadow); }
-.px-frame__surface { position: relative; z-index: 1; min-width: 0; min-height: 100%; padding: var(--space-4); background: var(--surface-mid); box-shadow: inset var(--px-border-medium) var(--px-border-medium) 0 var(--surface-light), inset calc(var(--px-border-medium) * -1) calc(var(--px-border-medium) * -1) 0 var(--frame-shadow); }
+
+.px-frame::before,
+.px-frame::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  z-index: var(--px-layer-decoration);
+}
+
+.px-frame::before {
+  visibility: var(--px-frame-inner-visibility);
+  inset: var(--px-frame-padding);
+  border-block-start: var(--px-border-thin) solid var(--px-border-light);
+  border-inline-start: var(--px-border-thin) solid var(--px-border-light);
+  border-block-end: var(--px-border-thin) solid var(--px-border-dark);
+  border-inline-end: var(--px-border-thin) solid var(--px-border-dark);
+}
+
+.px-frame::after {
+  visibility: var(--px-decoration-visibility, visible);
+  inline-size: calc(var(--px-grid) * 3);
+  block-size: var(--px-border-thick);
+  inset-block-start: 0;
+  inset-inline-end: calc(var(--px-corner-cut) + var(--space-2));
+  background: var(--px-accent);
+  box-shadow: calc(var(--px-grid) * -4) 0 0 var(--px-border-dark);
+}
+
+.px-frame[data-px-selected="true"]::after {
+  background: var(--px-selected);
+  box-shadow: calc(var(--px-grid) * -4) 0 0 var(--px-selected);
+}
+
+.px-frame__surface {
+  position: relative;
+  z-index: var(--px-layer-content);
+  min-width: 0;
+  min-height: 100%;
+  padding: var(--px-panel-padding);
+  background: var(--px-panel-mid);
+  box-shadow: var(--px-surface-shadow);
+}
+
 .px-panel { display: grid; gap: var(--space-3); }
-.px-panel__header { display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); padding-block-end: var(--space-2); border-block-end: var(--px-border-medium) solid var(--frame-base); }
-.px-panel__title { margin: 0; font-family: var(--font-display); font-size: 1rem; line-height: 1.2; letter-spacing: 0.04em; text-transform: uppercase; }
+.px-panel__header { display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); padding-block-end: var(--space-2); border-block-end: var(--px-border-thin) solid var(--px-border-base); }
+.px-panel__title { margin: 0; font-family: var(--px-font-display); font-size: var(--px-panel-title-size); line-height: var(--px-panel-title-line); letter-spacing: 0; text-transform: var(--px-panel-title-transform); }
+
 .px-control {
-  --px-control-accent: var(--frame-base);
+  --px-control-face: var(--px-border-base);
+  --px-control-ink: var(--px-text-primary);
   position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: var(--space-2);
   min-width: 0;
-  min-height: var(--px-control-height, var(--px-component-height-md));
+  min-height: var(--px-control-height, var(--px-control-md));
   padding-inline: var(--px-control-pad, var(--space-3));
   border: 0;
-  color: var(--text-primary);
-  background: var(--px-control-accent);
-  box-shadow: inset var(--px-border-thin) var(--px-border-thin) 0 var(--frame-highlight), inset calc(var(--px-border-medium) * -1) calc(var(--px-border-medium) * -1) 0 var(--frame-shadow), var(--px-border-medium) var(--px-border-medium) 0 var(--frame-shadow);
-  clip-path: polygon(var(--px-notch-size) 0, 100% 0, 100% calc(100% - var(--px-notch-size)), calc(100% - var(--px-notch-size)) 100%, 0 100%, 0 var(--px-notch-size));
+  color: var(--px-control-ink);
+  background: var(--px-control-face);
+  box-shadow:
+    inset var(--px-border-thin) var(--px-border-thin) 0 var(--px-border-light),
+    inset calc(var(--px-border-thick) * -1) calc(var(--px-border-thick) * -1) 0 var(--px-border-dark),
+    var(--px-shadow-offset) var(--px-shadow-offset) 0 var(--px-border-dark);
+  clip-path: polygon(
+    var(--px-notch-size) 0,
+    100% 0,
+    100% calc(100% - var(--px-notch-size)),
+    calc(100% - var(--px-notch-size)) 100%,
+    0 100%,
+    0 var(--px-notch-size)
+  );
   cursor: pointer;
-  font-family: var(--font-data);
-  font-size: var(--px-control-font, 0.9375rem);
+  font-family: var(--px-font-display);
+  font-size: var(--px-control-font, var(--px-font-sm));
   font-weight: 700;
-  letter-spacing: 0.035em;
-  transition: transform var(--motion-fast) var(--ease-out), background-color var(--motion-medium) var(--ease-out), color var(--motion-medium) var(--ease-out);
+  line-height: var(--px-control-line, var(--px-line-sm));
+  letter-spacing: 0;
 }
-.px-control::after { content: ""; position: absolute; inset: var(--px-border-medium); border-block-start: var(--px-border-thin) solid color-mix(in oklch, var(--frame-highlight) 72%, transparent); pointer-events: none; }
-.px-control[data-px-tone="accent"] { --px-control-accent: var(--accent-main); color: var(--accent-ink); }
-.px-control[data-px-tone="success"] { --px-control-accent: var(--state-success); color: var(--accent-ink); }
-.px-control[data-px-tone="warning"] { --px-control-accent: var(--state-warning); color: var(--accent-ink); }
-.px-control[data-px-tone="danger"] { --px-control-accent: var(--state-danger); color: var(--text-primary); }
-.px-control[data-px-variant="outline"], .px-control[data-px-variant="ghost"] { color: var(--text-primary); background: var(--surface-mid); }
-.px-control[data-px-variant="ghost"] { box-shadow: inset 0 calc(var(--px-border-thin) * -1) 0 var(--frame-base); }
-.px-control[data-px-selected="true"] { color: var(--accent-light); background: var(--surface-light); box-shadow: inset 0 calc(var(--px-border-thick) * -1) 0 var(--accent-main), inset var(--px-border-thin) var(--px-border-thin) 0 var(--frame-highlight); }
+
+.px-control::after {
+  content: "";
+  position: absolute;
+  inset: var(--px-border-thick);
+  border-block-start: var(--px-border-thin) solid var(--px-border-light);
+  border-inline-start: var(--px-border-thin) solid var(--px-border-light);
+  pointer-events: none;
+}
+
+.px-control[data-px-tone="accent"] { --px-control-face: var(--px-accent); --px-control-ink: var(--px-accent-ink); }
+.px-control[data-px-tone="success"] { --px-control-face: var(--px-success); --px-control-ink: var(--px-accent-ink); }
+.px-control[data-px-tone="warning"] { --px-control-face: var(--px-warning); --px-control-ink: var(--px-accent-ink); }
+.px-control[data-px-tone="danger"] { --px-control-face: var(--px-danger); --px-control-ink: var(--px-border-dark); }
+.px-control[data-px-variant="outline"], .px-control[data-px-variant="ghost"] { --px-control-face: var(--px-panel-mid); --px-control-ink: var(--px-text-primary); }
+.px-control[data-px-variant="ghost"] { box-shadow: inset 0 calc(var(--px-border-thin) * -1) 0 var(--px-border-base); }
+.px-control[data-px-selected="true"] { --px-control-face: var(--px-panel-light); --px-control-ink: var(--px-selected); box-shadow: inset 0 calc(var(--px-border-thick) * -1) 0 var(--px-selected), inset var(--px-border-thin) var(--px-border-thin) 0 var(--px-border-light), var(--px-shadow-offset) var(--px-shadow-offset) 0 var(--px-border-dark); }
 .px-control[data-px-selected="true"]::before { content: ""; inline-size: var(--px-notch-size); block-size: var(--px-notch-size); flex: none; background: currentColor; }
-@media (hover: hover) and (pointer: fine) { .px-control:not(:disabled):hover { transform: translateY(var(--hover-offset)); background-color: color-mix(in oklch, var(--px-control-accent) 86%, var(--frame-highlight)); } }
-.px-control:not(:disabled):active { transform: translateY(var(--press-offset)); box-shadow: inset var(--px-border-medium) var(--px-border-medium) 0 var(--frame-shadow); }
-.px-control:disabled, .px-control[aria-disabled="true"] { filter: saturate(0.25); opacity: 0.52; cursor: not-allowed; }
+
+@media (hover: hover) and (pointer: fine) {
+  .px-control:not(:disabled):hover { --px-control-face: var(--px-panel-light); }
+  .px-control[data-px-tone="accent"]:not(:disabled):hover { --px-control-face: var(--px-accent-highlight); }
+}
+
+.px-control:not(:disabled):active {
+  transform: translate(var(--px-press-offset), var(--px-press-offset));
+  box-shadow: inset var(--px-border-thick) var(--px-border-thick) 0 var(--px-border-dark);
+}
+
+.px-control:disabled,
+.px-control[aria-disabled="true"] {
+  --px-control-face: var(--px-disabled);
+  --px-control-ink: var(--px-panel-dark);
+  cursor: not-allowed;
+  box-shadow: inset var(--px-border-thin) var(--px-border-thin) 0 var(--px-border-light);
+}
+
 .px-control[aria-busy="true"] { cursor: wait; }
-.px-control[aria-busy="true"]::before { content: ""; inline-size: var(--space-2); block-size: var(--space-2); border: var(--px-border-medium) solid currentColor; border-inline-end-color: transparent; animation: px-loader 800ms steps(4) infinite; }
-.px-icon-control { inline-size: var(--px-control-height, var(--px-component-height-md)); padding-inline: 0; }
-.px-icon-control svg { inline-size: var(--px-icon-size); block-size: var(--px-icon-size); }
-.px-tab { min-height: 44px; background: var(--surface-mid); box-shadow: inset 0 calc(var(--px-border-medium) * -1) 0 var(--frame-base); }
+.px-control[aria-busy="true"]::before { content: ""; inline-size: var(--space-2); block-size: var(--space-2); border: var(--px-border-thin) solid currentColor; border-inline-end-color: transparent; animation: px-loader var(--px-motion-loop) steps(4) infinite; }
+.px-icon-control { inline-size: var(--px-control-height, var(--px-control-md)); padding-inline: 0; }
+.px-icon-control svg { inline-size: var(--px-icon-size); block-size: var(--px-icon-size); shape-rendering: crispEdges; }
+.px-tab { min-height: var(--px-control-sm); background: var(--px-panel-mid); box-shadow: inset 0 calc(var(--px-border-thin) * -1) 0 var(--px-border-base); }
 @keyframes px-loader { to { transform: rotate(1turn); } }
-@media (pointer: coarse) { .px-control { min-height: 48px; } }
+@media (pointer: coarse) { .px-control { min-height: var(--px-control-md); } }

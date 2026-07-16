@@ -1,4 +1,4 @@
-import { forwardRef, type CSSProperties, type HTMLAttributes, type ReactNode, type TableHTMLAttributes } from "react";
+import { forwardRef, type CSSProperties, type HTMLAttributes, type KeyboardEvent, type ReactNode, type TableHTMLAttributes } from "react";
 import type { PixelStyleProps } from "./types";
 import { PixelFrame } from "./PixelFrame";
 import { cx, pixelData } from "./utils";
@@ -7,11 +7,11 @@ export interface PixelCardProps extends HTMLAttributes<HTMLElement>, PixelStyleP
 }
 
 export const PixelCard = forwardRef<HTMLElement, PixelCardProps>(function PixelCard(
-  { className, children, theme, variant = "inset", tone = "neutral", density = "low", size = "md", selected, loading, ...props },
+  { className, children, theme, mode, grid, variant = "inset", tone = "neutral", density = "low", size = "md", selected, loading, ...props },
   ref
 ) {
   return (
-    <PixelFrame theme={theme} variant={variant} tone={tone} density={density} size={size} selected={selected} loading={loading}>
+    <PixelFrame theme={theme} mode={mode} grid={grid} variant={variant} tone={tone} density={density} size={size} selected={selected} loading={loading}>
       <article ref={ref} className={cx("px-card", className)} {...props}>{children}</article>
     </PixelFrame>
   );
@@ -46,13 +46,28 @@ export const PixelProgress = forwardRef<HTMLDivElement, PixelProgressProps>(func
 });
 
 export interface PixelToolbarProps extends HTMLAttributes<HTMLDivElement> { label: string; }
-export const PixelToolbar = forwardRef<HTMLDivElement, PixelToolbarProps>(function PixelToolbar({ className, label, ...props }, ref) {
-  return <div ref={ref} role="toolbar" aria-label={label} className={cx("px-toolbar", className)} {...props} />;
+function moveFocus(event: KeyboardEvent<HTMLElement>, selector: string) {
+  if (!["ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown", "Home", "End"].includes(event.key)) return;
+  const items = [...event.currentTarget.querySelectorAll<HTMLElement>(selector)].filter((item) => !item.matches(":disabled,[aria-disabled=true]"));
+  if (!items.length) return;
+  const current = Math.max(0, items.indexOf(document.activeElement as HTMLElement));
+  const next = event.key === "Home" ? 0 : event.key === "End" ? items.length - 1 : event.key === "ArrowLeft" || event.key === "ArrowUp" ? (current - 1 + items.length) % items.length : (current + 1) % items.length;
+  event.preventDefault();
+  items[next].focus();
+}
+
+export const PixelToolbar = forwardRef<HTMLDivElement, PixelToolbarProps>(function PixelToolbar({ className, label, onKeyDown, ...props }, ref) {
+  return <div ref={ref} role="toolbar" aria-label={label} className={cx("px-toolbar", className)} onKeyDown={(event) => { moveFocus(event, "button,a[href],[tabindex]:not([tabindex='-1'])"); onKeyDown?.(event); }} {...props} />;
+});
+
+export interface PixelTabListProps extends HTMLAttributes<HTMLDivElement> { label: string; }
+export const PixelTabList = forwardRef<HTMLDivElement, PixelTabListProps>(function PixelTabList({ className, label, onKeyDown, ...props }, ref) {
+  return <div ref={ref} role="tablist" aria-label={label} className={cx("px-tablist", className)} onKeyDown={(event) => { moveFocus(event, "[role=tab]"); onKeyDown?.(event); }} {...props} />;
 });
 
 export interface PixelWindowProps extends Omit<HTMLAttributes<HTMLElement>, "title">, PixelStyleProps { title: ReactNode; actions?: ReactNode; }
-export const PixelWindow = forwardRef<HTMLElement, PixelWindowProps>(function PixelWindow({ className, title, actions, children, theme, variant, tone, density, size, selected, loading, ...props }, ref) {
-  return <PixelFrame theme={theme} variant={variant} tone={tone} density={density} size={size} selected={selected} loading={loading}><section ref={ref} className={cx("px-window", className)} {...props}><header className="px-window__header"><h2>{title}</h2>{actions && <div className="px-window__actions">{actions}</div>}</header><div className="px-window__content">{children}</div></section></PixelFrame>;
+export const PixelWindow = forwardRef<HTMLElement, PixelWindowProps>(function PixelWindow({ className, title, actions, children, theme, mode, grid, variant, tone, density, size, selected, loading, ...props }, ref) {
+  return <PixelFrame theme={theme} mode={mode} grid={grid} variant={variant} tone={tone} density={density} size={size} selected={selected} loading={loading}><section ref={ref} className={cx("px-window", className)} {...props}><header className="px-window__header"><h2>{title}</h2>{actions && <div className="px-window__actions">{actions}</div>}</header><div className="px-window__content">{children}</div></section></PixelFrame>;
 });
 
 export interface PixelTableProps extends TableHTMLAttributes<HTMLTableElement> { caption?: ReactNode; }
@@ -63,5 +78,5 @@ export const PixelTable = forwardRef<HTMLTableElement, PixelTableProps>(function
 export interface PixelToastProps extends HTMLAttributes<HTMLElement>, Pick<PixelStyleProps, "tone"> { action?: ReactNode; }
 export const PixelToast = forwardRef<HTMLElement, PixelToastProps>(function PixelToast({ className, tone = "neutral", children, action, ...props }, ref) {
   const urgent = tone === "danger";
-  return <aside ref={ref} className={cx("px-toast", className)} role={urgent ? "alert" : "status"} aria-live={urgent ? "assertive" : "polite"} {...pixelData({ tone })} {...props}><PixelStatus tone={tone} label={urgent ? "Error" : "Notice"} /><div className="px-toast__message">{children}</div>{action}</aside>;
+  return <aside ref={ref} className={cx("px-toast", className)} role={urgent ? "alert" : "status"} aria-live={urgent ? "assertive" : "polite"} {...pixelData({ tone })} {...props}><PixelStatus tone={tone} label={urgent ? "Error" : "Notice"} /><div className="px-toast__message">{children}</div>{action && <div className="px-toast__action">{action}</div>}</aside>;
 });

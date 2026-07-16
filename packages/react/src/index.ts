@@ -7,4 +7,6 @@ export * from "./PixelTab";
 export * from "./PixelContent";
 export * from "./PixelFields";
 export * from "./PixelOverlays";
+export * from "./PixelGame";
+export * from "./PixelOrnate";
 export * from "./PixelAsset";

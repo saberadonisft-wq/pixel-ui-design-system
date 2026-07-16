@@ -5,6 +5,8 @@ All React primitives forward native attributes and refs. Visual options are emit
 ## Shared options
 
 - `theme`: subtree override for one of the supported presets.
+- `mode`: one of `ornamental`, `minimal-8bit`, `rpg-16bit`, `cozy`, `tactical-hud`, `cyber`, or `data-dashboard`; controls family geometry without changing semantics.
+- `grid`: `2`, `4`, or `8`; controls all decorative geometry.
 - `variant`: `solid`, `outline`, `inset`, or `ghost`.
 - `tone`: `neutral`, `accent`, `success`, `warning`, or `danger`.
 - `density`: `low`, `medium`, or `high`.
@@ -12,9 +14,13 @@ All React primitives forward native attributes and refs. Visual options are emit
 - `selected`: exposes a structural selected marker.
 - `loading`: sets `aria-busy`, stabilizes dimensions, and prevents duplicate activation.
 
+Active controls move by exactly one grid unit and reduce their bottom/right shadow. Selected, disabled, loading, and error states include shape, pattern, position, icon, or text evidence rather than color alone.
+
 ## Current primitives
 
-- `PixelFrame`: generic multilayer container.
+- `PixelFrame`: generic family-aware container.
+- `PixelOrnateFrame`: formal nine-slice DOM frame with fixed corners, live content center, material ornament, detail hierarchy, and semantic ramp.
+- `PixelOrnateButton`: native button composed from the same nine-slice system with icon, label, marker, complete interaction states, and non-color selection.
 - `PixelPanel`: semantic section/aside/article composed inside `PixelFrame`.
 - `PixelButton`: text action using a native button.
 - `PixelIconButton`: square native button requiring `label`.
@@ -22,8 +28,10 @@ All React primitives forward native attributes and refs. Visual options are emit
 - Content: `PixelCard`, `PixelBadge`, `PixelDivider`, `PixelStatus`, `PixelProgress`, `PixelToolbar`, `PixelWindow`, `PixelTable`, and `PixelToast`.
 - Fields: `PixelInput`, `PixelTextarea`, `PixelSelect`, `PixelCheckbox`, `PixelRadio`, and `PixelSwitch` with persistent labels, helper/error text, and native semantics.
 - Overlays: `PixelTooltip` with keyboard focus support and `PixelModal` built on the native dialog element.
+- Game primitives: `PixelSprite` with intrinsic source dimensions and integer scale, `PixelSlot`, segmented `PixelMeter`, `PixelCounter`, `PixelCurrency`, and `PixelState` for loading/empty/error.
+- Composite keyboard helpers: `PixelTabList` and `PixelToolbar` with roving arrow-key focus.
 
-All seven presets (`sci-fi`, `fantasy`, `cyberpunk`, `terminal`, `arcade`, `industrial`, and `minimal`) consume this same contract. A theme swap must not require component-specific CSS.
+All eight presets (`ornamental`, `sci-fi`, `fantasy`, `cyberpunk`, `terminal`, `arcade`, `industrial`, and `minimal`) consume this same contract. A theme swap must not require component-specific CSS.
 
 ## Adding a primitive
 

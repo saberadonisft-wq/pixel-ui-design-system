@@ -5,6 +5,7 @@
   "sideEffects": ["*.css"],
   "exports": {
     ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" },
+    "./ornamental.css": "./ornamental.css",
     "./sci-fi.css": "./sci-fi.css",
     "./fantasy.css": "./fantasy.css",
     "./terminal.css": "./terminal.css",
