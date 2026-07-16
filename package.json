@@ -12,10 +12,13 @@
     "dev:sci-fi": "npm run dev -w @pixel-ui/example-sci-fi",
     "dev:fantasy": "npm run dev -w @pixel-ui/example-fantasy",
     "dev:terminal": "npm run dev -w @pixel-ui/example-terminal",
+    "dev:asset-demo": "npm run dev -w @pixel-ui/example-asset-demo",
+    "assets:pixel-ui": "python scripts/extract-pixel-ui-assets.py",
     "dev:lab": "npm run dev -w @pixel-ui/example-lab",
     "lint": "eslint . --max-warnings=0",
     "type-check": "tsc -b --pretty false",
     "build": "npm run build --workspaces --if-present",
+    "test:asset-demo": "node scripts/capture-pixel-asset-demo.mjs",
     "test:visual": "node scripts/visual-audit.mjs",
     "validate:skill": "python C:/Users/vhc/.codex/skills/.system/skill-creator/scripts/quick_validate.py skills/pixel-ui-design-system"
   },

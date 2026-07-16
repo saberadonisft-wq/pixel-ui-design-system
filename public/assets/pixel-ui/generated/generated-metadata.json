@@ -1,0 +1,331 @@
+{
+  "schemaVersion": 1,
+  "source": "public/assets/pixel-ui/source/pixel-ui-sheet.png",
+  "sourceWidth": 1672,
+  "sourceHeight": 941,
+  "sourceMode": "RGB",
+  "sourceHasAlpha": false,
+  "backgroundRemoval": {
+    "strategy": "edge-connected-color-distance",
+    "defaultTolerance": 26,
+    "alphaMode": "binary"
+  },
+  "assets": [
+    {
+      "id": "frame-market-amber",
+      "type": "nine-slice-frame",
+      "output": "generated/frame-market-amber.png",
+      "sourceCrop": {
+        "x": 650,
+        "y": 80,
+        "width": 112,
+        "height": 60
+      },
+      "width": 112,
+      "height": 60,
+      "opaquePixels": 5168,
+      "transparentPixels": 1552,
+      "darkOpaquePixels": 4156,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "backgroundPixelsRemoved": 1552,
+      "sha256": "4401fc518cbcfa3b9f110734e42449c97fea8c6cc67386cae551fbd320abcf13",
+      "nineSlice": {
+        "top": 16,
+        "right": 16,
+        "bottom": 16,
+        "left": 16
+      }
+    },
+    {
+      "id": "frame-currency-blue",
+      "type": "nine-slice-frame",
+      "output": "generated/frame-currency-blue.png",
+      "sourceCrop": {
+        "x": 764,
+        "y": 80,
+        "width": 112,
+        "height": 60
+      },
+      "width": 112,
+      "height": 60,
+      "opaquePixels": 5193,
+      "transparentPixels": 1527,
+      "darkOpaquePixels": 3436,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "backgroundPixelsRemoved": 1527,
+      "sha256": "b66d3061625b847699d14661aac005e7527739a22c6daaa64ade958b13c850c7",
+      "nineSlice": {
+        "top": 16,
+        "right": 16,
+        "bottom": 16,
+        "left": 16
+      }
+    },
+    {
+      "id": "frame-research-red",
+      "type": "nine-slice-frame",
+      "output": "generated/frame-research-red.png",
+      "sourceCrop": {
+        "x": 650,
+        "y": 142,
+        "width": 112,
+        "height": 60
+      },
+      "width": 112,
+      "height": 60,
+      "opaquePixels": 5271,
+      "transparentPixels": 1449,
+      "darkOpaquePixels": 4114,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "backgroundPixelsRemoved": 1449,
+      "sha256": "38cb493efec8f239b1fe97e502fb4c3b3e5f75efbc04153065509d7e828172e4",
+      "nineSlice": {
+        "top": 16,
+        "right": 16,
+        "bottom": 16,
+        "left": 16
+      }
+    },
+    {
+      "id": "frame-capital-purple",
+      "type": "nine-slice-frame",
+      "output": "generated/frame-capital-purple.png",
+      "sourceCrop": {
+        "x": 764,
+        "y": 142,
+        "width": 112,
+        "height": 60
+      },
+      "width": 112,
+      "height": 60,
+      "opaquePixels": 5320,
+      "transparentPixels": 1400,
+      "darkOpaquePixels": 4291,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "backgroundPixelsRemoved": 1400,
+      "sha256": "c0bc56f159416a8c80772dfeb35a3b30024fbcdb857ff40f36f5796ff7710074",
+      "nineSlice": {
+        "top": 16,
+        "right": 16,
+        "bottom": 16,
+        "left": 16
+      }
+    },
+    {
+      "id": "frame-intelligence-cyan",
+      "type": "nine-slice-frame",
+      "output": "generated/frame-intelligence-cyan.png",
+      "sourceCrop": {
+        "x": 650,
+        "y": 204,
+        "width": 112,
+        "height": 62
+      },
+      "width": 112,
+      "height": 62,
+      "opaquePixels": 5369,
+      "transparentPixels": 1575,
+      "darkOpaquePixels": 4330,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "backgroundPixelsRemoved": 1575,
+      "sha256": "f2e0a0eac135f505fd7818f4d062aa047b98d3edd9214dfba8638f42ce8397dd",
+      "nineSlice": {
+        "top": 16,
+        "right": 16,
+        "bottom": 16,
+        "left": 16
+      }
+    },
+    {
+      "id": "compact-security-amber",
+      "type": "compact-frame",
+      "output": "generated/compact-security-amber.png",
+      "sourceCrop": {
+        "x": 613,
+        "y": 319,
+        "width": 62,
+        "height": 55
+      },
+      "width": 62,
+      "height": 55,
+      "opaquePixels": 2110,
+      "transparentPixels": 1300,
+      "darkOpaquePixels": 1294,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "backgroundPixelsRemoved": 1300,
+      "sha256": "11de884a8f6614f67480c9e570382118ca5239a1f7f6fc8822dfeaad5cac8cbb"
+    },
+    {
+      "id": "compact-logout-amber",
+      "type": "compact-frame",
+      "output": "generated/compact-logout-amber.png",
+      "sourceCrop": {
+        "x": 680,
+        "y": 319,
+        "width": 63,
+        "height": 55
+      },
+      "width": 63,
+      "height": 55,
+      "opaquePixels": 2205,
+      "transparentPixels": 1260,
+      "darkOpaquePixels": 1358,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "backgroundPixelsRemoved": 1260,
+      "sha256": "3ef2e49dacb1f6451fefb644605bd46a5d5c4d384769211b042fa1a48d31b014"
+    },
+    {
+      "id": "icon-market-coins",
+      "type": "fixed-icon",
+      "output": "generated/icon-market-coins.png",
+      "sourceCrop": {
+        "x": 787,
+        "y": 580,
+        "width": 54,
+        "height": 54
+      },
+      "width": 42,
+      "height": 42,
+      "opaquePixels": 1440,
+      "transparentPixels": 324,
+      "darkOpaquePixels": 786,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "backgroundPixelsRemoved": 1476,
+      "sha256": "2e1b0660102b1943631036af1b67dc9ea114ca639db21ca29777e9425c9186b9"
+    },
+    {
+      "id": "icon-research-pulse",
+      "type": "fixed-icon",
+      "output": "generated/icon-research-pulse.png",
+      "sourceCrop": {
+        "x": 656,
+        "y": 630,
+        "width": 54,
+        "height": 54
+      },
+      "width": 42,
+      "height": 43,
+      "opaquePixels": 1474,
+      "transparentPixels": 332,
+      "darkOpaquePixels": 929,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "backgroundPixelsRemoved": 1442,
+      "sha256": "bcb2c7c567e0e3c53d7d904c09961c38488c0da2bea47e8bf70c2810063246fe"
+    },
+    {
+      "id": "icon-capital-shield",
+      "type": "fixed-icon",
+      "output": "generated/icon-capital-shield.png",
+      "sourceCrop": {
+        "x": 656,
+        "y": 679,
+        "width": 54,
+        "height": 54
+      },
+      "width": 42,
+      "height": 43,
+      "opaquePixels": 1480,
+      "transparentPixels": 326,
+      "darkOpaquePixels": 852,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "backgroundPixelsRemoved": 1436,
+      "sha256": "77a7208b90d728d0a61edcb9904ef351d83af5d6cee2c97fb8c0c96cfa60cbe1"
+    },
+    {
+      "id": "icon-intelligence-core",
+      "type": "fixed-icon",
+      "output": "generated/icon-intelligence-core.png",
+      "sourceCrop": {
+        "x": 656,
+        "y": 728,
+        "width": 54,
+        "height": 54
+      },
+      "width": 42,
+      "height": 42,
+      "opaquePixels": 1461,
+      "transparentPixels": 303,
+      "darkOpaquePixels": 766,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "backgroundPixelsRemoved": 1455,
+      "sha256": "ebaa209b3c188415c21e021a5602629c6f306fc10159bcdde20da87a3826ef2d"
+    },
+    {
+      "id": "icon-status-shield-cyan",
+      "type": "fixed-icon",
+      "output": "generated/icon-status-shield-cyan.png",
+      "sourceCrop": {
+        "x": 787,
+        "y": 728,
+        "width": 54,
+        "height": 54
+      },
+      "width": 42,
+      "height": 42,
+      "opaquePixels": 1453,
+      "transparentPixels": 311,
+      "darkOpaquePixels": 906,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "backgroundPixelsRemoved": 1463,
+      "sha256": "94467185f9e78c05a91426802aa8ea09e5f01fb1be6c6d397373f68d3c716bd1"
+    },
+    {
+      "id": "icon-deposit-plus-cyan",
+      "type": "fixed-icon",
+      "output": "generated/icon-deposit-plus-cyan.png",
+      "sourceCrop": {
+        "x": 835,
+        "y": 500,
+        "width": 28,
+        "height": 34
+      },
+      "width": 28,
+      "height": 33,
+      "opaquePixels": 154,
+      "transparentPixels": 770,
+      "darkOpaquePixels": 40,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "backgroundPixelsRemoved": 798,
+      "sha256": "4a166473a9e2e1a83b1bc69b01cb664129e47aff0309efad85192c97e834c626"
+    }
+  ]
+}

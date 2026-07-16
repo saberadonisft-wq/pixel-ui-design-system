@@ -1,5 +1,16 @@
 # Pixel UI Design System
 
+## Raster asset proof of concept
+
+The `/pixel-asset-demo` example extracts real PNG artwork from a supplied asset board and composes it into responsive nine-slice frames, raster icons, semantic controls, and live Vietnamese content.
+
+```sh
+npm run assets:pixel-ui
+npm run dev:asset-demo
+npm run test:asset-demo
+```
+
+See [docs/pixel-asset-demo.md](docs/pixel-asset-demo.md) for crop coordinates, background removal, component APIs, render captures, and known source limitations.
 Một monorepo độc lập để AI và frontend developer thiết kế, triển khai và kiểm tra giao diện pixel-art có cấu trúc. Dự án không coi “font pixel + border + glow” là pixel UI: mọi primitive đều có silhouette, nhiều lớp frame, hard highlight/shadow, geometry theo grid và trạng thái tương tác rõ ràng.
 
 ## Cài đặt

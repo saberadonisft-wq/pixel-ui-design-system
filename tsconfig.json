@@ -7,6 +7,7 @@
     { "path": "./examples/sci-fi-hud" },
     { "path": "./examples/fantasy-ui" },
     { "path": "./examples/terminal-ui" },
-    { "path": "./examples/component-lab" }
+    { "path": "./examples/component-lab" },
+    { "path": "./examples/pixel-asset-demo" }
   ]
 }

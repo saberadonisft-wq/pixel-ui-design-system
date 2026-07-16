@@ -5,7 +5,8 @@
   "sideEffects": ["*.css", "src/*.css"],
   "exports": {
     ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" },
-    "./styles.css": "./src/styles.css"
+    "./styles.css": "./src/styles.css",
+    "./asset-styles.css": "./src/asset-styles.css"
   },
   "peerDependencies": { "react": ">=18", "react-dom": ">=18" },
   "dependencies": { "@pixel-ui/core": "*" },

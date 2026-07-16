@@ -5,3 +5,4 @@ dist/
 playwright-report/
 test-results/
 .review/
+public/assets/pixel-ui/debug/
