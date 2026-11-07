@@ -1,0 +1,68 @@
+[data-px-theme="ornamental"] {
+  color-scheme: dark;
+  --px-canvas: #050609;
+  --px-panel-dark: #090b10;
+  --px-panel-mid: #10141c;
+  --px-panel-light: #263044;
+  --px-border-dark: #020306;
+  --px-border-base: #5d6b82;
+  --px-border-light: #a9b4c6;
+  --px-backdrop: #010204;
+  --px-text-primary: #f7f4ed;
+  --px-text-muted: #b8c2d2;
+  --px-accent-dark: #0754a8;
+  --px-accent: #1687ff;
+  --px-accent-highlight: #86d9ff;
+  --px-accent-ink: #030914;
+  --px-selected: #ffd34a;
+  --px-disabled: #59616e;
+  --px-success: #61dc78;
+  --px-warning: #ffc22f;
+  --px-danger: #ff5252;
+  --px-focus: #ffffff;
+  --px-font-display: "Cascadia Mono", "Segoe UI", monospace;
+  --px-font-body: "Segoe UI", system-ui, sans-serif;
+  --px-font-data: "Cascadia Mono", "Segoe UI", monospace;
+
+  --px-orn-neutral-hi: #d9e2f0;
+  --px-orn-neutral-bright: #8d9bb0;
+  --px-orn-neutral-base: #505b70;
+  --px-orn-neutral-shadow: #252d3d;
+  --px-orn-neutral-deep: #070910;
+
+  --px-orn-market-hi: #ffe487;
+  --px-orn-market-bright: #ffbd27;
+  --px-orn-market-base: #ed7b0b;
+  --px-orn-market-shadow: #8f3506;
+  --px-orn-market-deep: #2b0d03;
+
+  --px-orn-research-hi: #ffb09e;
+  --px-orn-research-bright: #ff5e55;
+  --px-orn-research-base: #d62932;
+  --px-orn-research-shadow: #71131d;
+  --px-orn-research-deep: #26070c;
+
+  --px-orn-capital-hi: #e3afff;
+  --px-orn-capital-bright: #bd64ff;
+  --px-orn-capital-base: #7932c8;
+  --px-orn-capital-shadow: #401276;
+  --px-orn-capital-deep: #180527;
+
+  --px-orn-intelligence-hi: #8ffff5;
+  --px-orn-intelligence-bright: #22e5dc;
+  --px-orn-intelligence-base: #08aeb2;
+  --px-orn-intelligence-shadow: #075d69;
+  --px-orn-intelligence-deep: #03252d;
+
+  --px-orn-currency-hi: #a7e7ff;
+  --px-orn-currency-bright: #3ca8ff;
+  --px-orn-currency-base: #146be4;
+  --px-orn-currency-shadow: #0b378f;
+  --px-orn-currency-deep: #041538;
+
+  --px-orn-gold-hi: #fff0a3;
+  --px-orn-gold-bright: #ffd234;
+  --px-orn-gold-base: #e79009;
+  --px-orn-gold-shadow: #874006;
+  --px-orn-gold-deep: #291002;
+}

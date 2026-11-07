@@ -1,0 +1,166 @@
+:root {
+  --px-grid: 4px;
+  --px-half-grid: calc(var(--px-grid) / 2);
+  --px-border-thin: var(--px-half-grid);
+  --px-border-medium: var(--px-grid);
+  --px-border-thick: var(--px-grid);
+  --px-border-heavy: calc(var(--px-grid) * 2);
+  --px-corner-cut: calc(var(--px-grid) * 2);
+  --px-notch-size: var(--px-grid);
+  --px-shadow-offset: var(--px-grid);
+  --px-shadow-offset-lg: calc(var(--px-grid) * 2);
+  --px-press-offset: var(--px-grid);
+  --px-icon-size: 24px;
+  --px-sprite-sm: 16px;
+  --px-sprite-md: 24px;
+  --px-sprite-lg: 32px;
+  --px-sprite-hero: 48px;
+  --px-sprite-xl: 64px;
+  --px-canvas-icon-sm: 16px;
+  --px-canvas-icon-md: 32px;
+  --px-canvas-icon-lg: 48px;
+  --px-canvas-actor: 64px;
+  --px-canvas-weapon-oversize: 96px;
+  --px-stage-preview-w: 160px;
+  --px-stage-preview-h: 96px;
+  --px-rarity-common: var(--px-border-light);
+  --px-rarity-rare: var(--px-accent);
+  --px-rarity-epic: var(--px-accent-highlight);
+  --px-rarity-ssr: var(--px-warning);
+  --px-rarity-ur: var(--px-danger);
+  --px-foil-band-1: var(--px-warning);
+  --px-foil-band-2: var(--px-accent);
+  --px-foil-band-3: var(--px-accent-highlight);
+  --space-1: calc(var(--px-grid) * 1);
+  --space-2: calc(var(--px-grid) * 2);
+  --space-3: calc(var(--px-grid) * 3);
+  --space-4: calc(var(--px-grid) * 4);
+  --space-6: calc(var(--px-grid) * 6);
+  --space-8: calc(var(--px-grid) * 8);
+  --px-font-xs: 12px;
+  --px-font-sm: 14px;
+  --px-font-md: 16px;
+  --px-font-lg: 20px;
+  --px-font-xl: 24px;
+  --px-font-display-lg: 32px;
+  --px-font-display-xl: 48px;
+  --px-font-display-xxl: 64px;
+  --px-line-xs: 16px;
+  --px-line-sm: 20px;
+  --px-line-md: 24px;
+  --px-line-lg: 28px;
+  --px-line-xl: 32px;
+  --px-line-display-lg: 40px;
+  --px-line-display-xl: 56px;
+  --px-line-display-xxl: 72px;
+  --px-control-sm: 44px;
+  --px-control-md: 48px;
+  --px-control-lg: 56px;
+  --px-button-width: calc(var(--px-grid) * 36);
+  --px-tab-width: calc(var(--px-grid) * 28);
+  --px-layer-base: 0;
+  --px-layer-content: 1;
+  --px-layer-decoration: 2;
+  --px-layer-overlay: 400;
+  --px-layer-tooltip: 600;
+  --px-layer-toast: 700;
+  --px-motion-instant: 0ms;
+  --px-motion-step: 96ms;
+  --px-motion-loop: 768ms;
+  --px-ease-step: steps(1, end);
+  --px-breakpoint-tablet: 768px;
+  --px-breakpoint-desktop: 960px;
+  --px-content-max: 1408px;
+  --px-content-wide: 1312px;
+  --px-content-standard: 1216px;
+  --px-text-measure: 640px;
+  --px-toast-max: 512px;
+  --px-tooltip-max: 288px;
+  --px-dialog-max: 608px;
+  --px-dialog-max-height: 672px;
+  --px-textarea-min: 112px;
+  --px-orn-slice: calc(var(--px-grid) * 5);
+  --px-orn-slice-hero: calc(var(--px-grid) * 7);
+  --px-orn-corner-step: calc(var(--px-grid) * 2);
+  --px-orn-edge-depth: calc(var(--px-grid) * 3);
+  --px-orn-bolt: calc(var(--px-grid) * 2);
+  --px-orn-icon: calc(var(--px-grid) * 14);
+  --px-orn-icon-hero: calc(var(--px-grid) * 18);
+  --px-orn-module-min: calc(var(--px-grid) * 26);
+  --px-orn-hero-min: calc(var(--px-grid) * 36);
+  --px-canvas: #10151f;
+  --px-panel-dark: #151d2a;
+  --px-panel-mid: #202c3d;
+  --px-panel-light: #34475e;
+  --px-border-dark: #070a0f;
+  --px-border-base: #526b86;
+  --px-border-light: #91abc3;
+  --px-backdrop: #05070c;
+  --px-text-primary: #f2f6f8;
+  --px-text-muted: #b8c7d1;
+  --px-accent-dark: #167884;
+  --px-accent: #46d9e8;
+  --px-accent-highlight: #baf8ff;
+  --px-accent-ink: #07191d;
+  --px-selected: #ffe066;
+  --px-disabled: #687280;
+  --px-success: #65d47a;
+  --px-warning: #ffd166;
+  --px-danger: #ff5c66;
+  --px-font-display: "Pixel Operator", "Press Start 2P", "Cascadia Mono", monospace;
+  --px-font-body: system-ui, "Segoe UI", sans-serif;
+  --px-font-data: "Cascadia Mono", "SFMono-Regular", monospace;
+  --px-frame-padding: var(--px-border-thin);
+  --px-frame-shadow: 0 0 0 var(--px-border-thin) var(--px-border-dark), var(--px-shadow-offset) var(--px-shadow-offset) 0 var(--px-border-dark);
+  --px-frame-inner-visibility: hidden;
+  --px-decoration-visibility: hidden;
+  --px-panel-padding: var(--space-6);
+  --px-surface-shadow: none;
+  --px-panel-title-transform: none;
+  --px-panel-title-size: var(--px-font-lg);
+  --px-panel-title-line: var(--px-line-lg);
+
+  /* Compatibility aliases. Primitives should migrate toward the px-prefixed roles. */
+  --surface-dark: var(--px-canvas);
+  --surface-mid: var(--px-panel-mid);
+  --surface-light: var(--px-panel-light);
+  --frame-shadow: var(--px-border-dark);
+  --frame-base: var(--px-border-base);
+  --frame-highlight: var(--px-border-light);
+  --accent-dark: var(--px-accent-dark);
+  --accent-main: var(--px-accent);
+  --accent-light: var(--px-accent-highlight);
+  --accent-ink: var(--px-accent-ink);
+  --text-primary: var(--px-text-primary);
+  --text-secondary: var(--px-text-muted);
+  --state-success: var(--px-success);
+  --state-warning: var(--px-warning);
+  --state-danger: var(--px-danger);
+  --motion-fast: var(--px-motion-step);
+  --motion-medium: calc(var(--px-motion-step) * 2);
+  --press-offset: var(--px-press-offset);
+  --hover-offset: 0px;
+  --ease-out: var(--px-ease-step);
+  --ease-in: var(--px-ease-step);
+  --font-display: var(--px-font-display);
+  --font-body: var(--px-font-body);
+  --font-data: var(--px-font-data);
+  --px-component-height-sm: var(--px-control-sm);
+  --px-component-height-md: var(--px-control-md);
+  --px-component-height-lg: var(--px-control-lg);
+}
+
+[data-px-grid="2"] { --px-grid: 2px; }
+[data-px-grid="4"] { --px-grid: 4px; }
+[data-px-grid="8"] { --px-grid: 8px; --px-control-sm: 48px; --px-control-md: 56px; --px-control-lg: 64px; }
+[data-px-mode="ornamental"] { --px-frame-padding: var(--px-border-thick); --px-frame-inner-visibility: visible; --px-decoration-visibility: visible; --px-panel-padding: var(--space-6); --px-surface-shadow: inset var(--px-border-thin) var(--px-border-thin) 0 var(--px-panel-light), inset calc(var(--px-border-thick) * -1) calc(var(--px-border-thick) * -1) 0 var(--px-border-dark); --px-panel-title-transform: none; --px-panel-title-size: var(--px-font-xl); --px-panel-title-line: var(--px-line-xl); }
+[data-px-mode="minimal-8bit"], [data-px-mode="cozy"], [data-px-mode="data-dashboard"] { --px-frame-padding: var(--px-border-thin); --px-frame-inner-visibility: hidden; --px-decoration-visibility: hidden; --px-panel-padding: var(--space-6); --px-surface-shadow: none; --px-panel-title-transform: none; --px-panel-title-size: var(--px-font-lg); --px-panel-title-line: var(--px-line-lg); }
+[data-px-mode="rpg-16bit"], [data-px-mode="tactical-hud"], [data-px-mode="cyber"] { --px-frame-padding: var(--px-border-thick); --px-frame-inner-visibility: visible; --px-decoration-visibility: visible; --px-panel-padding: var(--space-4); --px-surface-shadow: inset var(--px-border-thin) var(--px-border-thin) 0 var(--px-panel-light), inset calc(var(--px-border-thick) * -1) calc(var(--px-border-thick) * -1) 0 var(--px-border-dark); --px-panel-title-transform: uppercase; --px-panel-title-size: var(--px-font-md); --px-panel-title-line: var(--px-line-md); }
+[data-px-density="low"] { --px-frame-gap: var(--space-1); }
+[data-px-density="medium"] { --px-frame-gap: var(--space-2); }
+[data-px-density="high"] { --px-frame-gap: var(--space-3); }
+[data-px-mode="tactical-hud"][data-px-density="low"], [data-px-mode="cyber"][data-px-density="low"] { --px-decoration-visibility: hidden; }
+[data-px-mode="ornamental"], [data-px-mode="rpg-16bit"], [data-px-mode="tactical-hud"][data-px-density="medium"], [data-px-mode="tactical-hud"][data-px-density="high"], [data-px-mode="cyber"][data-px-density="medium"], [data-px-mode="cyber"][data-px-density="high"] { --px-decoration-visibility: visible; }
+[data-px-size="sm"] { --px-control-height: var(--px-control-sm); --px-control-pad: var(--space-2); --px-control-font: var(--px-font-sm); --px-control-line: var(--px-line-sm); }
+[data-px-size="md"] { --px-control-height: var(--px-control-md); --px-control-pad: var(--space-3); --px-control-font: var(--px-font-sm); --px-control-line: var(--px-line-sm); }
+[data-px-size="lg"] { --px-control-height: var(--px-control-lg); --px-control-pad: var(--space-4); --px-control-font: var(--px-font-md); --px-control-line: var(--px-line-md); }

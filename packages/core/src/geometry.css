@@ -1,0 +1,13 @@
+.px-cut {
+  clip-path: polygon(var(--px-corner-cut) 0, calc(100% - var(--px-corner-cut)) 0, 100% var(--px-corner-cut), 100% calc(100% - var(--px-corner-cut)), calc(100% - var(--px-corner-cut)) 100%, var(--px-corner-cut) 100%, 0 calc(100% - var(--px-corner-cut)), 0 var(--px-corner-cut));
+}
+.px-step-corners {
+  clip-path: polygon(var(--px-notch-size) 0, calc(100% - var(--px-notch-size)) 0, calc(100% - var(--px-notch-size)) var(--px-notch-size), 100% var(--px-notch-size), 100% calc(100% - var(--px-notch-size)), calc(100% - var(--px-notch-size)) calc(100% - var(--px-notch-size)), calc(100% - var(--px-notch-size)) 100%, var(--px-notch-size) 100%, var(--px-notch-size) calc(100% - var(--px-notch-size)), 0 calc(100% - var(--px-notch-size)), 0 var(--px-notch-size), var(--px-notch-size) var(--px-notch-size));
+}
+.px-grid-surface {
+  background-color: var(--px-canvas);
+  background-image: linear-gradient(to right, var(--px-panel-dark) var(--px-border-thin), transparent var(--px-border-thin)), linear-gradient(to bottom, var(--px-panel-dark) var(--px-border-thin), transparent var(--px-border-thin));
+  background-size: calc(var(--px-grid) * 4) calc(var(--px-grid) * 4);
+  image-rendering: pixelated;
+}
+.px-data { font-family: var(--font-data); font-variant-numeric: tabular-nums; }

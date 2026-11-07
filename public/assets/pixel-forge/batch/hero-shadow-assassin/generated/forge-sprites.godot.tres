@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://pixel_forge_paladin_knight_ssr"]
+
+[ext_resource type="Texture2D" path="res://assets/pixel-forge/generated/forge-atlas-diffuse.png" id="1_diffuse"]
+[ext_resource type="Texture2D" path="res://assets/pixel-forge/generated/forge-atlas-normal.png" id="2_normal"]
+
+[resource]
+resource_name = "PaladinKnightSpriteFrames"
+character_id = "hero-shadow-assassin"
+foot_baseline_y = 88
+animations = [
+  { "name": &"idle", "speed": 6.0, "loop": true, "frames": 4, "hit_stop_ms": 0 },
+  { "name": &"walk", "speed": 8.0, "loop": true, "frames": 4, "hit_stop_ms": 0 },
+  { "name": &"attack", "speed": 10.0, "loop": false, "frames": 4, "hit_stop_ms": 80 },
+  { "name": &"hurt", "speed": 6.0, "loop": false, "frames": 2, "hit_stop_ms": 64 },
+  { "name": &"victory", "speed": 8.0, "loop": true, "frames": 4, "hit_stop_ms": 0 },
+]

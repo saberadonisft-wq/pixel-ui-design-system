@@ -1,0 +1,42 @@
+{
+  "name": "pixel-ui-design-system",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w @pixel-ui/example-asset-demo",
+    "dev:asset-demo": "npm run dev -w @pixel-ui/example-asset-demo",
+    "assets:pixel-ui": "python scripts/extract-pixel-ui-assets.py",
+    "forge:build": "python scripts/pixel-forge.py build",
+    "forge:validate": "python scripts/pixel-forge.py validate",
+    "forge:prompts": "python scripts/pixel-forge.py prompts",
+    "forge:batch": "python scripts/pixel-forge.py batch",
+    "forge:batch-prompts": "python scripts/pixel-forge.py batch-prompts",
+    "forge:batch-validate": "python scripts/pixel-forge.py batch-validate",
+    "lint": "eslint . --max-warnings=0",
+    "type-check": "tsc -b --pretty false",
+    "build": "npm run build --workspaces --if-present",
+    "test:visual": "node scripts/capture-pixel-asset-demo.mjs",
+    "test:asset-demo": "node scripts/capture-pixel-asset-demo.mjs",
+    "validate:pixel": "node scripts/validate-pixel-rules.mjs",
+    "validate:skill": "python C:/Users/vhc/.codex/skills/.system/skill-creator/scripts/quick_validate.py skills/pixel-ui-design-system"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.31.0",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@vitejs/plugin-react": "^4.6.0",
+    "eslint": "^9.31.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "globals": "^16.3.0",
+    "puppeteer-core": "^25.3.0",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.37.0",
+    "vite": "^7.0.4"
+  }
+}

@@ -1,0 +1,679 @@
+{
+  "schemaVersion": 1,
+  "character": {
+    "id": "hero-paladin-knight",
+    "name": "Hiệp Sĩ Thánh Quang",
+    "title": "Thánh Kỵ Sĩ Giáp Bạc",
+    "rarity": "ssr",
+    "masterStill": "hero-master-still.png",
+    "damagedStill": "hero-master-damaged.png",
+    "normalMap": "hero-master-normal.png",
+    "specularMap": "hero-master-specular.png",
+    "emissiveMap": "hero-master-emissive.png",
+    "damagedBboxDeltaPx": 0,
+    "bodyCanvas": [
+      64,
+      64
+    ],
+    "weaponCanvas": [
+      96,
+      96
+    ],
+    "footBaselineY": 88,
+    "paletteHex": [
+      "#10060B",
+      "#1B171D",
+      "#4E182E",
+      "#262B45",
+      "#29407E",
+      "#892338",
+      "#464B66",
+      "#764D3D",
+      "#3E5EA1",
+      "#616D83",
+      "#78726E",
+      "#A36A38",
+      "#7D889C",
+      "#B38543",
+      "#8C9BAF",
+      "#BDA573",
+      "#A3C2CA",
+      "#E0CA7B",
+      "#BCCCD6",
+      "#E7ECCB"
+    ]
+  },
+  "layers": {
+    "00_shadow": "layer-00_shadow.png",
+    "10_body": "layer-10_body.png",
+    "20_iris": "layer-20_iris.png",
+    "30_outfit": "layer-30_outfit.png",
+    "40_hair": "layer-40_hair.png",
+    "50_weapon": "layer-50_weapon.png",
+    "60_fx": "layer-60_fx.png"
+  },
+  "sockets": [
+    {
+      "id": "hand_r",
+      "x": 58,
+      "y": 50,
+      "angleDeg": 0,
+      "zOrder": 50,
+      "visible": true
+    },
+    {
+      "id": "hand_l",
+      "x": 36,
+      "y": 51,
+      "angleDeg": 0,
+      "zOrder": 35,
+      "visible": true
+    },
+    {
+      "id": "head",
+      "x": 48,
+      "y": 28,
+      "angleDeg": 0,
+      "zOrder": 45,
+      "visible": true
+    },
+    {
+      "id": "back",
+      "x": 48,
+      "y": 48,
+      "angleDeg": 0,
+      "zOrder": 25,
+      "visible": true
+    },
+    {
+      "id": "muzzle",
+      "x": 60,
+      "y": 22,
+      "angleDeg": 0,
+      "zOrder": 60,
+      "visible": true
+    }
+  ],
+  "elements": {
+    "solar": {
+      "label": "Hệ Thái Dương (Solar Gold)",
+      "file": "hero-element-solar.png"
+    },
+    "fire": {
+      "label": "Hệ Hỏa Viêm (Crimson Flame)",
+      "file": "hero-element-fire.png"
+    },
+    "ice": {
+      "label": "Hệ Băng Tuyết (Glacial Frost)",
+      "file": "hero-element-ice.png"
+    },
+    "shadow": {
+      "label": "Hệ Hư Không (Void Eclipse)",
+      "file": "hero-element-shadow.png"
+    },
+    "emerald": {
+      "label": "Hệ Cổ Mộc (Verdant Rune)",
+      "file": "hero-element-emerald.png"
+    }
+  },
+  "directions": {
+    "S": "hero-dir-S.png",
+    "SE": "hero-dir-SE.png",
+    "E": "hero-dir-E.png",
+    "NE": "hero-dir-NE.png",
+    "N": "hero-dir-N.png",
+    "SW": "hero-dir-SW.png",
+    "W": "hero-dir-W.png",
+    "NW": "hero-dir-NW.png"
+  },
+  "clips": {
+    "idle": {
+      "strip": "clip-idle-strip.png",
+      "frames": [
+        "clip-idle-f0.png",
+        "clip-idle-f1.png",
+        "clip-idle-f2.png",
+        "clip-idle-f3.png"
+      ],
+      "fps": 6,
+      "loop": true,
+      "regionMasked": true,
+      "crawlPixelsSuppressed": 3165,
+      "timing": {
+        "windupFrames": 0,
+        "hitFrame": 0,
+        "recoveryFrames": 0,
+        "hitStopMs": 0,
+        "screenShakePx": 0
+      }
+    },
+    "walk": {
+      "strip": "clip-walk-strip.png",
+      "frames": [
+        "clip-walk-f0.png",
+        "clip-walk-f1.png",
+        "clip-walk-f2.png",
+        "clip-walk-f3.png"
+      ],
+      "fps": 8,
+      "loop": true,
+      "regionMasked": false,
+      "crawlPixelsSuppressed": 0,
+      "timing": {
+        "windupFrames": 0,
+        "hitFrame": 2,
+        "recoveryFrames": 0,
+        "hitStopMs": 0,
+        "screenShakePx": 0
+      }
+    },
+    "attack": {
+      "strip": "clip-attack-strip.png",
+      "frames": [
+        "clip-attack-f0.png",
+        "clip-attack-f1.png",
+        "clip-attack-f2.png",
+        "clip-attack-f3.png"
+      ],
+      "fps": 10,
+      "loop": false,
+      "regionMasked": false,
+      "crawlPixelsSuppressed": 0,
+      "timing": {
+        "windupFrames": 1,
+        "hitFrame": 2,
+        "recoveryFrames": 1,
+        "hitStopMs": 80,
+        "screenShakePx": 4
+      }
+    },
+    "hurt": {
+      "strip": "clip-hurt-strip.png",
+      "frames": [
+        "clip-hurt-f0.png",
+        "clip-hurt-f1.png"
+      ],
+      "fps": 6,
+      "loop": false,
+      "regionMasked": false,
+      "crawlPixelsSuppressed": 0,
+      "timing": {
+        "windupFrames": 0,
+        "hitFrame": 1,
+        "recoveryFrames": 1,
+        "hitStopMs": 64,
+        "screenShakePx": 4
+      }
+    },
+    "victory": {
+      "strip": "clip-victory-strip.png",
+      "frames": [
+        "clip-victory-f0.png",
+        "clip-victory-f1.png",
+        "clip-victory-f2.png",
+        "clip-victory-f3.png"
+      ],
+      "fps": 8,
+      "loop": true,
+      "regionMasked": true,
+      "crawlPixelsSuppressed": 0,
+      "timing": {
+        "windupFrames": 1,
+        "hitFrame": 2,
+        "recoveryFrames": 1,
+        "hitStopMs": 0,
+        "screenShakePx": 0
+      }
+    }
+  },
+  "vfx": {
+    "vfx-gacha-summon-ssr": {
+      "name": "Nghi Thức Triệu Hồi SSR (Summon Ritual)",
+      "category": "summon-ritual",
+      "colorStrip": "vfx-gacha-summon-ssr-color-strip.png",
+      "emissiveStrip": "vfx-gacha-summon-ssr-emissive-strip.png",
+      "compositeStrip": "vfx-gacha-summon-ssr-composite-strip.png",
+      "frames": [
+        "vfx-gacha-summon-ssr-f0.png",
+        "vfx-gacha-summon-ssr-f1.png",
+        "vfx-gacha-summon-ssr-f2.png",
+        "vfx-gacha-summon-ssr-f3.png"
+      ],
+      "fps": 8,
+      "craftChecksPassed": 22
+    },
+    "vfx-solar-slash": {
+      "name": "Kiếm Khí Thái Dương (Dual-Buffer Slash)",
+      "category": "elemental-slash",
+      "colorStrip": "vfx-solar-slash-color-strip.png",
+      "emissiveStrip": "vfx-solar-slash-emissive-strip.png",
+      "compositeStrip": "vfx-solar-slash-composite-strip.png",
+      "frames": [
+        "vfx-solar-slash-f0.png",
+        "vfx-solar-slash-f1.png",
+        "vfx-solar-slash-f2.png",
+        "vfx-solar-slash-f3.png"
+      ],
+      "fps": 12,
+      "craftChecksPassed": 22
+    }
+  },
+  "loot": [
+    {
+      "id": "loot-sunblade-ur",
+      "name": "Đại Kiếm Thánh Quang",
+      "category": "sword",
+      "rarity": "ur",
+      "material": "solar-prismatic",
+      "size": 32,
+      "file": "loot-sunblade-ur.png"
+    },
+    {
+      "id": "loot-aether-staff-ssr",
+      "name": "Quyền Trượng Tinh Hà",
+      "category": "staff",
+      "rarity": "ssr",
+      "material": "arcane-gold",
+      "size": 32,
+      "file": "loot-aether-staff-ssr.png"
+    },
+    {
+      "id": "loot-fortress-shield-epic",
+      "name": "Khiên Chữ Thập Hiệp Sĩ",
+      "category": "shield",
+      "rarity": "epic",
+      "material": "amethyst-steel",
+      "size": 32,
+      "file": "loot-fortress-shield-epic.png"
+    },
+    {
+      "id": "loot-elixir-rare",
+      "name": "Huyết Dược Tinh Khiết",
+      "category": "potion",
+      "rarity": "rare",
+      "material": "sapphire-glass",
+      "size": 32,
+      "file": "loot-elixir-rare.png"
+    },
+    {
+      "id": "loot-relic-chest-ssr",
+      "name": "Rương Thánh Tích SSR",
+      "category": "chest",
+      "rarity": "ssr",
+      "material": "royal-gold",
+      "size": 32,
+      "file": "loot-relic-chest-ssr.png"
+    },
+    {
+      "id": "loot-core-sigil-common",
+      "name": "Ấn Ký Hiệp Sĩ",
+      "category": "relic",
+      "rarity": "common",
+      "material": "bronze-iron",
+      "size": 32,
+      "file": "loot-core-sigil-common.png"
+    }
+  ],
+  "world": {
+    "tilesetId": "autotile-obsidian-sanctum",
+    "tilesetName": "Thánh Điện Hắc Diện (16-Tile Wang Autotile)",
+    "autotileSheet": "autotile-16-sheet.png",
+    "mapPreview": "autotile-map-preview.png",
+    "parallaxSky": "parallax-sky-far.png",
+    "parallaxRuins": "parallax-ruins-mid.png",
+    "parallaxArena": "parallax-arena-ground.png",
+    "parallaxComposite": "parallax-stage-composite.png",
+    "tileMeta": [
+      {
+        "mask": 0,
+        "binary": "0000",
+        "neighbors": {
+          "N": false,
+          "E": false,
+          "S": false,
+          "W": false
+        },
+        "sheetX": 0,
+        "sheetY": 0
+      },
+      {
+        "mask": 1,
+        "binary": "0001",
+        "neighbors": {
+          "N": true,
+          "E": false,
+          "S": false,
+          "W": false
+        },
+        "sheetX": 16,
+        "sheetY": 0
+      },
+      {
+        "mask": 2,
+        "binary": "0010",
+        "neighbors": {
+          "N": false,
+          "E": true,
+          "S": false,
+          "W": false
+        },
+        "sheetX": 32,
+        "sheetY": 0
+      },
+      {
+        "mask": 3,
+        "binary": "0011",
+        "neighbors": {
+          "N": true,
+          "E": true,
+          "S": false,
+          "W": false
+        },
+        "sheetX": 48,
+        "sheetY": 0
+      },
+      {
+        "mask": 4,
+        "binary": "0100",
+        "neighbors": {
+          "N": false,
+          "E": false,
+          "S": true,
+          "W": false
+        },
+        "sheetX": 0,
+        "sheetY": 16
+      },
+      {
+        "mask": 5,
+        "binary": "0101",
+        "neighbors": {
+          "N": true,
+          "E": false,
+          "S": true,
+          "W": false
+        },
+        "sheetX": 16,
+        "sheetY": 16
+      },
+      {
+        "mask": 6,
+        "binary": "0110",
+        "neighbors": {
+          "N": false,
+          "E": true,
+          "S": true,
+          "W": false
+        },
+        "sheetX": 32,
+        "sheetY": 16
+      },
+      {
+        "mask": 7,
+        "binary": "0111",
+        "neighbors": {
+          "N": true,
+          "E": true,
+          "S": true,
+          "W": false
+        },
+        "sheetX": 48,
+        "sheetY": 16
+      },
+      {
+        "mask": 8,
+        "binary": "1000",
+        "neighbors": {
+          "N": false,
+          "E": false,
+          "S": false,
+          "W": true
+        },
+        "sheetX": 0,
+        "sheetY": 32
+      },
+      {
+        "mask": 9,
+        "binary": "1001",
+        "neighbors": {
+          "N": true,
+          "E": false,
+          "S": false,
+          "W": true
+        },
+        "sheetX": 16,
+        "sheetY": 32
+      },
+      {
+        "mask": 10,
+        "binary": "1010",
+        "neighbors": {
+          "N": false,
+          "E": true,
+          "S": false,
+          "W": true
+        },
+        "sheetX": 32,
+        "sheetY": 32
+      },
+      {
+        "mask": 11,
+        "binary": "1011",
+        "neighbors": {
+          "N": true,
+          "E": true,
+          "S": false,
+          "W": true
+        },
+        "sheetX": 48,
+        "sheetY": 32
+      },
+      {
+        "mask": 12,
+        "binary": "1100",
+        "neighbors": {
+          "N": false,
+          "E": false,
+          "S": true,
+          "W": true
+        },
+        "sheetX": 0,
+        "sheetY": 48
+      },
+      {
+        "mask": 13,
+        "binary": "1101",
+        "neighbors": {
+          "N": true,
+          "E": false,
+          "S": true,
+          "W": true
+        },
+        "sheetX": 16,
+        "sheetY": 48
+      },
+      {
+        "mask": 14,
+        "binary": "1110",
+        "neighbors": {
+          "N": false,
+          "E": true,
+          "S": true,
+          "W": true
+        },
+        "sheetX": 32,
+        "sheetY": 48
+      },
+      {
+        "mask": 15,
+        "binary": "1111",
+        "neighbors": {
+          "N": true,
+          "E": true,
+          "S": true,
+          "W": true
+        },
+        "sheetX": 48,
+        "sheetY": 48
+      }
+    ]
+  },
+  "atlas": {
+    "diffuse": "forge-atlas-diffuse.png",
+    "normal": "forge-atlas-normal.png",
+    "emissive": "forge-atlas-emissive.png",
+    "width": 384,
+    "height": 384,
+    "frameCount": 14,
+    "deduplicatedFrames": 2,
+    "exports": {
+      "aseprite": "forge-atlas.aseprite.json",
+      "unity": "forge-atlas.unity.json",
+      "godot": "forge-sprites.godot.tres"
+    }
+  },
+  "qualityReport": {
+    "score": 100,
+    "allPassed": true,
+    "checks": [
+      {
+        "id": "gate-binary-alpha",
+        "label": "Binary Alpha Contract {0, 255}",
+        "passed": true,
+        "detail": "alphaValues=[0, 255], opaquePixels=2683"
+      },
+      {
+        "id": "gate-palette-cap",
+        "label": "Palette Discipline (<=24 colors)",
+        "passed": true,
+        "detail": "uniqueColors=20"
+      },
+      {
+        "id": "gate-damaged-bbox",
+        "label": "Damaged Variant Bounding-Box Drift (<=1px)",
+        "passed": true,
+        "detail": "maxBboxDelta=0px"
+      },
+      {
+        "id": "gate-concentric-paperdoll",
+        "label": "Concentric 64px/96px Pivot & Socket Alignment",
+        "passed": true,
+        "detail": "body=(64, 64), weapon=(96, 96), sockets=5"
+      },
+      {
+        "id": "gate-motion-hysteresis",
+        "label": "5 Action Clips + Crawl Killer & Foot Baseline Lock",
+        "passed": true,
+        "detail": "clips=['idle', 'walk', 'attack', 'hurt', 'victory']"
+      },
+      {
+        "id": "gate-multimap-atlas-vfx",
+        "label": "Multi-Map Atlas (Diffuse/Normal/Emissive) & 22 VFX Craft Checks",
+        "passed": true,
+        "detail": "atlasSize=384x384, frames=14"
+      }
+    ],
+    "paletteRgb": [
+      [
+        16,
+        6,
+        11
+      ],
+      [
+        27,
+        23,
+        29
+      ],
+      [
+        78,
+        24,
+        46
+      ],
+      [
+        38,
+        43,
+        69
+      ],
+      [
+        41,
+        64,
+        126
+      ],
+      [
+        137,
+        35,
+        56
+      ],
+      [
+        70,
+        75,
+        102
+      ],
+      [
+        118,
+        77,
+        61
+      ],
+      [
+        62,
+        94,
+        161
+      ],
+      [
+        97,
+        109,
+        131
+      ],
+      [
+        120,
+        114,
+        110
+      ],
+      [
+        163,
+        106,
+        56
+      ],
+      [
+        125,
+        136,
+        156
+      ],
+      [
+        179,
+        133,
+        67
+      ],
+      [
+        140,
+        155,
+        175
+      ],
+      [
+        189,
+        165,
+        115
+      ],
+      [
+        163,
+        194,
+        202
+      ],
+      [
+        224,
+        202,
+        123
+      ],
+      [
+        188,
+        204,
+        214
+      ],
+      [
+        231,
+        236,
+        203
+      ]
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+[data-px-theme="arcade"] {
+  color-scheme: dark;
+  --px-canvas: #0d102a;
+  --px-panel-dark: #151943;
+  --px-panel-mid: #242a66;
+  --px-panel-light: #3b4492;
+  --px-border-dark: #050611;
+  --px-border-base: #5965b5;
+  --px-border-light: #a9b3ff;
+  --px-backdrop: #050611;
+  --px-text-primary: #fff6ce;
+  --px-text-muted: #c7c8ed;
+  --px-accent-dark: #a66c10;
+  --px-accent: #ffd33d;
+  --px-accent-highlight: #fff1a3;
+  --px-accent-ink: #1d1805;
+  --px-selected: #ff6fae;
+  --px-disabled: #66698c;
+  --px-success: #61d681;
+  --px-warning: #ffd33d;
+  --px-danger: #ff5c66;
+  --px-shadow-offset: var(--px-shadow-offset-lg);
+  --px-font-display: "Press Start 2P", "Cascadia Mono", monospace;
+}
+[data-px-theme="arcade"] .px-frame { clip-path: polygon(var(--space-2) 0, calc(100% - var(--space-2)) 0, calc(100% - var(--space-2)) var(--space-2), 100% var(--space-2), 100% calc(100% - var(--space-2)), calc(100% - var(--space-2)) calc(100% - var(--space-2)), calc(100% - var(--space-2)) 100%, var(--space-2) 100%, var(--space-2) calc(100% - var(--space-2)), 0 calc(100% - var(--space-2)), 0 var(--space-2), var(--space-2) var(--space-2)); }

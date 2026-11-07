@@ -1,0 +1,19 @@
+{
+  "name": "@pixel-ui/themes",
+  "version": "0.1.0",
+  "type": "module",
+  "sideEffects": ["*.css"],
+  "exports": {
+    ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" },
+    "./ornamental.css": "./ornamental.css",
+    "./sci-fi.css": "./sci-fi.css",
+    "./fantasy.css": "./fantasy.css",
+    "./terminal.css": "./terminal.css",
+    "./cyberpunk.css": "./cyberpunk.css",
+    "./arcade.css": "./arcade.css",
+    "./industrial.css": "./industrial.css",
+    "./minimal.css": "./minimal.css",
+    "./pixel-assets.css": "./pixel-assets.css"
+  },
+  "scripts": { "build": "tsc -p tsconfig.json" }
+}

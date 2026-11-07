@@ -1,0 +1,41 @@
+[data-px-theme="fantasy"] {
+  color-scheme: light;
+  --px-canvas: oklch(94% 0.03 80);
+  --px-panel-dark: oklch(88% 0.04 72);
+  --px-panel-mid: oklch(97% 0.02 82);
+  --px-panel-light: oklch(99% 0.01 85);
+  --px-border-dark: oklch(28% 0.05 45);
+  --px-border-base: oklch(48% 0.09 45);
+  --px-border-light: oklch(78% 0.08 70);
+  --px-backdrop: oklch(20% 0.04 45);
+  --px-text-primary: oklch(24% 0.04 45);
+  --px-text-muted: oklch(40% 0.04 50);
+  --px-accent-dark: oklch(42% 0.12 38);
+  --px-accent: oklch(62% 0.15 35);
+  --px-accent-highlight: oklch(82% 0.11 55);
+  --px-accent-ink: oklch(20% 0.03 45);
+  --px-selected: oklch(72% 0.13 8);
+  --px-disabled: oklch(70% 0.02 70);
+  --px-success: oklch(52% 0.12 140);
+  --px-warning: oklch(70% 0.15 75);
+  --px-danger: oklch(52% 0.17 28);
+  --px-sky: oklch(86% 0.07 225);
+  --px-sky-light: oklch(94% 0.04 220);
+  --px-mountain-far: oklch(76% 0.06 235);
+  --px-mountain-near: oklch(60% 0.08 190);
+  --px-blossom: oklch(78% 0.13 8);
+  --px-blossom-light: oklch(90% 0.07 8);
+  --px-moss: oklch(55% 0.1 135);
+  --px-moss-dark: oklch(38% 0.08 135);
+  --px-river: oklch(68% 0.09 225);
+  --px-wood: oklch(48% 0.1 48);
+  --px-wood-dark: oklch(30% 0.07 45);
+  --px-paper: oklch(98% 0.02 82);
+  --px-gold: oklch(72% 0.14 78);
+  --px-font-display: "Pixel Operator", "Cascadia Mono", monospace;
+  --px-font-body: "Segoe UI", ui-sans-serif, sans-serif;
+  --px-font-data: "Cascadia Mono", monospace;
+}
+[data-px-theme="fantasy"] .px-frame {
+  clip-path: polygon(var(--space-2) 0, calc(100% - var(--space-2)) 0, calc(100% - var(--space-2)) var(--space-1), 100% var(--space-1), 100% calc(100% - var(--space-1)), calc(100% - var(--space-2)) calc(100% - var(--space-1)), calc(100% - var(--space-2)) 100%, var(--space-2) 100%, var(--space-2) calc(100% - var(--space-1)), 0 calc(100% - var(--space-1)), 0 var(--space-1), var(--space-2) var(--space-1));
+}

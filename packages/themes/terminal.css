@@ -1,0 +1,26 @@
+[data-px-theme="terminal"] {
+  color-scheme: dark;
+  --px-canvas: #07100a;
+  --px-panel-dark: #0a170d;
+  --px-panel-mid: #102417;
+  --px-panel-light: #1b3d25;
+  --px-border-dark: #020604;
+  --px-border-base: #347347;
+  --px-border-light: #76bd84;
+  --px-backdrop: #020603;
+  --px-text-primary: #c9f6cf;
+  --px-text-muted: #93bc99;
+  --px-accent-dark: #2d7b3b;
+  --px-accent: #62d475;
+  --px-accent-highlight: #c7f7cf;
+  --px-accent-ink: #07140a;
+  --px-selected: #ffd166;
+  --px-disabled: #526b57;
+  --px-success: #62d475;
+  --px-warning: #ffd166;
+  --px-danger: #ff626d;
+  --px-font-display: "Cascadia Mono", monospace;
+  --px-font-body: "Cascadia Mono", monospace;
+  --px-font-data: "Cascadia Mono", monospace;
+}
+[data-px-theme="terminal"] .px-frame { clip-path: none; }

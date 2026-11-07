@@ -1,0 +1,25 @@
+[data-px-theme="cyberpunk"] {
+  color-scheme: dark;
+  --px-canvas: #120912;
+  --px-panel-dark: #1c0d1d;
+  --px-panel-mid: #311333;
+  --px-panel-light: #56235a;
+  --px-border-dark: #070307;
+  --px-border-base: #9b3a91;
+  --px-border-light: #f07ee2;
+  --px-backdrop: #070307;
+  --px-text-primary: #fff0fb;
+  --px-text-muted: #d2a6cb;
+  --px-accent-dark: #9e276d;
+  --px-accent: #f14ba6;
+  --px-accent-highlight: #ffb8df;
+  --px-accent-ink: #200513;
+  --px-selected: #b8f23d;
+  --px-disabled: #74556f;
+  --px-success: #80e34f;
+  --px-warning: #ffd34d;
+  --px-danger: #ff5868;
+  --px-font-display: "Pixel Operator", "Cascadia Mono", monospace;
+}
+[data-px-theme="cyberpunk"] .px-frame { clip-path: polygon(var(--space-4) 0, 72% 0, calc(72% + var(--space-3)) var(--space-3), 100% var(--space-3), 100% calc(100% - var(--space-2)), calc(100% - var(--space-2)) 100%, var(--space-4) 100%, 0 calc(100% - var(--space-4)), 0 var(--space-4)); }
+[data-px-theme="cyberpunk"] .px-frame::after { inset-inline-end: 28%; box-shadow: calc(var(--space-8) * -1) 0 0 var(--px-border-light); }

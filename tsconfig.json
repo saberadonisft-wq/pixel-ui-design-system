@@ -1,0 +1,9 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./packages/core" },
+    { "path": "./packages/react" },
+    { "path": "./packages/themes" },
+    { "path": "./examples/pixel-asset-demo" }
+  ]
+}

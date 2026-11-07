@@ -1,0 +1,185 @@
+{
+  "frames": {
+    "hero-crimson-valkyrie_idle_0": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 24,
+        "y": 5,
+        "w": 67,
+        "h": 84
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 125
+    },
+    "hero-crimson-valkyrie_idle_1": {
+      "frame": {
+        "x": 96,
+        "y": 0,
+        "w": 96,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 19,
+        "y": 5,
+        "w": 72,
+        "h": 84
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 125
+    },
+    "hero-crimson-valkyrie_idle_2": {
+      "frame": {
+        "x": 192,
+        "y": 0,
+        "w": 96,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 24,
+        "y": 5,
+        "w": 67,
+        "h": 84
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 125
+    },
+    "hero-crimson-valkyrie_idle_3": {
+      "frame": {
+        "x": 288,
+        "y": 0,
+        "w": 96,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 19,
+        "y": 5,
+        "w": 72,
+        "h": 84
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 125
+    },
+    "hero-crimson-valkyrie_attack_0": {
+      "frame": {
+        "x": 0,
+        "y": 96,
+        "w": 96,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 24,
+        "y": 5,
+        "w": 67,
+        "h": 84
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 125
+    },
+    "hero-crimson-valkyrie_attack_1": {
+      "frame": {
+        "x": 96,
+        "y": 96,
+        "w": 96,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 16,
+        "y": 5,
+        "w": 69,
+        "h": 84
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 125
+    },
+    "hero-crimson-valkyrie_attack_2": {
+      "frame": {
+        "x": 192,
+        "y": 96,
+        "w": 96,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 6,
+        "y": 5,
+        "w": 84,
+        "h": 84
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 125
+    },
+    "hero-crimson-valkyrie_attack_3": {
+      "frame": {
+        "x": 288,
+        "y": 96,
+        "w": 96,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 19,
+        "y": 5,
+        "w": 72,
+        "h": 84
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 125
+    }
+  },
+  "meta": {
+    "app": "https://github.com/pixel-ui-design-system/pixel-forge",
+    "version": "1.0.0",
+    "image": "forge-atlas-diffuse.png",
+    "normalMap": "forge-atlas-normal.png",
+    "emissiveMap": "forge-atlas-emissive.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 384,
+      "h": 192
+    },
+    "scale": "1"
+  }
+}

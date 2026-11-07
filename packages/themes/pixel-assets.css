@@ -1,0 +1,30 @@
+[data-px-assets="pixel-ui-sheet"] {
+  color-scheme: dark;
+  --px-backdrop: #010204;
+  --px-canvas: #050609;
+  --px-panel-dark: #090b10;
+  --px-panel-mid: #10141c;
+  --px-border-base: #5d6b82;
+  --px-text-primary: #f7f4ed;
+  --px-text-muted: #b8c2d2;
+  --px-selected: #ffd34a;
+  --px-success: #61dc78;
+  --px-warning: #ffc22f;
+  --px-font-display: "Cascadia Mono", "Segoe UI", monospace;
+  --px-font-body: "Segoe UI", system-ui, sans-serif;
+  --px-font-data: "Cascadia Mono", "Segoe UI", monospace;
+  --px-asset-frame-slice-source: 16;
+  --px-asset-frame-slice: calc(var(--px-grid) * 4);
+  --px-asset-frame-fallback: var(--px-border-base);
+  --px-asset-surface-fallback: var(--px-panel-dark);
+  --px-asset-focus: var(--px-text-primary);
+  --px-asset-hover-filter: brightness(1.16);
+  --px-asset-disabled-filter: grayscale(1) contrast(0.8);
+  --px-asset-nav-min: calc(var(--px-grid) * 20);
+  --px-asset-panel-min: calc(var(--px-grid) * 24);
+  --px-asset-frame-market-image: url("/assets/pixel-ui/generated/frame-market-amber.png");
+  --px-asset-frame-currency-image: url("/assets/pixel-ui/generated/frame-currency-blue.png");
+  --px-asset-frame-research-image: url("/assets/pixel-ui/generated/frame-research-red.png");
+  --px-asset-frame-capital-image: url("/assets/pixel-ui/generated/frame-capital-purple.png");
+  --px-asset-frame-intelligence-image: url("/assets/pixel-ui/generated/frame-intelligence-cyan.png");
+}

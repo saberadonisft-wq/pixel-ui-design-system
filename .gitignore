@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.vite/
+*.tsbuildinfo
+playwright-report/
+test-results/
+.review/
+.tmp/
+public/assets/pixel-ui/debug/
+
+__pycache__/
+*.pyc

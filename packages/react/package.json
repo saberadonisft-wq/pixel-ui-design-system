@@ -1,0 +1,15 @@
+{
+  "name": "@pixel-ui/react",
+  "version": "0.1.0",
+  "type": "module",
+  "sideEffects": ["*.css", "src/*.css"],
+  "exports": {
+    ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" },
+    "./styles.css": "./src/styles.css",
+    "./asset-styles.css": "./src/asset-styles.css"
+  },
+  "peerDependencies": { "react": ">=18", "react-dom": ">=18" },
+  "dependencies": { "@pixel-ui/core": "*" },
+  "devDependencies": { "react": "^19.1.0", "react-dom": "^19.1.0" },
+  "scripts": { "build": "tsc -p tsconfig.json" }
+}

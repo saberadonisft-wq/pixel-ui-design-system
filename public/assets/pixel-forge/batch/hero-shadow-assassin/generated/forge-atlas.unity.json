@@ -1,0 +1,452 @@
+{
+  "schema": "unity-6-2d-sprite-atlas-v1",
+  "textures": {
+    "diffuse": "forge-atlas-diffuse.png",
+    "normalMap": "_NormalMap:forge-atlas-normal.png",
+    "maskMap": "_EmissiveMap:forge-atlas-emissive.png"
+  },
+  "pixelsPerUnit": 16,
+  "filterMode": "Point",
+  "sprites": [
+    {
+      "name": "hero-shadow-assassin_idle_0",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 96
+      },
+      "pivot": {
+        "x": 48,
+        "y": 72
+      },
+      "sockets": [
+        {
+          "id": "hand_r",
+          "x": 58,
+          "y": 50,
+          "angleDeg": 0,
+          "zOrder": 50,
+          "visible": true
+        },
+        {
+          "id": "hand_l",
+          "x": 36,
+          "y": 51,
+          "angleDeg": 0,
+          "zOrder": 35,
+          "visible": true
+        },
+        {
+          "id": "head",
+          "x": 48,
+          "y": 28,
+          "angleDeg": 0,
+          "zOrder": 45,
+          "visible": true
+        },
+        {
+          "id": "back",
+          "x": 48,
+          "y": 48,
+          "angleDeg": 0,
+          "zOrder": 25,
+          "visible": true
+        },
+        {
+          "id": "muzzle",
+          "x": 60,
+          "y": 22,
+          "angleDeg": 0,
+          "zOrder": 60,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "name": "hero-shadow-assassin_idle_1",
+      "rect": {
+        "x": 96,
+        "y": 0,
+        "w": 96,
+        "h": 96
+      },
+      "pivot": {
+        "x": 48,
+        "y": 72
+      },
+      "sockets": [
+        {
+          "id": "hand_r",
+          "x": 58,
+          "y": 50,
+          "angleDeg": 0,
+          "zOrder": 50,
+          "visible": true
+        },
+        {
+          "id": "hand_l",
+          "x": 36,
+          "y": 51,
+          "angleDeg": 0,
+          "zOrder": 35,
+          "visible": true
+        },
+        {
+          "id": "head",
+          "x": 48,
+          "y": 28,
+          "angleDeg": 0,
+          "zOrder": 45,
+          "visible": true
+        },
+        {
+          "id": "back",
+          "x": 48,
+          "y": 48,
+          "angleDeg": 0,
+          "zOrder": 25,
+          "visible": true
+        },
+        {
+          "id": "muzzle",
+          "x": 60,
+          "y": 22,
+          "angleDeg": 0,
+          "zOrder": 60,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "name": "hero-shadow-assassin_idle_2",
+      "rect": {
+        "x": 192,
+        "y": 0,
+        "w": 96,
+        "h": 96
+      },
+      "pivot": {
+        "x": 48,
+        "y": 72
+      },
+      "sockets": [
+        {
+          "id": "hand_r",
+          "x": 58,
+          "y": 50,
+          "angleDeg": 0,
+          "zOrder": 50,
+          "visible": true
+        },
+        {
+          "id": "hand_l",
+          "x": 36,
+          "y": 51,
+          "angleDeg": 0,
+          "zOrder": 35,
+          "visible": true
+        },
+        {
+          "id": "head",
+          "x": 48,
+          "y": 28,
+          "angleDeg": 0,
+          "zOrder": 45,
+          "visible": true
+        },
+        {
+          "id": "back",
+          "x": 48,
+          "y": 48,
+          "angleDeg": 0,
+          "zOrder": 25,
+          "visible": true
+        },
+        {
+          "id": "muzzle",
+          "x": 60,
+          "y": 22,
+          "angleDeg": 0,
+          "zOrder": 60,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "name": "hero-shadow-assassin_idle_3",
+      "rect": {
+        "x": 288,
+        "y": 0,
+        "w": 96,
+        "h": 96
+      },
+      "pivot": {
+        "x": 48,
+        "y": 72
+      },
+      "sockets": [
+        {
+          "id": "hand_r",
+          "x": 58,
+          "y": 50,
+          "angleDeg": 0,
+          "zOrder": 50,
+          "visible": true
+        },
+        {
+          "id": "hand_l",
+          "x": 36,
+          "y": 51,
+          "angleDeg": 0,
+          "zOrder": 35,
+          "visible": true
+        },
+        {
+          "id": "head",
+          "x": 48,
+          "y": 28,
+          "angleDeg": 0,
+          "zOrder": 45,
+          "visible": true
+        },
+        {
+          "id": "back",
+          "x": 48,
+          "y": 48,
+          "angleDeg": 0,
+          "zOrder": 25,
+          "visible": true
+        },
+        {
+          "id": "muzzle",
+          "x": 60,
+          "y": 22,
+          "angleDeg": 0,
+          "zOrder": 60,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "name": "hero-shadow-assassin_attack_0",
+      "rect": {
+        "x": 0,
+        "y": 96,
+        "w": 96,
+        "h": 96
+      },
+      "pivot": {
+        "x": 48,
+        "y": 72
+      },
+      "sockets": [
+        {
+          "id": "hand_r",
+          "x": 58,
+          "y": 50,
+          "angleDeg": 0,
+          "zOrder": 50,
+          "visible": true
+        },
+        {
+          "id": "hand_l",
+          "x": 36,
+          "y": 51,
+          "angleDeg": 0,
+          "zOrder": 35,
+          "visible": true
+        },
+        {
+          "id": "head",
+          "x": 48,
+          "y": 28,
+          "angleDeg": 0,
+          "zOrder": 45,
+          "visible": true
+        },
+        {
+          "id": "back",
+          "x": 48,
+          "y": 48,
+          "angleDeg": 0,
+          "zOrder": 25,
+          "visible": true
+        },
+        {
+          "id": "muzzle",
+          "x": 60,
+          "y": 22,
+          "angleDeg": 0,
+          "zOrder": 60,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "name": "hero-shadow-assassin_attack_1",
+      "rect": {
+        "x": 96,
+        "y": 96,
+        "w": 96,
+        "h": 96
+      },
+      "pivot": {
+        "x": 48,
+        "y": 72
+      },
+      "sockets": [
+        {
+          "id": "hand_r",
+          "x": 58,
+          "y": 50,
+          "angleDeg": 0,
+          "zOrder": 50,
+          "visible": true
+        },
+        {
+          "id": "hand_l",
+          "x": 36,
+          "y": 51,
+          "angleDeg": 0,
+          "zOrder": 35,
+          "visible": true
+        },
+        {
+          "id": "head",
+          "x": 48,
+          "y": 28,
+          "angleDeg": 0,
+          "zOrder": 45,
+          "visible": true
+        },
+        {
+          "id": "back",
+          "x": 48,
+          "y": 48,
+          "angleDeg": 0,
+          "zOrder": 25,
+          "visible": true
+        },
+        {
+          "id": "muzzle",
+          "x": 60,
+          "y": 22,
+          "angleDeg": 0,
+          "zOrder": 60,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "name": "hero-shadow-assassin_attack_2",
+      "rect": {
+        "x": 192,
+        "y": 96,
+        "w": 96,
+        "h": 96
+      },
+      "pivot": {
+        "x": 48,
+        "y": 72
+      },
+      "sockets": [
+        {
+          "id": "hand_r",
+          "x": 58,
+          "y": 50,
+          "angleDeg": 90,
+          "zOrder": 50,
+          "visible": true
+        },
+        {
+          "id": "hand_l",
+          "x": 36,
+          "y": 51,
+          "angleDeg": 0,
+          "zOrder": 35,
+          "visible": true
+        },
+        {
+          "id": "head",
+          "x": 48,
+          "y": 28,
+          "angleDeg": 0,
+          "zOrder": 45,
+          "visible": true
+        },
+        {
+          "id": "back",
+          "x": 48,
+          "y": 48,
+          "angleDeg": 0,
+          "zOrder": 25,
+          "visible": true
+        },
+        {
+          "id": "muzzle",
+          "x": 96,
+          "y": 50,
+          "angleDeg": 0,
+          "zOrder": 60,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "name": "hero-shadow-assassin_attack_3",
+      "rect": {
+        "x": 288,
+        "y": 96,
+        "w": 96,
+        "h": 96
+      },
+      "pivot": {
+        "x": 48,
+        "y": 72
+      },
+      "sockets": [
+        {
+          "id": "hand_r",
+          "x": 58,
+          "y": 50,
+          "angleDeg": 0,
+          "zOrder": 50,
+          "visible": true
+        },
+        {
+          "id": "hand_l",
+          "x": 36,
+          "y": 51,
+          "angleDeg": 0,
+          "zOrder": 35,
+          "visible": true
+        },
+        {
+          "id": "head",
+          "x": 48,
+          "y": 28,
+          "angleDeg": 0,
+          "zOrder": 45,
+          "visible": true
+        },
+        {
+          "id": "back",
+          "x": 48,
+          "y": 48,
+          "angleDeg": 0,
+          "zOrder": 25,
+          "visible": true
+        },
+        {
+          "id": "muzzle",
+          "x": 60,
+          "y": 22,
+          "angleDeg": 0,
+          "zOrder": 60,
+          "visible": true
+        }
+      ]
+    }
+  ]
+}
