@@ -1,0 +1,29 @@
+# Báo Cáo Nghiên Cứu: Hệ Sinh Thái Mã Nguồn Mở Tạo Đồ Họa & Asset Cho Game Pixel Gacha
+
+Thư mục này lưu trữ hai báo cáo nghiên cứu chuyên sâu về hệ sinh thái các kho lưu trữ (repositories) mã nguồn mở phục vụ dây chuyền sản xuất (pipeline) đồ họa, nhân vật, trang bị, hiệu ứng kỹ năng (VFX), shader thẻ bài và công cụ hậu kỳ cho dòng game **Pixel Gacha**.
+
+## Danh Sách Báo Cáo
+
+1. **[Hệ Sinh Thái Repository Mã Nguồn Mở Tạo Đồ Họa và Asset Cho Game Pixel Gacha](./pixel-gacha-asset-repositories-MP7fCFnogkxu.md)**
+   - **Nguồn chia sẻ:** https://share.gemini.google/MP7fCFnogkxu (`https://gemini.google.com/share/d83ce5ed0b58`)
+   - **Tiêu đề gốc:** *Gemini - Tìm Repo Asset Game Pixel Gacha*
+   - **Nội dung chính:** Phân tích kiến trúc 4 phân hệ của `0x0funky/agent-sprite-forge` (v0.4) và tổng hợp **hơn 45 repository mã nguồn mở** theo 7 nhóm:
+     1. AI Agent / MCP & Web Studio sinh nhân vật (`0x0funky/agent-sprite-forge`, `GAlbanese09/spritebrew`, `pixellab-code/pixellab-mcp`, `Shilo/pixellab-pip`, `SpriteCook/skills`, `lightblink/cocos-asset-forge-mcp`, `SbName/yoyopixel`).
+     2. ComfyUI Workflows & Node Packs cho sản xuất cục bộ, đa lớp trang phục (Skins) & khử rung video (`mor-o/comfyui-2d-character-pipeline`, `japaneserunic/blubs-pixel-nodepack`, `Tidwell32/comfyui-sprite-generator`, `envy-ai/ComfyUI-Krea2-Pixel-Art-Refiner`, `marcoc2/ComfyUI-AnotherUtils`, `ugotworms/comfyui_sprite_sheet_extractor`, `See-Sol-Lab/Picxel`).
+     3. Hệ thống Paper-Doll đa lớp (`LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator`, `etamity/rapidlpc`, `fnaith/Godot-Universal-LPC-Spritesheet-Character-Generator`) & Trình sinh thủ tục vũ khí, vật phẩm, quái vật theo cấp độ hiếm (`tarulahsan/PXG-Tiny-AI`, `KodoRe/pixel-forge`, `ITsPorky/Character-Generation-API`, `navnoorsingh39/procedural-pixel-creatures`, `zfedoran/pixel-sprite-generator`, `KilledByAPixel/ZzSprite`, `stmn/pixelship`).
+     4. Xử lý hậu kỳ, chuẩn hóa lưới pixel & sửa lỗi ảnh AI (`Retro-Diffusion/pixel-art-fixer`, `alexkorol/pixel-respecter`, `Hugo-Dz/spritefusion-pixel-snapper`, `KennethJAllen/proper-pixel-art`, `ahmetolcum/PixelArtConverter`).
+     5. Kỹ xảo chiến đấu (VFX), Shader thẻ bài triệu hồi (Holographic/Foil/Scratch card) & Ánh sáng động 2D (`patch-gg/pixelfx`, `Ttanasart-pt/Pixel-Composer`, `twdoor/simple-cards-v-2`, `xxidbr9/balatro-effect-recreate`, `Nefers12/godot-scratch-card`, `daniel-ilett/shaders-holo-card`, `lereldarion/card-system`, `azagaya/laigter`, `Hugo-Dz/spritefusion-sprite-normals`).
+     6. Trình biên tập Pixel, cầu nối Aseprite MCP, đóng gói Texture Atlas & kho tài nguyên CC0 / phông chữ Tiếng Việt (`orama-interactive/pixelorama`, `LibreSprite`, `yuchenyang1994/blendlorama`, `ZhangDongyang800/Aseprite_MCP`, `logiksecurity/ase-mcp`, `davebarkeruk/Aseprite_LUA_Scripts`, `ChevyRay/crunch-rs`, `webcyou-org/open-texture-packer`, `odrick/free-tex-packer`, `sparklinlabs/superpowers-asset-packs`, `seloc0des/godot-dungeon-starter`, `lizziejperez/gridventure-toolkit`, `TakWolf/ark-pixel-font`, `TakWolf/fusion-pixel-font`, `SolidZORO/zpix-pixel-font`, `Serena1432/EasyRPGPlayer-Vietnamese`).
+     7. Lộ trình kết hợp 5 bước theo giai đoạn phát triển.
+
+2. **[Hệ Sinh Thái Mã Nguồn Mở Tạo Đồ Họa Và Asset Cho Game Pixel Gacha](./pixel-gacha-asset-ecosystem-4H67NG6o9QCi.md)**
+   - **Nguồn chia sẻ:** https://share.gemini.google/4H67NG6o9QCi (`https://gemini.google.com/share/6521a70427f8`)
+   - **Tiêu đề gốc:** *Gemini - Tìm Repo Asset Game Pixel*
+   - **Nội dung chính:** Phân tích điểm mạnh và 5 khoảng trống kỹ thuật của `0x0funky/agent-sprite-forge` (v0.4.0) cùng **hơn 37 repository mã nguồn mở** chia thành 6 nhóm chức năng và 3 phương án Tech Stack:
+     1. Khung công tác AI Agent & Studio tạo hoạt ảnh nhân vật tự động (`0x0funky/agent-sprite-forge`, `gykim80/perfectpixel-studio`, `aldegad/sprite-gen`, `m4bwav/pixelwright`, `isabellagreco1997/sprite-forge`, `blendi-remade/sprite-sheet-creator`, `SpriteCook/skills`, `mankidev/codixel`).
+     2. Pipeline tự vận hành trên GPU cục bộ: ComfyUI, LoRA & Character Bible 23 khung hình (`kitepon/sprite-forge-mcp`, `japaneserunic/blubs-pixel-nodepack`, `bunnyUFO-lab/pixel-studio-comfyui-workflows`, `Tidwell32/comfyui-sprite-generator`).
+     3. Hệ thống Paperdoll, tạo sinh thủ tục (Procedural) quái vật/lai tạo di truyền & kho vật phẩm/vũ khí (`idlerunner00/procedural-pixel-creatures`, `Shilo/PixelDoll`, `LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator`, `KhurrumAli1997/paper-doll-studio`, `EYamanS/texel-studio`, `SbName/yoyopixel`, `zfedoran/pixel-sprite-generator`, `BumbertFiddlesticks/Sword-Maker`, `Deep-Fold/PixelPlanets`).
+     4. Hiệu ứng triệu hồi Gacha (Summon VFX), kỹ năng chiến đấu & Shader thẻ bài Hologram (`HoangLong256/spritefx`, `patch-gg/pixelfx`, `888wing/pixel-vfx-codex`, `daniel-ilett/shaders-holo-card`, `ceceppa/godot-shaders`, `codevogel/faux-3d-perspective-shader-godot`, `xxidbr9/balatro-effect-recreate`, `KoBeWi/Godot-Palette-Swap-Shader`).
+     5. Hậu kỳ chuẩn hóa lưới pixel (Grid Snapper), tạo Normal Map 2.5D & đóng gói Multi-Map Atlas (`Hugo-Dz/spritefusion-pixel-snapper`, `KennethJAllen/proper-pixel-art`, `chongdashu/ai-pixel-snapped-game-sprites`, `Hugo-Dz/spritefusion-sprite-normals`, `azagaya/laigter`, `houmain/spright`, `reybits/texture-packer`, `odrick/free-tex-packer`, `lunkums/PixelSwap`, `vansGAMee/OKLCH-PIXEL-PALETTE`, `rhinoc/xprite-pixelate`).
+     6. Máy chủ Aseprite MCP cho AI Agent, Plugin trong Engine & trình biên tập mã nguồn mở (`diivi/aseprite-mcp`, `with-pebbly/aseprite-ai-artist`, `stereomp3/pixel-art-ai`, `willibrandon/pixel-mcp`, `kbraiden/pixelmaker-godot-plugin`, `alvmivan/pixel-toolkit`, `Orama-Interactive/Pixelorama`, `PixiEditor/PixiEditor`, `LibreSprite/LibreSprite`).
+     7. Khuyến nghị 3 lộ trình tích hợp (Godot 4 Stack, Unity 6 URP Stack, Local GPU & Zero-API-Cost Stack).
