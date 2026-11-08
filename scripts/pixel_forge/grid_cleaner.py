@@ -141,23 +141,44 @@ def hibit_majority_downscale(
     return out
 
 
-def remove_orphan_pixels(image: Image.Image) -> Image.Image:
-    """Eliminate isolated 1px noise islands that have zero 4-connected opaque neighbors."""
+def remove_orphan_pixels(image: Image.Image, min_cluster: int = 1) -> Image.Image:
+    """Eliminate isolated noise pixels or tiny disconnected specks smaller than min_cluster."""
     rgba = image.convert("RGBA")
     w, h = rgba.size
     src = rgba.load()
     out = rgba.copy()
     dst = out.load()
+    if min_cluster <= 1:
+        for y in range(h):
+            for x in range(w):
+                if src[x, y][3] == 0:
+                    continue
+                neighbors = 0
+                for nx, ny in ((x - 1, y), (x + 1, y), (x, y - 1), (x, y + 1)):
+                    if 0 <= nx < w and 0 <= ny < h and src[nx, ny][3] == 255:
+                        neighbors += 1
+                if neighbors == 0:
+                    dst[x, y] = (0, 0, 0, 0)
+        return out
+
+    visited = bytearray(w * h)
     for y in range(h):
         for x in range(w):
-            if src[x, y][3] == 0:
+            if src[x, y][3] == 0 or visited[y * w + x]:
                 continue
-            neighbors = 0
-            for nx, ny in ((x - 1, y), (x + 1, y), (x, y - 1), (x, y + 1)):
-                if 0 <= nx < w and 0 <= ny < h and src[nx, ny][3] == 255:
-                    neighbors += 1
-            if neighbors == 0:
-                dst[x, y] = (0, 0, 0, 0)
+            comp: list[tuple[int, int]] = []
+            q: deque[tuple[int, int]] = deque([(x, y)])
+            visited[y * w + x] = 1
+            while q:
+                cx, cy = q.popleft()
+                comp.append((cx, cy))
+                for nx, ny in ((cx - 1, cy), (cx + 1, cy), (cx, cy - 1), (cx, cy + 1)):
+                    if 0 <= nx < w and 0 <= ny < h and not visited[ny * w + nx] and src[nx, ny][3] == 255:
+                        visited[ny * w + nx] = 1
+                        q.append((nx, ny))
+            if len(comp) < min_cluster:
+                for cx, cy in comp:
+                    dst[cx, cy] = (0, 0, 0, 0)
     return out
 
 
@@ -254,3 +275,25 @@ def to_greyscale_tint_mask(image: Image.Image) -> Image.Image:
                 luma = min(255, max(0, (r * 299 + g * 587 + b * 114) // 1000))
                 dst[x, y] = (luma, luma, luma, 255)
     return out
+
+
+def save_png_safe(img: Image.Image, target_path: Any) -> None:
+    """Encode PNG in memory first and write with Windows handle-lock retry protection."""
+    import io
+    from pathlib import Path
+    import time
+
+    p = Path(target_path)
+    p.parent.mkdir(parents=True, exist_ok=True)
+    buf = io.BytesIO()
+    img.save(buf, format="PNG", compress_level=9)
+    payload = buf.getvalue()
+
+    for attempt in range(6):
+        try:
+            p.write_bytes(payload)
+            return
+        except OSError:
+            if attempt == 5:
+                raise
+            time.sleep(0.06 * (attempt + 1))

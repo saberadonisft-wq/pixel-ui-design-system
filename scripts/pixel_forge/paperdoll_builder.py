@@ -45,7 +45,8 @@ def build_paperdoll_layers(
     damaged: bool = False,
     direction: Direction8 = "S",
 ) -> dict[str, Image.Image]:
-    """Generate the 7 concentric RGBA layers (64x64 body layers + 96x96 weapon/fx layers)."""
+    """Generate the 7 concentric RGBA layers aligned to shared ground baseline Y=88
+    (00_shadow/10_body/20_iris/30_outfit at offset (16, 26), 40_hair at (16, 4), 50_weapon/60_fx at (0, 0))."""
     p_dark, p_mid, p_light = [(*c, 255) for c in base_element.primary_ramp]
     a_dark, a_mid, a_light = [(*c, 255) for c in base_element.accent_ramp]
     glow = (*base_element.glow_rgb, 255)
@@ -53,83 +54,76 @@ def build_paperdoll_layers(
     dir_shift = -2 if direction in ("W", "SW", "NW") else (2 if direction in ("E", "SE", "NE") else 0)
     facing_back = direction in ("N", "NW", "NE")
 
-    # 1. 00_shadow (64x64, locked to foot baseline Y=56)
+    # 1. 00_shadow (64x64 at offset (16, 26) -> y_64=61..63 maps to Y=87..89)
     shadow = Image.new("RGBA", (64, 64), (0, 0, 0, 0))
     s_draw = ImageDraw.Draw(shadow)
-    _rect(s_draw, 16, 54, 32, 5, (14, 18, 28, 255))
-    _rect(s_draw, 20, 53, 24, 7, (22, 28, 42, 255))
+    _rect(s_draw, 16, 60, 32, 4, (14, 18, 28, 255))
+    _rect(s_draw, 20, 59, 24, 5, (22, 28, 42, 255))
 
-    # 2. 10_body (64x64, Knight base anatomy, armored sabatons & gauntlets locked to Y=56)
+    # 2. 10_body (64x64 at offset (16, 26), boots at y_64=62 == Y=88)
     body = Image.new("RGBA", (64, 64), (0, 0, 0, 0))
     b_draw = ImageDraw.Draw(body)
-    leg_l_y = 43 + (0 if step_phase % 2 == 0 else -2)
-    leg_r_y = 43 + (-2 if step_phase % 2 == 1 else 0)
-    # Armored Sabatons & Greaves (bottom locked to baseline Y=56)
-    _rect(b_draw, 23 + dir_shift, leg_l_y, 7, 56 - leg_l_y, STEEL_DARK)
+    leg_l_y = 48 + (0 if step_phase % 2 == 0 else -2)
+    leg_r_y = 48 + (-2 if step_phase % 2 == 1 else 0)
+    _rect(b_draw, 23 + dir_shift, leg_l_y, 7, 63 - leg_l_y, STEEL_DARK)
     _rect(b_draw, 24 + dir_shift, leg_l_y + 1, 5, 6, STEEL_MID)
-    _rect(b_draw, 24 + dir_shift, 52, 6, 4, STEEL_LIGHT)
-    _rect(b_draw, 34 + dir_shift, leg_r_y, 7, 56 - leg_r_y, STEEL_DARK)
+    _rect(b_draw, 24 + dir_shift, 58, 6, 4, STEEL_LIGHT)
+    _rect(b_draw, 34 + dir_shift, leg_r_y, 7, 63 - leg_r_y, STEEL_DARK)
     _rect(b_draw, 35 + dir_shift, leg_r_y + 1, 5, 6, STEEL_MID)
-    _rect(b_draw, 35 + dir_shift, 52, 6, 4, STEEL_LIGHT)
-    # Chainmail Hauberk & Arms core
-    ty = 27 + pose_offset_y
-    _rect(b_draw, 22 + dir_shift, ty, 20, 16, STEEL_DARK)
-    _rect(b_draw, 24 + dir_shift, ty + 1, 16, 14, STEEL_MID)
-    _rect(b_draw, 18 + dir_shift, ty + 2, 4, 12, STEEL_MID)
-    _rect(b_draw, 42 + dir_shift, ty + 2, 4, 12, STEEL_DARK)
-    # Knight Head (visible when helmet 40_hair is toggled off, or through visor slit)
-    hy = 13 + pose_offset_y
-    _rect(b_draw, 23 + dir_shift, hy, 18, 14, SKIN_DARK)
-    _rect(b_draw, 24 + dir_shift, hy + 1, 16, 12, SKIN_MID)
+    _rect(b_draw, 35 + dir_shift, 58, 6, 4, STEEL_LIGHT)
+
+    ty = 28 + pose_offset_y
+    _rect(b_draw, 22 + dir_shift, ty, 20, 18, STEEL_DARK)
+    _rect(b_draw, 24 + dir_shift, ty + 1, 16, 16, STEEL_MID)
+    _rect(b_draw, 18 + dir_shift, ty + 2, 4, 13, STEEL_MID)
+    _rect(b_draw, 42 + dir_shift, ty + 2, 4, 13, STEEL_DARK)
+
+    hy = 12 + pose_offset_y
+    _rect(b_draw, 23 + dir_shift, hy, 18, 15, SKIN_DARK)
+    _rect(b_draw, 24 + dir_shift, hy + 1, 16, 13, SKIN_MID)
     _rect(b_draw, 25 + dir_shift, hy + 2, 12, 8, SKIN_LIGHT)
     if not facing_back:
         _rect(b_draw, 26 + dir_shift, hy + 7, 3, 3, SCLERA)
         _rect(b_draw, 35 + dir_shift, hy + 7, 3, 3, SCLERA)
     body = apply_selective_outline(body, "selective")
 
-    # 3. 20_iris (64x64, glowing Knight visor eye slits + 1px specular glint)
+    # 3. 20_iris (64x64 at offset (16, 26) -> aligns directly with face / helm slit)
     iris = Image.new("RGBA", (64, 64), (0, 0, 0, 0))
     if not facing_back:
         i_draw = ImageDraw.Draw(iris)
-        hy = 13 + pose_offset_y
+        hy = 12 + pose_offset_y
         _rect(i_draw, 27 + dir_shift, hy + 7, 3, 2, glow)
         _rect(i_draw, 35 + dir_shift, hy + 7, 3, 2, glow)
         _rect(i_draw, 27 + dir_shift, hy + 7, 1, 1, GLINT)
         _rect(i_draw, 36 + dir_shift, hy + 7, 1, 1, GLINT)
 
-    # 4. 30_outfit (64x64, Knight Plate Cuirass, Winged Pauldrons, Royal Cape, Heraldic Shield & Tassets)
+    # 4. 30_outfit (64x64 at offset (16, 26))
     outfit = Image.new("RGBA", (64, 64), (0, 0, 0, 0))
     o_draw = ImageDraw.Draw(outfit)
-    ty = 27 + pose_offset_y
+    ty = 28 + pose_offset_y
     cape_shift = 1 if step_phase in (1, 3) else 0
-    # Flowing Knight Mantle / Cape
-    _rect(o_draw, 16 + dir_shift - cape_shift, ty + 1, 32 + cape_shift, 24, a_dark)
-    _rect(o_draw, 18 + dir_shift, ty + 3, 28, 20, a_mid)
-    _rect(o_draw, 20 + dir_shift, ty + 5, 6, 16, a_light)
-    # Heavy Steel Cuirass & Heraldic Breastplate
-    _rect(o_draw, 21 + dir_shift, ty - 1, 22, 16, STEEL_DARK)
-    _rect(o_draw, 23 + dir_shift, ty, 18, 14, STEEL_MID)
+    _rect(o_draw, 16 + dir_shift - cape_shift, ty + 1, 32 + cape_shift, 25, a_dark)
+    _rect(o_draw, 18 + dir_shift, ty + 3, 28, 21, a_mid)
+    _rect(o_draw, 20 + dir_shift, ty + 5, 6, 17, a_light)
+    _rect(o_draw, 21 + dir_shift, ty - 1, 22, 17, STEEL_DARK)
+    _rect(o_draw, 23 + dir_shift, ty, 18, 15, STEEL_MID)
     _rect(o_draw, 25 + dir_shift, ty + 1, 12, 10, STEEL_LIGHT)
-    # Gold Cross Emblem on Breastplate
-    _rect(o_draw, 31 + dir_shift, ty + 2, 2, 9, p_light)
+    _rect(o_draw, 31 + dir_shift, ty + 2, 2, 10, p_light)
     _rect(o_draw, 28 + dir_shift, ty + 4, 8, 2, p_light)
     _rect(o_draw, 31 + dir_shift, ty + 4, 2, 2, glow)
-    # Layered Winged Pauldrons (Shoulder Plates)
     _rect(o_draw, 15 + dir_shift, ty - 3, 9, 8, STEEL_DARK)
     _rect(o_draw, 16 + dir_shift, ty - 2, 7, 6, STEEL_LIGHT)
     _rect(o_draw, 16 + dir_shift, ty + 2, 7, 2, p_mid)
     _rect(o_draw, 40 + dir_shift, ty - 3, 9, 8, STEEL_DARK)
     _rect(o_draw, 41 + dir_shift, ty - 2, 7, 6, STEEL_MID)
     _rect(o_draw, 41 + dir_shift, ty + 2, 7, 2, p_mid)
-    # Knight Belt, Tassets & Royal Tabard
-    _rect(o_draw, 22 + dir_shift, ty + 13, 20, 3, p_dark)
-    _rect(o_draw, 24 + dir_shift, ty + 13, 16, 2, p_light)
-    _rect(o_draw, 30 + dir_shift, ty + 12, 4, 4, glow)
-    _rect(o_draw, 23 + dir_shift, ty + 16, 6, 8, STEEL_MID)
-    _rect(o_draw, 35 + dir_shift, ty + 16, 6, 8, STEEL_MID)
-    _rect(o_draw, 29 + dir_shift, ty + 16, 6, 11, a_light)
-    _rect(o_draw, 30 + dir_shift, ty + 16, 4, 10, p_light)
-    # Heraldic Heater Shield on Left Arm (x=13..24)
+    _rect(o_draw, 22 + dir_shift, ty + 14, 20, 3, p_dark)
+    _rect(o_draw, 24 + dir_shift, ty + 14, 16, 2, p_light)
+    _rect(o_draw, 30 + dir_shift, ty + 13, 4, 4, glow)
+    _rect(o_draw, 23 + dir_shift, ty + 17, 6, 8, STEEL_MID)
+    _rect(o_draw, 35 + dir_shift, ty + 17, 6, 8, STEEL_MID)
+    _rect(o_draw, 29 + dir_shift, ty + 17, 6, 11, a_light)
+    _rect(o_draw, 30 + dir_shift, ty + 17, 4, 10, p_light)
     _rect(o_draw, 13 + dir_shift, ty + 3, 11, 15, p_dark)
     _rect(o_draw, 14 + dir_shift, ty + 4, 9, 13, a_dark)
     _rect(o_draw, 15 + dir_shift, ty + 5, 7, 11, a_mid)
@@ -137,33 +131,28 @@ def build_paperdoll_layers(
     _rect(o_draw, 15 + dir_shift, ty + 9, 7, 2, p_light)
     _rect(o_draw, 18 + dir_shift, ty + 9, 2, 2, GLINT)
     if damaged:
-        # Battle-damaged cracks across shield & breastplate while preserving exact outer bounding box (0px delta)
         _rect(o_draw, 25 + dir_shift, ty + 3, 4, 2, STEEL_DARK)
         _rect(o_draw, 15 + dir_shift, ty + 7, 4, 2, STEEL_DARK)
-        _rect(o_draw, 30 + dir_shift, ty + 19, 3, 3, a_dark)
+        _rect(o_draw, 30 + dir_shift, ty + 20, 3, 3, a_dark)
     outfit = apply_selective_outline(outfit, "selective")
 
-    # 5. 40_hair (64x64, Knight Winged Greathelm / Visor Helmet + Flowing Royal Plume)
+    # 5. 40_hair (64x64 at offset (16, 4) -> covers y_96=4..67 so plume & helm fit seamlessly over head)
     hair = Image.new("RGBA", (64, 64), (0, 0, 0, 0))
     h_draw = ImageDraw.Draw(hair)
-    hy = 11 + pose_offset_y
-    # Sweeping Royal Plume / Feather Crest atop Greathelm
-    _rect(h_draw, 26 + dir_shift, hy - 7, 12, 5, a_dark)
-    _rect(h_draw, 24 + dir_shift, hy - 6, 12, 4, a_mid)
-    _rect(h_draw, 25 + dir_shift, hy - 5, 8, 3, a_light)
-    _rect(h_draw, 30 + dir_shift, hy - 3, 4, 3, p_light)
-    # Greathelm Dome & Crown Trim
+    hy = 28 + pose_offset_y
+    _rect(h_draw, 26 + dir_shift, hy - 14, 12, 6, a_dark)
+    _rect(h_draw, 24 + dir_shift, hy - 12, 12, 5, a_mid)
+    _rect(h_draw, 25 + dir_shift, hy - 10, 8, 4, a_light)
+    _rect(h_draw, 30 + dir_shift, hy - 6, 4, 4, p_light)
     _rect(h_draw, 21 + dir_shift, hy, 22, 8, STEEL_DARK)
     _rect(h_draw, 22 + dir_shift, hy + 1, 20, 6, STEEL_MID)
     _rect(h_draw, 24 + dir_shift, hy + 1, 14, 4, STEEL_LIGHT)
     _rect(h_draw, 22 + dir_shift, hy + 6, 20, 2, p_light)
-    # Helmet Winged Side Guards & Faceplate (leaves eye slit y = hy+9..hy+10 open for 20_iris!)
     _rect(h_draw, 19 + dir_shift, hy + 3, 3, 11, p_mid)
     _rect(h_draw, 20 + dir_shift, hy + 2, 2, 6, p_light)
     _rect(h_draw, 42 + dir_shift, hy + 3, 3, 11, p_dark)
     _rect(h_draw, 42 + dir_shift, hy + 2, 2, 6, p_mid)
     if not facing_back:
-        # T-Visor Cheek Guards & Nasal Bar (framing the glowing eye slits)
         _rect(h_draw, 22 + dir_shift, hy + 8, 4, 8, STEEL_MID)
         _rect(h_draw, 38 + dir_shift, hy + 8, 4, 8, STEEL_DARK)
         _rect(h_draw, 31 + dir_shift, hy + 8, 2, 8, p_light)
@@ -173,13 +162,12 @@ def build_paperdoll_layers(
         _rect(h_draw, 22 + dir_shift, hy + 8, 20, 8, STEEL_DARK)
     hair = apply_selective_outline(hair, "selective")
 
-    # 6. 50_weapon (96x96 oversized canvas centered on pivot (48, 72) == body (32, 56) + (16, 16))
+    # 6. 50_weapon (96x96)
     weapon = Image.new("RGBA", (96, 96), (0, 0, 0, 0))
     w_draw = ImageDraw.Draw(weapon)
-    hand_x = 16 + 44 + dir_shift
-    hand_y = 16 + 34 + pose_offset_y
+    hand_x = 16 + 46 + dir_shift
+    hand_y = 26 + 31 + pose_offset_y
     if slash_phase == 0:
-        # Knight's Greatsword held upright in right gauntlet, extending into 96x96 oversize zone
         _rect(w_draw, hand_x - 1, hand_y + 2, 4, 9, p_dark)
         _rect(w_draw, hand_x, hand_y + 9, 4, 3, p_light)
         _rect(w_draw, hand_x - 6, hand_y - 2, 14, 4, p_mid)
@@ -190,30 +178,26 @@ def build_paperdoll_layers(
         _rect(w_draw, hand_x + 1, hand_y - 35, 2, 3, GLINT)
         _rect(w_draw, hand_x + 1, hand_y - 22, 2, 16, glow)
     elif slash_phase == 1:
-        # Overhead two-handed Paladin charge
         _rect(w_draw, hand_x - 7, hand_y - 12, 12, 4, p_light)
         _rect(w_draw, hand_x - 4, hand_y - 40, 6, 28, STEEL_LIGHT)
         _rect(w_draw, hand_x - 2, hand_y - 38, 2, 22, glow)
     else:
-        # Wide horizontal Greatsword cleave extending to x=90 in 96x96 oversize frame
         _rect(w_draw, hand_x - 2, hand_y - 5, 6, 12, p_light)
-        _rect(w_draw, hand_x + 4, hand_y - 3, 34, 8, STEEL_MID)
-        _rect(w_draw, hand_x + 4, hand_y - 2, 34, 5, STEEL_LIGHT)
-        _rect(w_draw, hand_x + 6, hand_y - 1, 28, 3, glow)
-        _rect(w_draw, hand_x + 36, hand_y - 1, 4, 4, GLINT)
+        _rect(w_draw, hand_x + 4, hand_y - 3, 30, 8, STEEL_MID)
+        _rect(w_draw, hand_x + 4, hand_y - 2, 30, 5, STEEL_LIGHT)
+        _rect(w_draw, hand_x + 6, hand_y - 1, 24, 3, glow)
+        _rect(w_draw, hand_x + 32, hand_y - 1, 4, 4, GLINT)
     weapon = apply_selective_outline(weapon, "selective")
 
-    # 7. 60_fx (96x96 Paladin Holy Aura & Slash Arc layer)
+    # 7. 60_fx (96x96)
     fx = Image.new("RGBA", (96, 96), (0, 0, 0, 0))
     f_draw = ImageDraw.Draw(fx)
     if slash_phase >= 2:
-        # Stepped crescent slash wave in 96x96 space
         _rect(f_draw, 64, 18, 6, 46, a_mid)
         _rect(f_draw, 68, 22, 6, 38, a_light)
         _rect(f_draw, 72, 28, 6, 26, glow)
         _rect(f_draw, 76, 34, 4, 14, GLINT)
     else:
-        # Floating holy cross runes around Knight's Greatsword & Shield
         _rect(f_draw, hand_x + 6, hand_y - 26, 3, 3, glow)
         _rect(f_draw, hand_x + 7, hand_y - 25, 1, 1, GLINT)
         _rect(f_draw, 22, 26 + pose_offset_y, 3, 3, a_light)
@@ -245,21 +229,27 @@ def composite_paperdoll(
     ),
     canvas_size: tuple[int, int] = (96, 96),
 ) -> Image.Image:
-    """Composite paperdoll layers onto a unified 96x96 or 64x64 canvas using concentric pivot offsets."""
+    """Composite paperdoll layers onto a unified 96x96 canvas using explicit baseline offsets."""
     out = Image.new("RGBA", canvas_size, (0, 0, 0, 0))
-    offset_64 = ((canvas_size[0] - 64) // 2, (canvas_size[1] - 64) // 2)
-    offset_96 = ((canvas_size[0] - 96) // 2, (canvas_size[1] - 96) // 2)
+    offsets_96: dict[str, tuple[int, int]] = {
+        "00_shadow": (16, 26),
+        "10_body": (16, 26),
+        "20_iris": (16, 26),
+        "30_outfit": (16, 26),
+        "40_hair": (16, 4),
+        "50_weapon": (0, 0),
+        "60_fx": (0, 0),
+    }
 
     for layer_id in enabled_layers:
         layer = layers.get(layer_id)
         if layer is None:
             continue
-        if layer.size == (64, 64):
-            out.alpha_composite(layer, dest=offset_64)
-        else:
-            temp = Image.new("RGBA", canvas_size, (0, 0, 0, 0))
-            temp.paste(layer, offset_96)
-            out.alpha_composite(temp)
+        ox, oy = offsets_96.get(layer_id, ((canvas_size[0] - layer.width) // 2, (canvas_size[1] - layer.height) // 2))
+        if canvas_size != (96, 96):
+            ox = (canvas_size[0] - layer.width) // 2
+            oy = (canvas_size[1] - layer.height) // 2
+        out.alpha_composite(layer, dest=(ox, oy))
     return chroma_key_cielab(out)
 
 
@@ -268,18 +258,24 @@ def compute_frame_sockets(
     slash_phase: int = 0,
     direction: Direction8 = "S",
 ) -> list[dict[str, Any]]:
-    """Return socket attachment points in 96x96 concentric space for weapons, headgear, and FX."""
+    """Return exact socket attachment points in 96x96 space aligned to Y=88 ground baseline."""
     dir_shift = -2 if direction in ("W", "SW", "NW") else (2 if direction in ("E", "SE", "NE") else 0)
-    hand_x = 16 + 42 + dir_shift
-    hand_y = 16 + 34 + pose_offset_y
-    muzzle_x = hand_x + (38 if slash_phase >= 2 else 2)
-    muzzle_y = hand_y + (0 if slash_phase >= 2 else -28)
+    if slash_phase == 1:
+        hand_x, hand_y, angle, pose_tag = 34 + dir_shift, 24 + pose_offset_y, -55, "windup"
+        muzzle_x, muzzle_y = hand_x + 42, hand_y - 10
+    elif slash_phase >= 2:
+        hand_x, hand_y, angle, pose_tag = 32 + dir_shift, 48 + pose_offset_y, 105, "cleave"
+        muzzle_x, muzzle_y = hand_x + 48, hand_y + 12
+    else:
+        hand_x, hand_y, angle, pose_tag = 63 + dir_shift, 57 + pose_offset_y, 35, "ready"
+        muzzle_x, muzzle_y = hand_x + 18, hand_y - 26
+
     sockets = [
-        SocketPoint("hand_r", hand_x, hand_y, 90 if slash_phase >= 2 else 0, 50, True),
-        SocketPoint("hand_l", 16 + 20 + dir_shift, 16 + 35 + pose_offset_y, 0, 35, True),
-        SocketPoint("head", 16 + 32 + dir_shift, 16 + 12 + pose_offset_y, 0, 45, True),
-        SocketPoint("back", 16 + 32 + dir_shift, 16 + 32 + pose_offset_y, 0, 25, True),
-        SocketPoint("muzzle", muzzle_x, muzzle_y, 0, 60, True),
+        SocketPoint("hand_r", hand_x, hand_y, angle, 50, True),
+        SocketPoint("hand_l", 34 + dir_shift, 58 + pose_offset_y, 0, 35, True),
+        SocketPoint("head", 48 + dir_shift, 31 + pose_offset_y, 0, 45, True),
+        SocketPoint("back", 48 + dir_shift, 52 + pose_offset_y, 0, 25, True),
+        SocketPoint("muzzle", muzzle_x, muzzle_y, angle, 60, True),
     ]
     return [
         {
@@ -289,6 +285,7 @@ def compute_frame_sockets(
             "angleDeg": s.angle_deg,
             "zOrder": s.z_order,
             "visible": s.visible,
+            "poseTag": pose_tag,
         }
         for s in sockets
     ]
@@ -312,7 +309,6 @@ def generate_loot_icon(spec: LootItemSpec, elements: tuple[ElementVariantSpec, .
     draw = ImageDraw.Draw(img)
 
     if spec.category == "sword":
-        # Diagonal-stepped broadsword with glowing fuller & ornate crossguard
         for i in range(14):
             _rect(draw, 10 + i, 18 - i, 4, 4, STEEL_MID)
             _rect(draw, 10 + i, 17 - i, 2, 2, STEEL_LIGHT)
@@ -351,7 +347,6 @@ def generate_loot_icon(spec: LootItemSpec, elements: tuple[ElementVariantSpec, .
         _rect(draw, 14, 14, 4, 6, glow)
         _rect(draw, 15, 15, 2, 2, GLINT)
     else:
-        # Relic / Sigil
         _rect(draw, 9, 6, 14, 20, p_dark)
         _rect(draw, 6, 9, 20, 14, p_mid)
         _rect(draw, 10, 10, 12, 12, a_mid)
@@ -384,15 +379,18 @@ def build_paperdoll_and_loot_bundle(spec: ForgeProjectSpec) -> dict[str, Any]:
         return {
             "baseLayers": ai_bundle["layers"],
             "greyscaleMasks": {
-                "10_body_greyscale": ai_bundle["greyscaleMasks"]["10_body"],
-                "20_iris_greyscale": ai_bundle["greyscaleMasks"]["20_iris"],
+                f"{k}_greyscale": v for k, v in ai_bundle["greyscaleMasks"].items()
             },
             "baseComposite": base_composite,
             "damagedComposite": damaged_composite,
             "damagedBboxDeltaPx": bbox_delta,
+            "masterPalette": ai_bundle["masterPalette"],
             "elementComposites": ai_bundle["elementComposites"],
             "directionFrames": ai_bundle["directionFrames"],
+            "directionMeta": ai_bundle.get("directionMeta", {}),
+            "characterBible": ai_bundle.get("characterBible"),
             "sockets": compute_frame_sockets(0, 0, "S"),
+            "weaponPoseFiles": ai_bundle.get("weaponPoseFiles", {}),
             "lootIcons": ai_bundle["lootIcons"] if ai_bundle.get("lootIcons") is not None else loot_icons,
             "aiFrames": ai_bundle["aiFrames"],
             "rawThumbnails": ai_bundle["rawThumbnails"],
@@ -406,34 +404,25 @@ def build_paperdoll_and_loot_bundle(spec: ForgeProjectSpec) -> dict[str, Any]:
     base_composite = composite_paperdoll(base_layers, canvas_size=(96, 96))
     damaged_composite = composite_paperdoll(damaged_layers, canvas_size=(96, 96))
 
-    # Measure bounding box drift between base and -damaged variant (must be <= 1px)
     base_bbox = base_composite.getchannel("A").getbbox() or (0, 0, 96, 96)
     dmg_bbox = damaged_composite.getchannel("A").getbbox() or (0, 0, 96, 96)
     bbox_delta = max(abs(a - b) for a, b in zip(base_bbox, dmg_bbox))
 
-    # Greyscale tintable masks for body & iris
     greyscale_masks = {
         "10_body_greyscale": to_greyscale_tint_mask(base_layers["10_body"]),
         "20_iris_greyscale": to_greyscale_tint_mask(base_layers["20_iris"]),
     }
 
-    # Elemental variants (byte-exact deterministic recolors)
     element_composites: dict[str, Image.Image] = {}
     for el in spec.elements:
         element_composites[el.id] = recolor_image_by_element(base_composite, base_element, el)
 
-    # 8-Direction Turnaround: 5 generated + 3 mirrored (SE<-SW, E<-W, NE<-NW)
     direction_frames: dict[str, Image.Image] = {}
     for d in spec.character.ai_directions:
         d_layers = build_paperdoll_layers(base_element, direction=d)
         direction_frames[d] = composite_paperdoll(d_layers, canvas_size=(96, 96))
     for target_dir, source_dir in spec.character.mirrored_directions.items():
         direction_frames[target_dir] = direction_frames[source_dir].transpose(Image.Transpose.FLIP_LEFT_RIGHT)
-
-    # Loot icons
-    loot_icons: dict[str, Image.Image] = {}
-    for item in spec.loot_items:
-        loot_icons[item.id] = generate_loot_icon(item, spec.elements)
 
     return {
         "baseLayers": base_layers,
@@ -444,5 +433,6 @@ def build_paperdoll_and_loot_bundle(spec: ForgeProjectSpec) -> dict[str, Any]:
         "elementComposites": element_composites,
         "directionFrames": direction_frames,
         "sockets": compute_frame_sockets(0, 0, "S"),
+        "weaponPoseFiles": {},
         "lootIcons": loot_icons,
     }

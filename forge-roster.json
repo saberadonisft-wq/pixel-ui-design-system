@@ -1,5 +1,5 @@
 {
-  "rosterVersion": 1,
+  "rosterVersion": 2,
   "description": "Batch Roster Configuration for AI Pixel Forge Mass Production",
   "defaults": {
     "bodyCanvas": [64, 64],
@@ -18,7 +18,8 @@
       "baseElement": "solar",
       "rawAiDir": "public/assets/pixel-forge/raw_ai",
       "outputDir": "public/assets/pixel-forge/generated",
-      "silhouette": "Winged silver-steel Greathelm with glowing cyan T-visor and royal blue plume, ornate plate cuirass with gold sun cross, royal blue cape, heraldic heater shield on left arm",
+      "headgearSpec": "Winged silver-steel Greathelm with glowing cyan T-visor and royal plume",
+      "silhouette": "Winged silver-steel Greathelm with glowing cyan T-visor and royal crimson plume, ornate plate cuirass with gold sun cross, royal blue cape, heraldic heater shield on left arm",
       "weaponSpec": "Oversized glowing golden-cyan Greatsword in right gauntlet",
       "skills": ["Trảm Đại Kiếm Thánh Quang", "Khiên Chữ Thập Bất Diệt"]
     },
@@ -31,6 +32,7 @@
       "baseElement": "fire",
       "rawAiDir": "public/assets/pixel-forge/batch/hero-crimson-valkyrie/raw_ai",
       "outputDir": "public/assets/pixel-forge/batch/hero-crimson-valkyrie/generated",
+      "headgearSpec": "Winged crimson-gold Valkyrie diadem with twin flame plumes",
       "silhouette": "Winged crimson-gold Valkyrie diadem, obsidian dragon-scale breastplate, flowing phoenix-feather mantle, floating flame Buckler on left arm",
       "weaponSpec": "Oversized blazing Dragon-Slayer Halberd in right hand",
       "skills": ["Long Thương Phá Thiên", "Cánh Phượng Hoàng Lửa"]
@@ -44,6 +46,7 @@
       "baseElement": "ice",
       "rawAiDir": "public/assets/pixel-forge/batch/hero-frost-archmage/raw_ai",
       "outputDir": "public/assets/pixel-forge/batch/hero-frost-archmage/generated",
+      "headgearSpec": "Tall astral frost-crystal mitre crown with sapphire core",
       "silhouette": "Tall astral frost-crystal mitre hat, silver-embroidered glacial robe, floating ice-rune grimoire on left hand",
       "weaponSpec": "Oversized celestial sapphire Aether Staff in right hand",
       "skills": ["Bão Tuyết Vĩnh Cửu", "Kết Giới Tinh Thể"]
@@ -57,8 +60,9 @@
       "baseElement": "shadow",
       "rawAiDir": "public/assets/pixel-forge/batch/hero-shadow-assassin/raw_ai",
       "outputDir": "public/assets/pixel-forge/batch/hero-shadow-assassin/generated",
-      "silhouette": "Hooded void-stalker cowl with glowing violet eyes, dark leather &obsidian shadow-plate, tattered phantom scarf",
-      "weaponSpec": "Oversized crescent Void Scythe & twinabyssal daggers",
+      "headgearSpec": "Hooded void-stalker cowl with glowing violet eyes",
+      "silhouette": "Hooded void-stalker cowl with glowing violet eyes, dark leather & obsidian shadow-plate, tattered phantom scarf",
+      "weaponSpec": "Oversized crescent Void Scythe & twin abyssal daggers",
       "skills": ["Trảm Hư Không", "Bước Nhảy Bóng Đêm"]
     },
     {
@@ -70,6 +74,7 @@
       "baseElement": "emerald",
       "rawAiDir": "public/assets/pixel-forge/batch/hero-emerald-ranger/raw_ai",
       "outputDir": "public/assets/pixel-forge/batch/hero-emerald-ranger/generated",
+      "headgearSpec": "Golden-antlered sylvan circlet with leaf crest",
       "silhouette": "Golden-antlered sylvan circlet, emerald leaf-mail tunic, hooded forest cloak, enchanted quiver on back",
       "weaponSpec": "Oversized glowing World-Tree Greatbow with emerald energy arrow",
       "skills": ["Mưa Tên Thần Mộc", "Phong Ấn Rừng Già"]

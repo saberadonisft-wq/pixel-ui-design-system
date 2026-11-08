@@ -7,4 +7,5 @@
 - Always verify responsive behavior at 320, 375, 414, and 768 CSS pixels.
 - Always render and visually review the representative primitive and affected demos before finishing.
 - Preserve semantic HTML, keyboard support, visible focus, and non-color state cues.
+- Always read `skills/pixel-forge-ai-gen/SKILL.md` when handling `[PIXEL-FORGE-IDE-TASK]` prompts, `/pixel-forge-ai-gen`, or generating/saving `#00FF00` AI hero assets for Pixel Forge.
 

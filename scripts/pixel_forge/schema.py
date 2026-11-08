@@ -26,7 +26,7 @@ class SocketPoint:
 
 @dataclass(frozen=True)
 class PaperdollLayerSpec:
-    """Single paperdoll layer definition on a concentric pivot canvas."""
+    """Single paperdoll layer definition aligned to a shared 96x96 ground baseline."""
 
     id: str
     role: Literal["shadow", "body", "iris", "outfit", "hair", "weapon", "fx"]
@@ -35,6 +35,8 @@ class PaperdollLayerSpec:
     canvas_height: int
     pivot_x: int
     pivot_y: int
+    offset_x: int = 0
+    offset_y: int = 0
     tintable_greyscale: bool = False
 
 
@@ -85,15 +87,15 @@ class CharacterBibleSpec:
     grid_px: int = 4
     body_canvas: tuple[int, int] = (64, 64)
     weapon_canvas: tuple[int, int] = (96, 96)
-    body_pivot: tuple[int, int] = (32, 56)
-    weapon_pivot: tuple[int, int] = (48, 72)
-    foot_baseline_y: int = 56
+    body_pivot: tuple[int, int] = (32, 62)
+    weapon_pivot: tuple[int, int] = (48, 88)
+    foot_baseline_y: int = 88
     max_shades_per_material: int = 3
-    max_palette_colors: int = 16
+    max_palette_colors: int = 20
     outline_mode: OutlineMode = "selective"
-    ai_directions: tuple[Direction8, ...] = ("S", "SW", "W", "NW", "N")
+    ai_directions: tuple[Direction8, ...] = ("S", "SE", "E", "NW", "N")
     mirrored_directions: dict[Direction8, Direction8] = field(
-        default_factory=lambda: {"SE": "SW", "E": "W", "NE": "NW"}
+        default_factory=lambda: {"SW": "SE", "W": "E", "NE": "NW"}
     )
     expressions: tuple[str, ...] = (
         "neutral",
@@ -126,9 +128,9 @@ class TilesetSpec:
     name: str
     tile_size: int = 16
     variant_count: int = 16
-    biome: Literal["obsidian-Sanctum", "emerald-ruins", "aether-citadel"] = "obsidian-Sanctum"
-    stage_width: int = 160
-    stage_height: int = 96
+    biome: Literal["obsidian-sanctum", "emerald-ruins", "aether-citadel"] = "obsidian-sanctum"
+    stage_width: int = 256
+    stage_height: int = 144
 
 
 @dataclass(frozen=True)
@@ -172,14 +174,16 @@ def default_forge_project_spec() -> ForgeProjectSpec:
         base_element="solar",
         foot_baseline_y=88,
     )
+    # 64x64 lower layers align at (16, 26) -> y_64=62 lands exactly on ground baseline Y=88;
+    # 40_hair stays 64x64 anchored at (16, 4) -> encloses plume & helm down to shoulders cleanly.
     layers = (
-        PaperdollLayerSpec("00_shadow", "shadow", 0, 64, 64, 32, 56, False),
-        PaperdollLayerSpec("10_body", "body", 10, 64, 64, 32, 56, True),
-        PaperdollLayerSpec("20_iris", "iris", 20, 64, 64, 32, 56, True),
-        PaperdollLayerSpec("30_outfit", "outfit", 30, 64, 64, 32, 56, False),
-        PaperdollLayerSpec("40_hair", "hair", 40, 64, 64, 32, 56, False),
-        PaperdollLayerSpec("50_weapon", "weapon", 50, 96, 96, 48, 72, False),
-        PaperdollLayerSpec("60_fx", "fx", 60, 96, 96, 48, 72, False),
+        PaperdollLayerSpec("00_shadow", "shadow", 0, 64, 64, 32, 62, 16, 26, False),
+        PaperdollLayerSpec("10_body", "body", 10, 64, 64, 32, 62, 16, 26, True),
+        PaperdollLayerSpec("20_iris", "iris", 20, 64, 64, 32, 62, 16, 26, True),
+        PaperdollLayerSpec("30_outfit", "outfit", 30, 64, 64, 32, 62, 16, 26, True),
+        PaperdollLayerSpec("40_hair", "hair", 40, 64, 64, 32, 38, 16, 4, True),
+        PaperdollLayerSpec("50_weapon", "weapon", 50, 96, 96, 48, 88, 0, 0, False),
+        PaperdollLayerSpec("60_fx", "fx", 60, 96, 96, 48, 88, 0, 0, False),
     )
     elements = (
         ElementVariantSpec(
@@ -248,7 +252,7 @@ def default_forge_project_spec() -> ForgeProjectSpec:
         ),
         AnimationClipSpec(
             id="hurt",
-            label="Nhận sát thương (1-Frame Hit Flash)",
+            label="Đỡ Khiên Chịu Đòn (Guard Recoil)",
             frames=2,
             fps=6,
             loop=False,
@@ -257,7 +261,7 @@ def default_forge_project_spec() -> ForgeProjectSpec:
         ),
         AnimationClipSpec(
             id="victory",
-            label="Chiến thắng (Banner Pose)",
+            label="Chiến thắng (Skyward Banner Pose)",
             frames=4,
             fps=8,
             loop=True,
@@ -266,7 +270,7 @@ def default_forge_project_spec() -> ForgeProjectSpec:
         ),
     )
     loot_items = (
-        LootItemSpec("loot-sunblade-ur", "Đại Kiếm Thánh Quang", "sword", "ur", "solar-prismatic", 32),
+        LootItemSpec("loot-sunblade-ur", "Thái Dương Thần Kiếm", "sword", "ur", "solar-prismatic", 32),
         LootItemSpec("loot-aether-staff-ssr", "Quyền Trượng Tinh Hà", "staff", "ssr", "arcane-gold", 32),
         LootItemSpec("loot-fortress-shield-epic", "Khiên Chữ Thập Hiệp Sĩ", "shield", "epic", "amethyst-steel", 32),
         LootItemSpec("loot-elixir-rare", "Huyết Dược Tinh Khiết", "potion", "rare", "sapphire-glass", 32),
@@ -278,9 +282,9 @@ def default_forge_project_spec() -> ForgeProjectSpec:
         name="Thánh Điện Hắc Diện (16-Tile Wang Autotile)",
         tile_size=16,
         variant_count=16,
-        biome="obsidian-Sanctum",
-        stage_width=160,
-        stage_height=96,
+        biome="obsidian-sanctum",
+        stage_width=256,
+        stage_height=144,
     )
     vfx_sequences = (
         VfxSequenceSpec(
@@ -305,7 +309,7 @@ def default_forge_project_spec() -> ForgeProjectSpec:
         ),
     )
     return ForgeProjectSpec(
-        schema_version=1,
+        schema_version=2,
         character=character,
         layers=layers,
         elements=elements,

@@ -1,5 +1,5 @@
 {
-  "schema": "unity-6-2d-sprite-atlas-v1",
+  "schema": "unity-6-2d-sprite-atlas-v2",
   "textures": {
     "diffuse": "forge-atlas-diffuse.png",
     "normalMap": "_NormalMap:forge-atlas-normal.png",
@@ -7,446 +7,1507 @@
   },
   "pixelsPerUnit": 16,
   "filterMode": "Point",
+  "extrudePx": 2,
   "sprites": [
     {
       "name": "hero-paladin-knight_idle_0",
       "rect": {
-        "x": 0,
-        "y": 0,
-        "w": 96,
-        "h": 96
+        "x": 6,
+        "y": 6,
+        "w": 67,
+        "h": 84
       },
       "pivot": {
         "x": 48,
-        "y": 72
+        "y": 88
       },
       "sockets": [
         {
           "id": "hand_r",
-          "x": 58,
-          "y": 50,
-          "angleDeg": 0,
+          "x": 63,
+          "y": 57,
+          "angleDeg": 35,
           "zOrder": 50,
-          "visible": true
+          "visible": true,
+          "poseTag": "ready"
         },
         {
           "id": "hand_l",
-          "x": 36,
-          "y": 51,
+          "x": 34,
+          "y": 58,
           "angleDeg": 0,
           "zOrder": 35,
-          "visible": true
+          "visible": true,
+          "poseTag": "ready"
         },
         {
           "id": "head",
           "x": 48,
-          "y": 28,
+          "y": 31,
           "angleDeg": 0,
           "zOrder": 45,
-          "visible": true
+          "visible": true,
+          "poseTag": "ready"
         },
         {
           "id": "back",
           "x": 48,
-          "y": 48,
+          "y": 52,
           "angleDeg": 0,
           "zOrder": 25,
-          "visible": true
+          "visible": true,
+          "poseTag": "ready"
         },
         {
           "id": "muzzle",
-          "x": 60,
-          "y": 22,
-          "angleDeg": 0,
+          "x": 81,
+          "y": 31,
+          "angleDeg": 35,
           "zOrder": 60,
-          "visible": true
+          "visible": true,
+          "poseTag": "ready"
         }
       ]
     },
     {
       "name": "hero-paladin-knight_idle_1",
       "rect": {
-        "x": 96,
-        "y": 0,
-        "w": 96,
-        "h": 96
+        "x": 81,
+        "y": 6,
+        "w": 72,
+        "h": 84
       },
       "pivot": {
         "x": 48,
-        "y": 72
+        "y": 88
       },
       "sockets": [
         {
           "id": "hand_r",
-          "x": 58,
-          "y": 50,
-          "angleDeg": 0,
+          "x": 63,
+          "y": 57,
+          "angleDeg": 35,
           "zOrder": 50,
-          "visible": true
+          "visible": true,
+          "poseTag": "ready"
         },
         {
           "id": "hand_l",
-          "x": 36,
-          "y": 51,
+          "x": 34,
+          "y": 58,
           "angleDeg": 0,
           "zOrder": 35,
-          "visible": true
+          "visible": true,
+          "poseTag": "ready"
         },
         {
           "id": "head",
           "x": 48,
-          "y": 28,
+          "y": 31,
           "angleDeg": 0,
           "zOrder": 45,
-          "visible": true
+          "visible": true,
+          "poseTag": "ready"
         },
         {
           "id": "back",
           "x": 48,
-          "y": 48,
+          "y": 52,
           "angleDeg": 0,
           "zOrder": 25,
-          "visible": true
+          "visible": true,
+          "poseTag": "ready"
         },
         {
           "id": "muzzle",
-          "x": 60,
-          "y": 22,
-          "angleDeg": 0,
+          "x": 81,
+          "y": 31,
+          "angleDeg": 35,
           "zOrder": 60,
-          "visible": true
+          "visible": true,
+          "poseTag": "ready"
         }
       ]
     },
     {
       "name": "hero-paladin-knight_idle_2",
       "rect": {
-        "x": 192,
-        "y": 0,
-        "w": 96,
-        "h": 96
+        "x": 161,
+        "y": 6,
+        "w": 73,
+        "h": 84
       },
       "pivot": {
         "x": 48,
-        "y": 72
+        "y": 88
       },
       "sockets": [
         {
           "id": "hand_r",
-          "x": 58,
-          "y": 50,
-          "angleDeg": 0,
+          "x": 63,
+          "y": 57,
+          "angleDeg": 35,
           "zOrder": 50,
-          "visible": true
+          "visible": true,
+          "poseTag": "ready"
         },
         {
           "id": "hand_l",
-          "x": 36,
-          "y": 51,
+          "x": 34,
+          "y": 58,
           "angleDeg": 0,
           "zOrder": 35,
-          "visible": true
+          "visible": true,
+          "poseTag": "ready"
         },
         {
           "id": "head",
           "x": 48,
-          "y": 28,
+          "y": 31,
           "angleDeg": 0,
           "zOrder": 45,
-          "visible": true
+          "visible": true,
+          "poseTag": "ready"
         },
         {
           "id": "back",
           "x": 48,
-          "y": 48,
+          "y": 52,
           "angleDeg": 0,
           "zOrder": 25,
-          "visible": true
+          "visible": true,
+          "poseTag": "ready"
         },
         {
           "id": "muzzle",
-          "x": 60,
-          "y": 22,
-          "angleDeg": 0,
+          "x": 81,
+          "y": 31,
+          "angleDeg": 35,
           "zOrder": 60,
-          "visible": true
+          "visible": true,
+          "poseTag": "ready"
         }
       ]
     },
     {
       "name": "hero-paladin-knight_idle_3",
       "rect": {
-        "x": 288,
-        "y": 0,
-        "w": 96,
-        "h": 96
+        "x": 242,
+        "y": 6,
+        "w": 68,
+        "h": 84
       },
       "pivot": {
         "x": 48,
-        "y": 72
+        "y": 88
       },
       "sockets": [
         {
           "id": "hand_r",
-          "x": 58,
-          "y": 50,
-          "angleDeg": 0,
+          "x": 63,
+          "y": 57,
+          "angleDeg": 35,
           "zOrder": 50,
-          "visible": true
+          "visible": true,
+          "poseTag": "ready"
         },
         {
           "id": "hand_l",
-          "x": 36,
-          "y": 51,
+          "x": 34,
+          "y": 58,
           "angleDeg": 0,
           "zOrder": 35,
-          "visible": true
+          "visible": true,
+          "poseTag": "ready"
         },
         {
           "id": "head",
           "x": 48,
-          "y": 28,
+          "y": 31,
           "angleDeg": 0,
           "zOrder": 45,
-          "visible": true
+          "visible": true,
+          "poseTag": "ready"
         },
         {
           "id": "back",
           "x": 48,
-          "y": 48,
+          "y": 52,
           "angleDeg": 0,
           "zOrder": 25,
-          "visible": true
+          "visible": true,
+          "poseTag": "ready"
         },
         {
           "id": "muzzle",
-          "x": 60,
-          "y": 22,
-          "angleDeg": 0,
+          "x": 81,
+          "y": 31,
+          "angleDeg": 35,
           "zOrder": 60,
-          "visible": true
+          "visible": true,
+          "poseTag": "ready"
+        }
+      ]
+    },
+    {
+      "name": "hero-paladin-knight_walk_0",
+      "rect": {
+        "x": 318,
+        "y": 6,
+        "w": 80,
+        "h": 84
+      },
+      "pivot": {
+        "x": 48,
+        "y": 88
+      },
+      "sockets": [
+        {
+          "id": "hand_r",
+          "x": 63,
+          "y": 57,
+          "angleDeg": 35,
+          "zOrder": 50,
+          "visible": true,
+          "poseTag": "ready"
+        },
+        {
+          "id": "hand_l",
+          "x": 34,
+          "y": 58,
+          "angleDeg": 0,
+          "zOrder": 35,
+          "visible": true,
+          "poseTag": "ready"
+        },
+        {
+          "id": "head",
+          "x": 48,
+          "y": 31,
+          "angleDeg": 0,
+          "zOrder": 45,
+          "visible": true,
+          "poseTag": "ready"
+        },
+        {
+          "id": "back",
+          "x": 48,
+          "y": 52,
+          "angleDeg": 0,
+          "zOrder": 25,
+          "visible": true,
+          "poseTag": "ready"
+        },
+        {
+          "id": "muzzle",
+          "x": 81,
+          "y": 31,
+          "angleDeg": 35,
+          "zOrder": 60,
+          "visible": true,
+          "poseTag": "ready"
+        }
+      ]
+    },
+    {
+      "name": "hero-paladin-knight_walk_1",
+      "rect": {
+        "x": 406,
+        "y": 6,
+        "w": 81,
+        "h": 85
+      },
+      "pivot": {
+        "x": 48,
+        "y": 88
+      },
+      "sockets": [
+        {
+          "id": "hand_r",
+          "x": 63,
+          "y": 57,
+          "angleDeg": 35,
+          "zOrder": 50,
+          "visible": true,
+          "poseTag": "ready"
+        },
+        {
+          "id": "hand_l",
+          "x": 34,
+          "y": 58,
+          "angleDeg": 0,
+          "zOrder": 35,
+          "visible": true,
+          "poseTag": "ready"
+        },
+        {
+          "id": "head",
+          "x": 48,
+          "y": 31,
+          "angleDeg": 0,
+          "zOrder": 45,
+          "visible": true,
+          "poseTag": "ready"
+        },
+        {
+          "id": "back",
+          "x": 48,
+          "y": 52,
+          "angleDeg": 0,
+          "zOrder": 25,
+          "visible": true,
+          "poseTag": "ready"
+        },
+        {
+          "id": "muzzle",
+          "x": 81,
+          "y": 31,
+          "angleDeg": 35,
+          "zOrder": 60,
+          "visible": true,
+          "poseTag": "ready"
+        }
+      ]
+    },
+    {
+      "name": "hero-paladin-knight_walk_2",
+      "rect": {
+        "x": 6,
+        "y": 99,
+        "w": 81,
+        "h": 85
+      },
+      "pivot": {
+        "x": 48,
+        "y": 88
+      },
+      "sockets": [
+        {
+          "id": "hand_r",
+          "x": 63,
+          "y": 57,
+          "angleDeg": 35,
+          "zOrder": 50,
+          "visible": true,
+          "poseTag": "ready"
+        },
+        {
+          "id": "hand_l",
+          "x": 34,
+          "y": 58,
+          "angleDeg": 0,
+          "zOrder": 35,
+          "visible": true,
+          "poseTag": "ready"
+        },
+        {
+          "id": "head",
+          "x": 48,
+          "y": 31,
+          "angleDeg": 0,
+          "zOrder": 45,
+          "visible": true,
+          "poseTag": "ready"
+        },
+        {
+          "id": "back",
+          "x": 48,
+          "y": 52,
+          "angleDeg": 0,
+          "zOrder": 25,
+          "visible": true,
+          "poseTag": "ready"
+        },
+        {
+          "id": "muzzle",
+          "x": 81,
+          "y": 31,
+          "angleDeg": 35,
+          "zOrder": 60,
+          "visible": true,
+          "poseTag": "ready"
+        }
+      ]
+    },
+    {
+      "name": "hero-paladin-knight_walk_3",
+      "rect": {
+        "x": 95,
+        "y": 99,
+        "w": 81,
+        "h": 85
+      },
+      "pivot": {
+        "x": 48,
+        "y": 88
+      },
+      "sockets": [
+        {
+          "id": "hand_r",
+          "x": 63,
+          "y": 57,
+          "angleDeg": 35,
+          "zOrder": 50,
+          "visible": true,
+          "poseTag": "ready"
+        },
+        {
+          "id": "hand_l",
+          "x": 34,
+          "y": 58,
+          "angleDeg": 0,
+          "zOrder": 35,
+          "visible": true,
+          "poseTag": "ready"
+        },
+        {
+          "id": "head",
+          "x": 48,
+          "y": 31,
+          "angleDeg": 0,
+          "zOrder": 45,
+          "visible": true,
+          "poseTag": "ready"
+        },
+        {
+          "id": "back",
+          "x": 48,
+          "y": 52,
+          "angleDeg": 0,
+          "zOrder": 25,
+          "visible": true,
+          "poseTag": "ready"
+        },
+        {
+          "id": "muzzle",
+          "x": 81,
+          "y": 31,
+          "angleDeg": 35,
+          "zOrder": 60,
+          "visible": true,
+          "poseTag": "ready"
         }
       ]
     },
     {
       "name": "hero-paladin-knight_attack_0",
       "rect": {
-        "x": 0,
-        "y": 96,
-        "w": 96,
-        "h": 96
+        "x": 184,
+        "y": 99,
+        "w": 67,
+        "h": 82
       },
       "pivot": {
         "x": 48,
-        "y": 72
+        "y": 88
       },
       "sockets": [
         {
           "id": "hand_r",
-          "x": 58,
-          "y": 50,
-          "angleDeg": 0,
+          "x": 63,
+          "y": 57,
+          "angleDeg": 35,
           "zOrder": 50,
-          "visible": true
+          "visible": true,
+          "poseTag": "ready"
         },
         {
           "id": "hand_l",
-          "x": 36,
-          "y": 51,
+          "x": 34,
+          "y": 58,
           "angleDeg": 0,
           "zOrder": 35,
-          "visible": true
+          "visible": true,
+          "poseTag": "ready"
         },
         {
           "id": "head",
           "x": 48,
-          "y": 28,
+          "y": 31,
           "angleDeg": 0,
           "zOrder": 45,
-          "visible": true
+          "visible": true,
+          "poseTag": "ready"
         },
         {
           "id": "back",
           "x": 48,
-          "y": 48,
+          "y": 52,
           "angleDeg": 0,
           "zOrder": 25,
-          "visible": true
+          "visible": true,
+          "poseTag": "ready"
         },
         {
           "id": "muzzle",
-          "x": 60,
-          "y": 22,
-          "angleDeg": 0,
+          "x": 81,
+          "y": 31,
+          "angleDeg": 35,
           "zOrder": 60,
-          "visible": true
+          "visible": true,
+          "poseTag": "ready"
         }
       ]
     },
     {
       "name": "hero-paladin-knight_attack_1",
       "rect": {
-        "x": 96,
-        "y": 96,
-        "w": 96,
-        "h": 96
+        "x": 259,
+        "y": 99,
+        "w": 68,
+        "h": 83
       },
       "pivot": {
         "x": 48,
-        "y": 72
+        "y": 88
       },
       "sockets": [
         {
           "id": "hand_r",
-          "x": 58,
-          "y": 50,
-          "angleDeg": 0,
+          "x": 34,
+          "y": 24,
+          "angleDeg": -55,
           "zOrder": 50,
-          "visible": true
+          "visible": true,
+          "poseTag": "windup"
         },
         {
           "id": "hand_l",
-          "x": 36,
-          "y": 51,
+          "x": 34,
+          "y": 58,
           "angleDeg": 0,
           "zOrder": 35,
-          "visible": true
+          "visible": true,
+          "poseTag": "windup"
         },
         {
           "id": "head",
           "x": 48,
-          "y": 28,
+          "y": 31,
           "angleDeg": 0,
           "zOrder": 45,
-          "visible": true
+          "visible": true,
+          "poseTag": "windup"
         },
         {
           "id": "back",
           "x": 48,
-          "y": 48,
+          "y": 52,
           "angleDeg": 0,
           "zOrder": 25,
-          "visible": true
+          "visible": true,
+          "poseTag": "windup"
         },
         {
           "id": "muzzle",
-          "x": 60,
-          "y": 22,
-          "angleDeg": 0,
+          "x": 76,
+          "y": 14,
+          "angleDeg": -55,
           "zOrder": 60,
-          "visible": true
+          "visible": true,
+          "poseTag": "windup"
         }
       ]
     },
     {
       "name": "hero-paladin-knight_attack_2",
       "rect": {
-        "x": 192,
-        "y": 96,
-        "w": 96,
-        "h": 96
+        "x": 335,
+        "y": 99,
+        "w": 85,
+        "h": 84
       },
       "pivot": {
         "x": 48,
-        "y": 72
+        "y": 88
       },
       "sockets": [
         {
           "id": "hand_r",
-          "x": 58,
-          "y": 50,
-          "angleDeg": 90,
+          "x": 32,
+          "y": 48,
+          "angleDeg": 105,
           "zOrder": 50,
-          "visible": true
+          "visible": true,
+          "poseTag": "cleave"
         },
         {
           "id": "hand_l",
-          "x": 36,
-          "y": 51,
+          "x": 34,
+          "y": 58,
           "angleDeg": 0,
           "zOrder": 35,
-          "visible": true
+          "visible": true,
+          "poseTag": "cleave"
         },
         {
           "id": "head",
           "x": 48,
-          "y": 28,
+          "y": 31,
           "angleDeg": 0,
           "zOrder": 45,
-          "visible": true
+          "visible": true,
+          "poseTag": "cleave"
         },
         {
           "id": "back",
           "x": 48,
-          "y": 48,
+          "y": 52,
           "angleDeg": 0,
           "zOrder": 25,
-          "visible": true
+          "visible": true,
+          "poseTag": "cleave"
         },
         {
           "id": "muzzle",
-          "x": 96,
-          "y": 50,
-          "angleDeg": 0,
+          "x": 80,
+          "y": 60,
+          "angleDeg": 105,
           "zOrder": 60,
-          "visible": true
+          "visible": true,
+          "poseTag": "cleave"
         }
       ]
     },
     {
       "name": "hero-paladin-knight_attack_3",
       "rect": {
-        "x": 288,
-        "y": 96,
-        "w": 96,
-        "h": 96
+        "x": 6,
+        "y": 192,
+        "w": 83,
+        "h": 84
       },
       "pivot": {
         "x": 48,
-        "y": 72
+        "y": 88
       },
       "sockets": [
         {
           "id": "hand_r",
-          "x": 58,
-          "y": 50,
-          "angleDeg": 0,
+          "x": 63,
+          "y": 57,
+          "angleDeg": 35,
           "zOrder": 50,
-          "visible": true
+          "visible": true,
+          "poseTag": "ready"
         },
         {
           "id": "hand_l",
-          "x": 36,
-          "y": 51,
+          "x": 34,
+          "y": 58,
           "angleDeg": 0,
           "zOrder": 35,
-          "visible": true
+          "visible": true,
+          "poseTag": "ready"
         },
         {
           "id": "head",
           "x": 48,
-          "y": 28,
+          "y": 31,
           "angleDeg": 0,
           "zOrder": 45,
-          "visible": true
+          "visible": true,
+          "poseTag": "ready"
         },
         {
           "id": "back",
           "x": 48,
-          "y": 48,
+          "y": 52,
           "angleDeg": 0,
           "zOrder": 25,
-          "visible": true
+          "visible": true,
+          "poseTag": "ready"
         },
         {
           "id": "muzzle",
-          "x": 60,
-          "y": 22,
-          "angleDeg": 0,
+          "x": 81,
+          "y": 31,
+          "angleDeg": 35,
           "zOrder": 60,
-          "visible": true
+          "visible": true,
+          "poseTag": "ready"
         }
       ]
+    },
+    {
+      "name": "hero-paladin-knight_hurt_0",
+      "rect": {
+        "x": 6,
+        "y": 6,
+        "w": 67,
+        "h": 84
+      },
+      "pivot": {
+        "x": 48,
+        "y": 88
+      },
+      "sockets": [
+        {
+          "id": "hand_r",
+          "x": 63,
+          "y": 57,
+          "angleDeg": 35,
+          "zOrder": 50,
+          "visible": true,
+          "poseTag": "ready"
+        },
+        {
+          "id": "hand_l",
+          "x": 34,
+          "y": 58,
+          "angleDeg": 0,
+          "zOrder": 35,
+          "visible": true,
+          "poseTag": "ready"
+        },
+        {
+          "id": "head",
+          "x": 48,
+          "y": 31,
+          "angleDeg": 0,
+          "zOrder": 45,
+          "visible": true,
+          "poseTag": "ready"
+        },
+        {
+          "id": "back",
+          "x": 48,
+          "y": 52,
+          "angleDeg": 0,
+          "zOrder": 25,
+          "visible": true,
+          "poseTag": "ready"
+        },
+        {
+          "id": "muzzle",
+          "x": 81,
+          "y": 31,
+          "angleDeg": 35,
+          "zOrder": 60,
+          "visible": true,
+          "poseTag": "ready"
+        }
+      ]
+    },
+    {
+      "name": "hero-paladin-knight_hurt_1",
+      "rect": {
+        "x": 97,
+        "y": 192,
+        "w": 67,
+        "h": 84
+      },
+      "pivot": {
+        "x": 48,
+        "y": 88
+      },
+      "sockets": [
+        {
+          "id": "hand_r",
+          "x": 60,
+          "y": 56,
+          "angleDeg": 35,
+          "zOrder": 50,
+          "visible": true,
+          "poseTag": "guard"
+        },
+        {
+          "id": "hand_l",
+          "x": 34,
+          "y": 58,
+          "angleDeg": 0,
+          "zOrder": 35,
+          "visible": true,
+          "poseTag": "ready"
+        },
+        {
+          "id": "head",
+          "x": 48,
+          "y": 31,
+          "angleDeg": 0,
+          "zOrder": 45,
+          "visible": true,
+          "poseTag": "ready"
+        },
+        {
+          "id": "back",
+          "x": 48,
+          "y": 52,
+          "angleDeg": 0,
+          "zOrder": 25,
+          "visible": true,
+          "poseTag": "ready"
+        },
+        {
+          "id": "muzzle",
+          "x": 81,
+          "y": 31,
+          "angleDeg": 35,
+          "zOrder": 60,
+          "visible": true,
+          "poseTag": "ready"
+        }
+      ]
+    },
+    {
+      "name": "hero-paladin-knight_victory_0",
+      "rect": {
+        "x": 81,
+        "y": 6,
+        "w": 72,
+        "h": 84
+      },
+      "pivot": {
+        "x": 48,
+        "y": 88
+      },
+      "sockets": [
+        {
+          "id": "hand_r",
+          "x": 63,
+          "y": 57,
+          "angleDeg": 35,
+          "zOrder": 50,
+          "visible": true,
+          "poseTag": "ready"
+        },
+        {
+          "id": "hand_l",
+          "x": 34,
+          "y": 58,
+          "angleDeg": 0,
+          "zOrder": 35,
+          "visible": true,
+          "poseTag": "ready"
+        },
+        {
+          "id": "head",
+          "x": 48,
+          "y": 31,
+          "angleDeg": 0,
+          "zOrder": 45,
+          "visible": true,
+          "poseTag": "ready"
+        },
+        {
+          "id": "back",
+          "x": 48,
+          "y": 52,
+          "angleDeg": 0,
+          "zOrder": 25,
+          "visible": true,
+          "poseTag": "ready"
+        },
+        {
+          "id": "muzzle",
+          "x": 81,
+          "y": 31,
+          "angleDeg": 35,
+          "zOrder": 60,
+          "visible": true,
+          "poseTag": "ready"
+        }
+      ]
+    },
+    {
+      "name": "hero-paladin-knight_victory_1",
+      "rect": {
+        "x": 172,
+        "y": 192,
+        "w": 62,
+        "h": 82
+      },
+      "pivot": {
+        "x": 48,
+        "y": 88
+      },
+      "sockets": [
+        {
+          "id": "hand_r",
+          "x": 56,
+          "y": 36,
+          "angleDeg": -15,
+          "zOrder": 50,
+          "visible": true,
+          "poseTag": "victory"
+        },
+        {
+          "id": "hand_l",
+          "x": 34,
+          "y": 58,
+          "angleDeg": 0,
+          "zOrder": 35,
+          "visible": true,
+          "poseTag": "ready"
+        },
+        {
+          "id": "head",
+          "x": 48,
+          "y": 31,
+          "angleDeg": 0,
+          "zOrder": 45,
+          "visible": true,
+          "poseTag": "ready"
+        },
+        {
+          "id": "back",
+          "x": 48,
+          "y": 52,
+          "angleDeg": 0,
+          "zOrder": 25,
+          "visible": true,
+          "poseTag": "ready"
+        },
+        {
+          "id": "muzzle",
+          "x": 81,
+          "y": 31,
+          "angleDeg": 35,
+          "zOrder": 60,
+          "visible": true,
+          "poseTag": "ready"
+        }
+      ]
+    },
+    {
+      "name": "hero-paladin-knight_victory_2",
+      "rect": {
+        "x": 242,
+        "y": 192,
+        "w": 62,
+        "h": 84
+      },
+      "pivot": {
+        "x": 48,
+        "y": 88
+      },
+      "sockets": [
+        {
+          "id": "hand_r",
+          "x": 56,
+          "y": 36,
+          "angleDeg": -15,
+          "zOrder": 50,
+          "visible": true,
+          "poseTag": "victory"
+        },
+        {
+          "id": "hand_l",
+          "x": 34,
+          "y": 58,
+          "angleDeg": 0,
+          "zOrder": 35,
+          "visible": true,
+          "poseTag": "ready"
+        },
+        {
+          "id": "head",
+          "x": 48,
+          "y": 31,
+          "angleDeg": 0,
+          "zOrder": 45,
+          "visible": true,
+          "poseTag": "ready"
+        },
+        {
+          "id": "back",
+          "x": 48,
+          "y": 52,
+          "angleDeg": 0,
+          "zOrder": 25,
+          "visible": true,
+          "poseTag": "ready"
+        },
+        {
+          "id": "muzzle",
+          "x": 81,
+          "y": 31,
+          "angleDeg": 35,
+          "zOrder": 60,
+          "visible": true,
+          "poseTag": "ready"
+        }
+      ]
+    },
+    {
+      "name": "hero-paladin-knight_victory_3",
+      "rect": {
+        "x": 312,
+        "y": 192,
+        "w": 63,
+        "h": 85
+      },
+      "pivot": {
+        "x": 48,
+        "y": 88
+      },
+      "sockets": [
+        {
+          "id": "hand_r",
+          "x": 56,
+          "y": 36,
+          "angleDeg": -15,
+          "zOrder": 50,
+          "visible": true,
+          "poseTag": "victory"
+        },
+        {
+          "id": "hand_l",
+          "x": 34,
+          "y": 58,
+          "angleDeg": 0,
+          "zOrder": 35,
+          "visible": true,
+          "poseTag": "ready"
+        },
+        {
+          "id": "head",
+          "x": 48,
+          "y": 31,
+          "angleDeg": 0,
+          "zOrder": 45,
+          "visible": true,
+          "poseTag": "ready"
+        },
+        {
+          "id": "back",
+          "x": 48,
+          "y": 52,
+          "angleDeg": 0,
+          "zOrder": 25,
+          "visible": true,
+          "poseTag": "ready"
+        },
+        {
+          "id": "muzzle",
+          "x": 81,
+          "y": 31,
+          "angleDeg": 35,
+          "zOrder": 60,
+          "visible": true,
+          "poseTag": "ready"
+        }
+      ]
+    },
+    {
+      "name": "hero-paladin-knight_dir_S",
+      "rect": {
+        "x": 6,
+        "y": 6,
+        "w": 67,
+        "h": 84
+      },
+      "pivot": {
+        "x": 48,
+        "y": 88
+      },
+      "sockets": []
+    },
+    {
+      "name": "hero-paladin-knight_dir_SE",
+      "rect": {
+        "x": 81,
+        "y": 6,
+        "w": 72,
+        "h": 84
+      },
+      "pivot": {
+        "x": 48,
+        "y": 88
+      },
+      "sockets": []
+    },
+    {
+      "name": "hero-paladin-knight_dir_E",
+      "rect": {
+        "x": 318,
+        "y": 6,
+        "w": 80,
+        "h": 84
+      },
+      "pivot": {
+        "x": 48,
+        "y": 88
+      },
+      "sockets": []
+    },
+    {
+      "name": "hero-paladin-knight_dir_NE",
+      "rect": {
+        "x": 383,
+        "y": 192,
+        "w": 81,
+        "h": 86
+      },
+      "pivot": {
+        "x": 48,
+        "y": 88
+      },
+      "sockets": []
+    },
+    {
+      "name": "hero-paladin-knight_dir_N",
+      "rect": {
+        "x": 6,
+        "y": 286,
+        "w": 45,
+        "h": 86
+      },
+      "pivot": {
+        "x": 48,
+        "y": 88
+      },
+      "sockets": []
+    },
+    {
+      "name": "hero-paladin-knight_dir_NW",
+      "rect": {
+        "x": 59,
+        "y": 286,
+        "w": 81,
+        "h": 86
+      },
+      "pivot": {
+        "x": 48,
+        "y": 88
+      },
+      "sockets": []
+    },
+    {
+      "name": "hero-paladin-knight_dir_W",
+      "rect": {
+        "x": 148,
+        "y": 286,
+        "w": 80,
+        "h": 84
+      },
+      "pivot": {
+        "x": 48,
+        "y": 88
+      },
+      "sockets": []
+    },
+    {
+      "name": "hero-paladin-knight_dir_SW",
+      "rect": {
+        "x": 236,
+        "y": 286,
+        "w": 72,
+        "h": 84
+      },
+      "pivot": {
+        "x": 48,
+        "y": 88
+      },
+      "sockets": []
+    },
+    {
+      "name": "hero-paladin-knight_damaged",
+      "rect": {
+        "x": 316,
+        "y": 286,
+        "w": 67,
+        "h": 84
+      },
+      "pivot": {
+        "x": 48,
+        "y": 88
+      },
+      "sockets": []
+    },
+    {
+      "name": "layer_00_shadow",
+      "rect": {
+        "x": 391,
+        "y": 286,
+        "w": 31,
+        "h": 5
+      },
+      "pivot": {
+        "x": 32,
+        "y": 62
+      },
+      "sockets": []
+    },
+    {
+      "name": "layer_10_body",
+      "rect": {
+        "x": 430,
+        "y": 286,
+        "w": 40,
+        "h": 62
+      },
+      "pivot": {
+        "x": 32,
+        "y": 62
+      },
+      "sockets": []
+    },
+    {
+      "name": "layer_20_iris",
+      "rect": {
+        "x": 478,
+        "y": 286,
+        "w": 11,
+        "h": 15
+      },
+      "pivot": {
+        "x": 32,
+        "y": 62
+      },
+      "sockets": []
+    },
+    {
+      "name": "layer_30_outfit",
+      "rect": {
+        "x": 6,
+        "y": 380,
+        "w": 47,
+        "h": 47
+      },
+      "pivot": {
+        "x": 32,
+        "y": 62
+      },
+      "sockets": []
+    },
+    {
+      "name": "layer_40_hair",
+      "rect": {
+        "x": 61,
+        "y": 380,
+        "w": 38,
+        "h": 40
+      },
+      "pivot": {
+        "x": 32,
+        "y": 62
+      },
+      "sockets": []
+    },
+    {
+      "name": "layer_50_weapon",
+      "rect": {
+        "x": 107,
+        "y": 380,
+        "w": 35,
+        "h": 40
+      },
+      "pivot": {
+        "x": 48,
+        "y": 94
+      },
+      "sockets": []
+    },
+    {
+      "name": "layer_60_fx",
+      "rect": {
+        "x": 150,
+        "y": 380,
+        "w": 73,
+        "h": 57
+      },
+      "pivot": {
+        "x": 48,
+        "y": 94
+      },
+      "sockets": []
+    },
+    {
+      "name": "vfx-gacha-summon-ssr_f0",
+      "rect": {
+        "x": 231,
+        "y": 380,
+        "w": 47,
+        "h": 33
+      },
+      "pivot": {
+        "x": 32,
+        "y": 32
+      },
+      "sockets": []
+    },
+    {
+      "name": "vfx-gacha-summon-ssr_f1",
+      "rect": {
+        "x": 286,
+        "y": 380,
+        "w": 47,
+        "h": 53
+      },
+      "pivot": {
+        "x": 32,
+        "y": 32
+      },
+      "sockets": []
+    },
+    {
+      "name": "vfx-gacha-summon-ssr_f2",
+      "rect": {
+        "x": 341,
+        "y": 380,
+        "w": 47,
+        "h": 51
+      },
+      "pivot": {
+        "x": 32,
+        "y": 32
+      },
+      "sockets": []
+    },
+    {
+      "name": "vfx-gacha-summon-ssr_f3",
+      "rect": {
+        "x": 396,
+        "y": 380,
+        "w": 47,
+        "h": 52
+      },
+      "pivot": {
+        "x": 32,
+        "y": 32
+      },
+      "sockets": []
+    },
+    {
+      "name": "vfx-solar-slash_f0",
+      "rect": {
+        "x": 451,
+        "y": 380,
+        "w": 18,
+        "h": 41
+      },
+      "pivot": {
+        "x": 32,
+        "y": 32
+      },
+      "sockets": []
+    },
+    {
+      "name": "vfx-solar-slash_f1",
+      "rect": {
+        "x": 6,
+        "y": 445,
+        "w": 29,
+        "h": 57
+      },
+      "pivot": {
+        "x": 32,
+        "y": 32
+      },
+      "sockets": []
+    },
+    {
+      "name": "vfx-solar-slash_f2",
+      "rect": {
+        "x": 43,
+        "y": 445,
+        "w": 33,
+        "h": 62
+      },
+      "pivot": {
+        "x": 32,
+        "y": 32
+      },
+      "sockets": []
+    },
+    {
+      "name": "vfx-solar-slash_f3",
+      "rect": {
+        "x": 84,
+        "y": 445,
+        "w": 25,
+        "h": 47
+      },
+      "pivot": {
+        "x": 32,
+        "y": 32
+      },
+      "sockets": []
+    },
+    {
+      "name": "loot-sunblade-ur",
+      "rect": {
+        "x": 117,
+        "y": 445,
+        "w": 26,
+        "h": 26
+      },
+      "pivot": {
+        "x": 16,
+        "y": 16
+      },
+      "sockets": []
+    },
+    {
+      "name": "loot-aether-staff-ssr",
+      "rect": {
+        "x": 151,
+        "y": 445,
+        "w": 25,
+        "h": 26
+      },
+      "pivot": {
+        "x": 16,
+        "y": 16
+      },
+      "sockets": []
+    },
+    {
+      "name": "loot-fortress-shield-epic",
+      "rect": {
+        "x": 184,
+        "y": 445,
+        "w": 21,
+        "h": 28
+      },
+      "pivot": {
+        "x": 16,
+        "y": 16
+      },
+      "sockets": []
+    },
+    {
+      "name": "loot-elixir-rare",
+      "rect": {
+        "x": 213,
+        "y": 445,
+        "w": 19,
+        "h": 28
+      },
+      "pivot": {
+        "x": 16,
+        "y": 16
+      },
+      "sockets": []
+    },
+    {
+      "name": "loot-relic-chest-ssr",
+      "rect": {
+        "x": 240,
+        "y": 445,
+        "w": 26,
+        "h": 24
+      },
+      "pivot": {
+        "x": 16,
+        "y": 16
+      },
+      "sockets": []
+    },
+    {
+      "name": "loot-core-sigil-common",
+      "rect": {
+        "x": 274,
+        "y": 445,
+        "w": 26,
+        "h": 26
+      },
+      "pivot": {
+        "x": 16,
+        "y": 16
+      },
+      "sockets": []
     }
   ]
 }

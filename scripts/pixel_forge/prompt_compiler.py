@@ -65,46 +65,45 @@ def compile_prompt_pack(spec: ForgeProjectSpec, preferred_provider: ProviderKey 
         "pillow shading, baked text, watermark, cropped weapon tip, floating feet"
     )
 
-    master_still_prompt = (
-        f"[HIBIT MASTER STILL SPEC] Character: {char.name} ({char.title}), rarity={char.rarity.upper()}, "
-        f"element={char.base_element}. Render flat unoutlined cel-shaded regions with strictly <= "
-        f"{char.max_shades_per_material} discrete shades per material for 8x8 majority-vote downscaling "
-        f"to a {char.body_canvas[0]}x{char.body_canvas[1]} logical canvas. "
-        f"Top-left directional lighting. Lock both feet on horizontal baseline Y={char.foot_baseline_y} "
-        f"(pivot={char.body_pivot[0]},{char.body_pivot[1]}). Solid chroma key background (#00FF00) with "
-        f"zero color spill. Leave >=8px silhouette padding around extremities."
-    )
-
-    bible_prompt = (
-        f"[CHARACTER BIBLE 23-PANEL SPEC] Subject: {char.name}. Generate a synchronized 23-panel design sheet: "
-        f"5 orthographic turnaround views ({', '.join(char.ai_directions)}; derive {', '.join(char.mirrored_directions.keys())} "
-        f"via deterministic horizontal mirror flip to save 37.5% generation cost), "
-        f"6 dialogue expressions ({', '.join(char.expressions)}), 3 combat action keyposes, "
-        f"3 ascension skins ({', '.join(char.skins)}), 1 chibi form, and a '-damaged' variant whose bounding box "
-        f"deviates by <=1px from the base pose."
+    raw_chroma_prompt = (
+        f"[STAGE 01: 10-FRAME CHROMA-KEY & LUT SPEC] Character: {char.name} ({char.title}), rarity={char.rarity.upper()}, "
+        f"element={char.base_element}. Author 10 synchronized AI source plates on solid #00FF00 pure green chroma background "
+        f"(7 character keyframes + 2x2 modular equipment kit + 3x2 RPG loot sheet + HD-2D cathedral arena). "
+        f"Run CIELAB Delta-E chroma removal BEFORE shared {char.max_palette_colors}-color Master Palette quantization, "
+        f"locking boots strictly to baseline Y={char.foot_baseline_y} on a {char.weapon_canvas[0]}x{char.weapon_canvas[1]} canvas."
     )
 
     paperdoll_prompt = (
-        f"[CONCENTRIC PAPERDOLL 7-LAYER SPEC] Decompose {char.name} into 7 bit-exact RGBA layers sharing a "
-        f"concentric ground pivot: body layers (00_shadow, 10_body greyscale-tintable, 20_iris green-key isolated, "
-        f"30_outfit, 40_hair) on {char.body_canvas[0]}x{char.body_canvas[1]} canvas (pivot={char.body_pivot}), and "
-        f"oversized equipment layers (50_weapon, 60_fx) on {char.weapon_canvas[0]}x{char.weapon_canvas[1]} canvas "
-        f"(pivot={char.weapon_pivot}) so broadswords and polearms never clip during swing arcs."
+        f"[STAGE 02: CONCENTRIC PAPERDOLL 7-LAYER & GREYSCALE TINT SPEC] Decompose {char.name} into 7 bit-exact RGBA layers "
+        f"sharing ground baseline Y={char.foot_baseline_y}: lower layers (00_shadow, 10_body, 20_iris, 30_outfit) on "
+        f"{char.body_canvas[0]}x{char.body_canvas[1]} at offset (16,26), headgear (40_hair) at (16,4), and oversized "
+        f"combat layers (50_weapon, 60_fx) on {char.weapon_canvas[0]}x{char.weapon_canvas[1]} with 4 runtime greyscale tint masks."
     )
 
     motion_prompt = (
-        "[I2V & REGION-MASK MOTION SPEC] Generate 5 game-ready clips (idle, walk, attack, hurt, victory). "
-        "For 'idle', apply anatomical breathing and cape oscillation strictly inside region masks while preserving "
-        "resting torso pixels 100% byte-identical. For 'walk' and 'attack', run CIELAB chroma key BEFORE palette "
-        "quantization, enforce Temporal Hysteresis (Crawl Killer: commit_frames=2, max_hold=3 starvation escape), "
-        f"and lock contact foot to Y={char.foot_baseline_y} with Alpha-Weighted Centroid stabilization."
+        "[STAGE 03: 5-CLIP MOTION, CRAWL KILLER & DUAL-BUFFER VFX SPEC] Generate 5 combat clips (idle, walk, attack, hurt, victory) "
+        "plus unarmed swap variants and 25 pre-baked socket weapon poses. Apply Region-Masked Idle, Temporal Hysteresis "
+        "(commit_frames=2, max_hold=3), Hit-Stop / Screen-Shake timing metadata, and Dual-Buffer VFX (color + emissive)."
+    )
+
+    bible_prompt = (
+        f"[STAGE 04: CHARACTER BIBLE 23-PANEL & COMPASS TURNAROUND SPEC] Subject: {char.name}. Assemble 23 synchronized panels: "
+        f"8-way spatial turnaround (5 source views {', '.join(char.ai_directions)} + 3 mirror flips "
+        f"{', '.join(char.mirrored_directions.keys())} saving 37.5% cost), "
+        f"6 portrait expressions ({', '.join(char.expressions)}), 5 action keyposes, "
+        f"3 ascension skins ({', '.join(char.skins)}), and 1 SD chibi form, plus a '-damaged' variant (bbox delta <=1px)."
     )
 
     world_prompt = (
-        f"[WANG 16-AUTOTILE & PARALLAX SPEC] Biome: {spec.tileset.name} ({spec.tileset.biome}). "
+        f"[STAGE 05: WANG 16-AUTOTILE, SEAMLESS PARALLAX & 2.5D LIGHTING SPEC] Biome: {spec.tileset.name} ({spec.tileset.biome}). "
         f"Construct a 16-tile Wang/Blob autotile set ({spec.tileset.tile_size}x{spec.tileset.tile_size}px per tile) "
-        "with crisp stepped stone/rune transitions, paired with a 3-layer parallax battle stage (sky_far, ruins_mid, "
-        "arena_ground) using a disciplined 14-color palette and 2.5D normal/specular/emissive maps."
+        "paired with a seamless 3-layer 256x144 parallax stage (sky_far, ruins_mid, arena_ground) and 2.5D SDF normal/specular/emissive maps."
+    )
+
+    atlas_prompt = (
+        f"[STAGE 06: MULTI-MAP EXTRUDED ATLAS & ENGINE EXPORT SPEC] Pack trimmed character clips, 8 directions, 7 paper-doll layers, "
+        "full 4-frame VFX sequences, damaged state, and 6 loot icons into synchronized Diffuse/Normal/Emissive power-of-two atlases "
+        "with 2px edge extrusion, exporting valid Godot 4 SpriteFrames (.tres), Unity 6 SpriteAtlas (.json), and Aseprite frameTags (.json)."
     )
 
     loot_prompts = [
@@ -124,52 +123,58 @@ def compile_prompt_pack(spec: ForgeProjectSpec, preferred_provider: ProviderKey 
     ]
 
     return {
-        "schemaVersion": 1,
+        "schemaVersion": 2,
         "selectedProvider": preferred_provider,
         "availableProviders": detect_available_providers(),
         "negativePrompt": negative_prompt,
         "stages": {
-            "masterStill": {
-                "title": "1. Master Still (Chế độ hibit 8×8 Majority-Vote)",
-                "prompt": master_still_prompt,
+            "stage1RawChroma": {
+                "title": "Công Đoạn 1: Ảnh AI Gốc 10 Khung & Khử Nền CIELAB",
+                "prompt": raw_chroma_prompt,
                 "constraints": [
-                    f"Canvas: {char.body_canvas[0]}×{char.body_canvas[1]}px (Pivot: {char.body_pivot[0]}, {char.body_pivot[1]})",
-                    f"Foot Baseline Lock: Y = {char.foot_baseline_y}px",
-                    f"Max shades per material: {char.max_shades_per_material} | Max palette: {char.max_palette_colors} colors",
-                    "Chroma Key BEFORE Quantize | Binary Alpha {0, 255}",
+                    f"10 tấm AI gốc (#00FF00): 7 keyframe nhân vật + Kit 2×2 + Loot 3×2 + Sàn đấu 256×144",
+                    f"Khóa bàn chân: Y = {char.foot_baseline_y}px | Tối đa {char.max_palette_colors} màu Master LUT",
+                    "Chroma Key CIELAB chạy TRƯỚC khi lượng tử hóa bảng màu | Binary Alpha {0, 255}",
                 ],
             },
-            "characterBible": {
-                "title": "2. Character Bible 23 Khung & 8 Hướng Đối Xứng",
-                "prompt": bible_prompt,
-                "constraints": [
-                    "5 hướng sinh gốc (S, SW, W, NW, N) + 3 hướng lật gương (SE, E, NE) → tiết kiệm 37,5% chi phí",
-                    "6 biểu cảm hội thoại + 3 Skin tiến hóa + 1 Chibi + biến thể -damaged lệch khung bao <= 1px",
-                ],
-            },
-            "paperdoll": {
-                "title": "3. Paper-Doll 7 Lớp & Khung Vũ Khí Quá Khổ 96×96",
+            "stage2Paperdoll": {
+                "title": "Công Đoạn 2: Paper-Doll 7 Lớp, 5 Socket & Nhuộm Greyscale",
                 "prompt": paperdoll_prompt,
                 "constraints": [
-                    "7 lớp RGBA: 00_shadow, 10_body, 20_iris, 30_outfit, 40_hair, 50_weapon (96×96), 60_fx (96×96)",
-                    "Tách riêng tròng mắt (Iris Key) và lớp cơ sở trắng xám để đổi màu runtime không lem",
+                    "7 lớp RGBA: 00_shadow, 10_body, 20_iris, 30_outfit, 40_hair (64×64), 50_weapon & 60_fx (96×96)",
+                    "4 mặt nạ Greyscale (10_body, 20_iris, 30_outfit, 40_hair) nhuộm màu runtime không lem",
                 ],
             },
-            "motion": {
-                "title": "4. Hoạt Ảnh, Khử Bò Viền (Crawl Killer) & Khóa Bàn Chân",
+            "stage3Motion": {
+                "title": "Công Đoạn 3: Hoạt Ảnh 5 Clip, Hit-Stop & VFX Kép",
                 "prompt": motion_prompt,
                 "constraints": [
-                    "Temporal Hysteresis: commit_frames = 2, max_hold = 3 (chống nhấp nháy viền)",
-                    "Region-Masked Idle: giữ nguyên 100% byte vùng thân đứng yên",
-                    "Dual-Buffer VFX: kênh color + kênh emissive_light tách biệt kèm metadata act",
+                    "5 clip chiến đấu + bản Unarmed tay không + 25 pose vũ khí xoay góc integer",
+                    "Crawl Killer (commit=2, max_hold=3), Hit-Stop & Screen-Shake + Dual-Buffer VFX (Color/Emissive)",
                 ],
             },
-            "world": {
-                "title": "5. Bản Đồ 16-Tile Wang Autotile, Parallax & 2.5D Normals",
+            "stage4Bible": {
+                "title": "Công Đoạn 4: Character Bible 23 Ô, La Bàn 8 Hướng & Gacha",
+                "prompt": bible_prompt,
+                "constraints": [
+                    "La bàn 8 hướng chuẩn không gian (S, SE, E, NW, N + lật gương SW, W, NE tiết kiệm 37,5%)",
+                    "6 biểu cảm chân dung (48×48) + 3 Skin tiến hóa (96×96) + 1 Chibi SD (64×64) + Giáp hư hại (<=1px)",
+                ],
+            },
+            "stage5World": {
+                "title": "Công Đoạn 5: Thế Giới Wang 16-Autotile, Parallax & Ánh Sáng 2.5D",
                 "prompt": world_prompt,
                 "constraints": [
-                    "16 biến thể bitmask (0..15) ghép liền mạch không vết nối",
-                    "3 lớp Parallax Battle Stage + bộ 3 bản đồ ánh sáng (_normal, _specular, _emissive)",
+                    "16 biến thể bitmask (0..15) đồng bộ trực tiếp với gridLayout của Sân Thánh Đường",
+                    "3 lớp Parallax cuộn liền mạch không hở viền đen + 3 bản đồ ánh sáng 2.5D (_normal, _specular, _emissive)",
+                ],
+            },
+            "stage6Atlas": {
+                "title": "Công Đoạn 6: Đóng Gói Multi-Map Atlas & Xuất Engine",
+                "prompt": atlas_prompt,
+                "constraints": [
+                    "Đóng gói Alpha-Trimmed + 2px Edge Extrusion trên đủ 3 kênh Diffuse / Normal / Emissive",
+                    "Xuất chuẩn Godot 4 SpriteFrames (.tres SubResource AtlasTexture), Unity 6 (.json) & Aseprite (.json)",
                 ],
             },
         },

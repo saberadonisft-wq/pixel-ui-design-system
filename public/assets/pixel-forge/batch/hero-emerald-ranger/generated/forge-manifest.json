@@ -1,0 +1,3451 @@
+{
+  "schemaVersion": 2,
+  "buildRevision": 1794127320274,
+  "assetProvenance": "ai-native",
+  "rawAiDir": "public/assets/pixel-forge/batch/hero-emerald-ranger/raw_ai",
+  "fileSlug": "emerald_ranger",
+  "rawSlotProvenance": {
+    "idle_f0": "ai-raw",
+    "idle_f1": "auto-derived",
+    "walk_f0": "auto-derived",
+    "walk_f1": "auto-derived",
+    "attack_f0": "ai-raw",
+    "attack_f1": "auto-derived",
+    "victory_f0": "auto-derived",
+    "paperdoll_kit": "ai-raw",
+    "loot_sheet": "procedural-fallback",
+    "arena_stage": "ai-raw"
+  },
+  "character": {
+    "id": "hero-emerald-ranger",
+    "name": "Xạ Thủ Cổ Mộc",
+    "title": "Người Gác Rừng Thánh",
+    "rarity": "ssr",
+    "masterStill": "hero-master-still.png",
+    "damagedStill": "hero-master-damaged.png",
+    "normalMap": "hero-master-normal.png",
+    "specularMap": "hero-master-specular.png",
+    "emissiveMap": "hero-master-emissive.png",
+    "damagedBboxDeltaPx": 0,
+    "bodyCanvas": [
+      64,
+      64
+    ],
+    "weaponCanvas": [
+      96,
+      96
+    ],
+    "footBaselineY": 88,
+    "paletteHex": [
+      "#0B0E16",
+      "#211C17",
+      "#0E242C",
+      "#3B251D",
+      "#11393A",
+      "#36362C",
+      "#553524",
+      "#21514A",
+      "#5E3E2A",
+      "#485643",
+      "#744C2F",
+      "#886440",
+      "#9D794C",
+      "#B1915E",
+      "#4DD8BE",
+      "#6BCEB3",
+      "#E3C78B",
+      "#8CF0FA"
+    ]
+  },
+  "layers": {
+    "00_shadow": "layer-00_shadow.png",
+    "10_body": "layer-10_body.png",
+    "20_iris": "layer-20_iris.png",
+    "30_outfit": "layer-30_outfit.png",
+    "40_hair": "layer-40_hair.png",
+    "50_weapon": "layer-50_weapon.png",
+    "60_fx": "layer-60_fx.png"
+  },
+  "layerSpecs": [
+    {
+      "id": "00_shadow",
+      "role": "shadow",
+      "zIndex": 0,
+      "width": 64,
+      "height": 64,
+      "offsetX": 16,
+      "offsetY": 26,
+      "pivotX": 32,
+      "pivotY": 62,
+      "tintable": false,
+      "file": "layer-00_shadow.png"
+    },
+    {
+      "id": "10_body",
+      "role": "body",
+      "zIndex": 10,
+      "width": 64,
+      "height": 64,
+      "offsetX": 16,
+      "offsetY": 26,
+      "pivotX": 32,
+      "pivotY": 62,
+      "tintable": true,
+      "file": "layer-10_body.png"
+    },
+    {
+      "id": "20_iris",
+      "role": "iris",
+      "zIndex": 20,
+      "width": 64,
+      "height": 64,
+      "offsetX": 16,
+      "offsetY": 26,
+      "pivotX": 32,
+      "pivotY": 62,
+      "tintable": true,
+      "file": "layer-20_iris.png"
+    },
+    {
+      "id": "30_outfit",
+      "role": "outfit",
+      "zIndex": 30,
+      "width": 64,
+      "height": 64,
+      "offsetX": 16,
+      "offsetY": 26,
+      "pivotX": 32,
+      "pivotY": 62,
+      "tintable": true,
+      "file": "layer-30_outfit.png"
+    },
+    {
+      "id": "40_hair",
+      "role": "hair",
+      "zIndex": 40,
+      "width": 64,
+      "height": 64,
+      "offsetX": 16,
+      "offsetY": 4,
+      "pivotX": 32,
+      "pivotY": 38,
+      "tintable": true,
+      "file": "layer-40_hair.png"
+    },
+    {
+      "id": "50_weapon",
+      "role": "weapon",
+      "zIndex": 50,
+      "width": 96,
+      "height": 96,
+      "offsetX": 0,
+      "offsetY": 0,
+      "pivotX": 48,
+      "pivotY": 88,
+      "tintable": false,
+      "file": "layer-50_weapon.png"
+    },
+    {
+      "id": "60_fx",
+      "role": "fx",
+      "zIndex": 60,
+      "width": 96,
+      "height": 96,
+      "offsetX": 0,
+      "offsetY": 0,
+      "pivotX": 48,
+      "pivotY": 88,
+      "tintable": false,
+      "file": "layer-60_fx.png"
+    }
+  ],
+  "masks": {
+    "10_body_greyscale": "mask-10_body_greyscale.png",
+    "20_iris_greyscale": "mask-20_iris_greyscale.png",
+    "30_outfit_greyscale": "mask-30_outfit_greyscale.png",
+    "40_hair_greyscale": "mask-40_hair_greyscale.png"
+  },
+  "rawThumbnails": {
+    "emerald-ranger-idle-f0": "raw-emerald-ranger-idle-f0.png",
+    "emerald-ranger-idle-f1": "raw-emerald-ranger-idle-f1.png",
+    "emerald-ranger-walk-f0": "raw-emerald-ranger-walk-f0.png",
+    "emerald-ranger-walk-f1": "raw-emerald-ranger-walk-f1.png",
+    "emerald-ranger-attack-f0": "raw-emerald-ranger-attack-f0.png",
+    "emerald-ranger-attack-f1": "raw-emerald-ranger-attack-f1.png",
+    "emerald-ranger-victory-f0": "raw-emerald-ranger-victory-f0.png",
+    "emerald-ranger-paperdoll-kit": "raw-emerald-ranger-paperdoll-kit.png",
+    "emerald-ranger-arena-stage": "raw-emerald-ranger-arena-stage.png",
+    "emerald-ranger-loot-sheet": "raw-emerald-ranger-loot-sheet.png"
+  },
+  "rawFrames": [
+    {
+      "slot": "01_idle_f0",
+      "title": "Frame 01 • Idle Guard (F0)",
+      "rawFile": "raw-emerald-ranger-idle-f0.png",
+      "cleanedFile": "clip-idle-f0.png",
+      "unarmedFile": "clip-idle-f0-unarmed.png",
+      "rawSize": [
+        96,
+        96
+      ],
+      "cleanedSize": [
+        96,
+        96
+      ],
+      "note": "Tách nền CIELAB #00FF00 + khóa chân Y=88"
+    },
+    {
+      "slot": "02_idle_f1",
+      "title": "Frame 02 • Idle Breath (F1)",
+      "rawFile": "raw-emerald-ranger-idle-f1.png",
+      "cleanedFile": "clip-idle-f2.png",
+      "unarmedFile": "clip-idle-f2-unarmed.png",
+      "rawSize": [
+        96,
+        96
+      ],
+      "cleanedSize": [
+        96,
+        96
+      ],
+      "note": "Region-Masked Breathing (ngực & áo choàng)"
+    },
+    {
+      "slot": "03_walk_f0",
+      "title": "Frame 03 • Walk Stride Left (F0)",
+      "rawFile": "raw-emerald-ranger-walk-f0.png",
+      "cleanedFile": "clip-walk-f0.png",
+      "unarmedFile": "clip-walk-f0-unarmed.png",
+      "rawSize": [
+        96,
+        96
+      ],
+      "cleanedSize": [
+        96,
+        96
+      ],
+      "note": "Sải chân trái + ổn định trọng tâm Alpha"
+    },
+    {
+      "slot": "04_walk_f1",
+      "title": "Frame 04 • Walk Stride Right (F1)",
+      "rawFile": "raw-emerald-ranger-walk-f1.png",
+      "cleanedFile": "clip-walk-f2.png",
+      "unarmedFile": "clip-walk-f2-unarmed.png",
+      "rawSize": [
+        96,
+        96
+      ],
+      "cleanedSize": [
+        96,
+        96
+      ],
+      "note": "Sải chân phải + Temporal Hysteresis"
+    },
+    {
+      "slot": "05_attack_f0",
+      "title": "Frame 05 • Attack Windup (F0)",
+      "rawFile": "raw-emerald-ranger-attack-f0.png",
+      "cleanedFile": "clip-attack-f1.png",
+      "unarmedFile": "clip-attack-f1-unarmed.png",
+      "rawSize": [
+        96,
+        96
+      ],
+      "cleanedSize": [
+        96,
+        96
+      ],
+      "note": "Vung vũ khí đỉnh đầu + bản Unarmed tay không"
+    },
+    {
+      "slot": "06_attack_f1",
+      "title": "Frame 06 • Attack Cleave (F1)",
+      "rawFile": "raw-emerald-ranger-attack-f1.png",
+      "cleanedFile": "clip-attack-f2.png",
+      "unarmedFile": "clip-attack-f2-unarmed.png",
+      "rawSize": [
+        96,
+        96
+      ],
+      "cleanedSize": [
+        96,
+        96
+      ],
+      "note": "Trảm 96×96 không cắt mũi vũ khí + Hit-Stop 80ms"
+    },
+    {
+      "slot": "07_victory_f0",
+      "title": "Frame 07 • Victory Skyward",
+      "rawFile": "raw-emerald-ranger-victory-f0.png",
+      "cleanedFile": "clip-victory-f2.png",
+      "unarmedFile": "clip-victory-f2-unarmed.png",
+      "rawSize": [
+        96,
+        96
+      ],
+      "cleanedSize": [
+        96,
+        96
+      ],
+      "note": "Tư thế khải hoàn + hào quang nguyên tố"
+    },
+    {
+      "slot": "08_paperdoll_kit",
+      "title": "Frame 08 • Modular Paper-Doll 2×2 Kit",
+      "rawFile": "raw-emerald-ranger-paperdoll-kit.png",
+      "cleanedFile": "layer-10_body.png",
+      "rawSize": [
+        96,
+        96
+      ],
+      "cleanedSize": [
+        64,
+        64
+      ],
+      "note": "Bóc tách 4 góc: Thân 64×64, Mũ/Tóc, Tay phụ & Vũ khí"
+    },
+    {
+      "slot": "09_loot_sheet",
+      "title": "Frame 09 • 3×2 RPG Loot & Relic Sheet",
+      "rawFile": "raw-emerald-ranger-loot-sheet.png",
+      "cleanedFile": "loot-sunblade-ur.png",
+      "rawSize": [
+        96,
+        64
+      ],
+      "cleanedSize": [
+        32,
+        32
+      ],
+      "note": "Cắt 6 ô vật phẩm 32×32 + đổi bảng màu hệ tướng"
+    },
+    {
+      "slot": "10_arena_stage",
+      "title": "Frame 10 • HD-2D Biome Battle Arena",
+      "rawFile": "raw-emerald-ranger-arena-stage.png",
+      "cleanedFile": "parallax-stage-composite.png",
+      "rawSize": [
+        128,
+        72
+      ],
+      "cleanedSize": [
+        256,
+        144
+      ],
+      "note": "Tách 3 lớp Parallax 256×144 theo nguyên tố tướng"
+    }
+  ],
+  "weaponArsenal": [
+    {
+      "id": "greatsword",
+      "name": "Đại Cung Cổ Mộc",
+      "rarity": "EPIC",
+      "layerFile": "layer-50_weapon-greatsword.png"
+    },
+    {
+      "id": "sunblade",
+      "name": "Thái Dương Thần Kiếm",
+      "rarity": "UR",
+      "layerFile": "layer-50_weapon-sunblade.png"
+    },
+    {
+      "id": "staff",
+      "name": "Quyền Trượng Tinh Hà",
+      "rarity": "SSR",
+      "layerFile": "layer-50_weapon-staff.png"
+    },
+    {
+      "id": "crimson-blade",
+      "name": "Huyết Long Đại Kiếm",
+      "rarity": "UR",
+      "layerFile": "layer-50_weapon-crimson-blade.png"
+    },
+    {
+      "id": "frost-blade",
+      "name": "Băng Tinh Chiến Kiếm",
+      "rarity": "SSR",
+      "layerFile": "layer-50_weapon-frost-blade.png"
+    }
+  ],
+  "weaponPoses": {
+    "greatsword": {
+      "ready": "weapon-greatsword-pose-ready.png",
+      "windup": "weapon-greatsword-pose-windup.png",
+      "cleave": "weapon-greatsword-pose-cleave.png",
+      "guard": "weapon-greatsword-pose-guard.png",
+      "victory": "weapon-greatsword-pose-victory.png"
+    },
+    "sunblade": {
+      "ready": "weapon-sunblade-pose-ready.png",
+      "windup": "weapon-sunblade-pose-windup.png",
+      "cleave": "weapon-sunblade-pose-cleave.png",
+      "guard": "weapon-sunblade-pose-guard.png",
+      "victory": "weapon-sunblade-pose-victory.png"
+    },
+    "staff": {
+      "ready": "weapon-staff-pose-ready.png",
+      "windup": "weapon-staff-pose-windup.png",
+      "cleave": "weapon-staff-pose-cleave.png",
+      "guard": "weapon-staff-pose-guard.png",
+      "victory": "weapon-staff-pose-victory.png"
+    },
+    "crimson-blade": {
+      "ready": "weapon-crimson-blade-pose-ready.png",
+      "windup": "weapon-crimson-blade-pose-windup.png",
+      "cleave": "weapon-crimson-blade-pose-cleave.png",
+      "guard": "weapon-crimson-blade-pose-guard.png",
+      "victory": "weapon-crimson-blade-pose-victory.png"
+    },
+    "frost-blade": {
+      "ready": "weapon-frost-blade-pose-ready.png",
+      "windup": "weapon-frost-blade-pose-windup.png",
+      "cleave": "weapon-frost-blade-pose-cleave.png",
+      "guard": "weapon-frost-blade-pose-guard.png",
+      "victory": "weapon-frost-blade-pose-victory.png"
+    }
+  },
+  "sockets": [
+    {
+      "id": "hand_r",
+      "x": 63,
+      "y": 57,
+      "angleDeg": 35,
+      "zOrder": 50,
+      "visible": true,
+      "poseTag": "ready"
+    },
+    {
+      "id": "hand_l",
+      "x": 34,
+      "y": 58,
+      "angleDeg": 0,
+      "zOrder": 35,
+      "visible": true,
+      "poseTag": "ready"
+    },
+    {
+      "id": "head",
+      "x": 48,
+      "y": 31,
+      "angleDeg": 0,
+      "zOrder": 45,
+      "visible": true,
+      "poseTag": "ready"
+    },
+    {
+      "id": "back",
+      "x": 48,
+      "y": 52,
+      "angleDeg": 0,
+      "zOrder": 25,
+      "visible": true,
+      "poseTag": "ready"
+    },
+    {
+      "id": "muzzle",
+      "x": 81,
+      "y": 31,
+      "angleDeg": 35,
+      "zOrder": 60,
+      "visible": true,
+      "poseTag": "ready"
+    }
+  ],
+  "elements": {
+    "emerald": {
+      "label": "Hệ Cổ Mộc (Verdant Rune)",
+      "file": "hero-element-emerald.png"
+    },
+    "solar": {
+      "label": "Hệ Thái Dương (Solar Gold)",
+      "file": "hero-element-solar.png"
+    },
+    "fire": {
+      "label": "Hệ Hỏa Viêm (Crimson Flame)",
+      "file": "hero-element-fire.png"
+    },
+    "ice": {
+      "label": "Hệ Băng Tuyết (Glacial Frost)",
+      "file": "hero-element-ice.png"
+    },
+    "shadow": {
+      "label": "Hệ Hư Không (Void Eclipse)",
+      "file": "hero-element-shadow.png"
+    }
+  },
+  "directions": {
+    "S": "hero-dir-S.png",
+    "SE": "hero-dir-SE.png",
+    "E": "hero-dir-E.png",
+    "NE": "hero-dir-NE.png",
+    "N": "hero-dir-N.png",
+    "NW": "hero-dir-NW.png",
+    "W": "hero-dir-W.png",
+    "SW": "hero-dir-SW.png"
+  },
+  "directionMeta": {
+    "S": {
+      "source": "ai-source",
+      "label": "Nam (Chính diện S)",
+      "mirrorOf": null
+    },
+    "SE": {
+      "source": "ai-source",
+      "label": "Đông Nam (Chéo phải SE)",
+      "mirrorOf": null
+    },
+    "E": {
+      "source": "ai-source",
+      "label": "Đông (Nghiêng phải E)",
+      "mirrorOf": null
+    },
+    "NE": {
+      "source": "mirror-flip",
+      "label": "Đông Bắc (Lưng phải NE)",
+      "mirrorOf": "NW"
+    },
+    "N": {
+      "source": "dorsal-pixel",
+      "label": "Bắc (Sau lưng N)",
+      "mirrorOf": null
+    },
+    "NW": {
+      "source": "dorsal-pixel",
+      "label": "Tây Bắc (Lưng trái NW)",
+      "mirrorOf": null
+    },
+    "W": {
+      "source": "mirror-flip",
+      "label": "Tây (Nghiêng trái W)",
+      "mirrorOf": "E"
+    },
+    "SW": {
+      "source": "mirror-flip",
+      "label": "Tây Nam (Chéo trái SW)",
+      "mirrorOf": "SE"
+    }
+  },
+  "characterBible": {
+    "totalPanels": 23,
+    "expressions": [
+      {
+        "id": "neutral",
+        "label": "Điềm Tĩnh (Neutral)",
+        "file": "bible-expr-neutral.png",
+        "size": 48
+      },
+      {
+        "id": "determined",
+        "label": "Quyết Chiến (Determined)",
+        "file": "bible-expr-determined.png",
+        "size": 48
+      },
+      {
+        "id": "victory",
+        "label": "Khải Hoàn (Victory)",
+        "file": "bible-expr-victory.png",
+        "size": 48
+      },
+      {
+        "id": "hurt",
+        "label": "Chịu Đòn (Battle Scar)",
+        "file": "bible-expr-hurt.png",
+        "size": 48
+      },
+      {
+        "id": "arcane-trance",
+        "label": "Thức Tỉnh Pháp Ấn (Arcane)",
+        "file": "bible-expr-arcane-trance.png",
+        "size": 48
+      },
+      {
+        "id": "command",
+        "label": "Hiệu Lệnh Quân Đoàn (Command)",
+        "file": "bible-expr-command.png",
+        "size": 48
+      }
+    ],
+    "skins": [
+      {
+        "id": "vanguard-armor",
+        "label": "Giáp Tiên Phong (Tier I)",
+        "file": "bible-skin-vanguard-armor.png",
+        "size": 96
+      },
+      {
+        "id": "astral-robe",
+        "label": "Thánh Y Tinh Hà (Tier II)",
+        "file": "bible-skin-astral-robe.png",
+        "size": 96
+      },
+      {
+        "id": "crimson-awakened",
+        "label": "Huyết Thần Thức Tỉnh (UR)",
+        "file": "bible-skin-crimson-awakened.png",
+        "size": 96
+      }
+    ],
+    "chibi": {
+      "file": "hero-chibi.png",
+      "size": 64,
+      "label": "Chibi SD 2-Đầu (64×64)"
+    }
+  },
+  "clips": {
+    "idle": {
+      "label": "Đứng nghỉ (Breathing & Cape Mask)",
+      "strip": "clip-idle-strip.png",
+      "frames": [
+        "clip-idle-f0.png",
+        "clip-idle-f1.png",
+        "clip-idle-f2.png",
+        "clip-idle-f3.png"
+      ],
+      "unarmedFrames": [
+        "clip-idle-f0-unarmed.png",
+        "clip-idle-f1-unarmed.png",
+        "clip-idle-f2-unarmed.png",
+        "clip-idle-f3-unarmed.png"
+      ],
+      "framePoseTags": [
+        "ready",
+        "ready",
+        "ready",
+        "ready"
+      ],
+      "fps": 6,
+      "loop": true,
+      "regionMasked": true,
+      "crawlPixelsSuppressed": 0,
+      "timing": {
+        "windupFrames": 0,
+        "hitFrame": 0,
+        "recoveryFrames": 0,
+        "hitStopMs": 0,
+        "screenShakePx": 0
+      }
+    },
+    "walk": {
+      "label": "Hành quân (Gait Foot-Lock)",
+      "strip": "clip-walk-strip.png",
+      "frames": [
+        "clip-walk-f0.png",
+        "clip-walk-f1.png",
+        "clip-walk-f2.png",
+        "clip-walk-f3.png"
+      ],
+      "unarmedFrames": [
+        "clip-walk-f0-unarmed.png",
+        "clip-walk-f1-unarmed.png",
+        "clip-walk-f2-unarmed.png",
+        "clip-walk-f3-unarmed.png"
+      ],
+      "framePoseTags": [
+        "ready",
+        "ready",
+        "ready",
+        "ready"
+      ],
+      "fps": 8,
+      "loop": true,
+      "regionMasked": false,
+      "crawlPixelsSuppressed": 216,
+      "timing": {
+        "windupFrames": 0,
+        "hitFrame": 2,
+        "recoveryFrames": 0,
+        "hitStopMs": 0,
+        "screenShakePx": 0
+      }
+    },
+    "attack": {
+      "label": "Trảm Thái Dương (Oversize 96px Slash)",
+      "strip": "clip-attack-strip.png",
+      "frames": [
+        "clip-attack-f0.png",
+        "clip-attack-f1.png",
+        "clip-attack-f2.png",
+        "clip-attack-f3.png"
+      ],
+      "unarmedFrames": [
+        "clip-attack-f0-unarmed.png",
+        "clip-attack-f1-unarmed.png",
+        "clip-attack-f2-unarmed.png",
+        "clip-attack-f3-unarmed.png"
+      ],
+      "framePoseTags": [
+        "ready",
+        "windup",
+        "cleave",
+        "ready"
+      ],
+      "fps": 10,
+      "loop": false,
+      "regionMasked": false,
+      "crawlPixelsSuppressed": 20,
+      "timing": {
+        "windupFrames": 1,
+        "hitFrame": 2,
+        "recoveryFrames": 1,
+        "hitStopMs": 80,
+        "screenShakePx": 4
+      }
+    },
+    "hurt": {
+      "label": "Đỡ Khiên Chịu Đòn (Guard Recoil)",
+      "strip": "clip-hurt-strip.png",
+      "frames": [
+        "clip-hurt-f0.png",
+        "clip-hurt-f1.png"
+      ],
+      "unarmedFrames": [
+        "clip-hurt-f0-unarmed.png",
+        "clip-hurt-f1-unarmed.png"
+      ],
+      "framePoseTags": [
+        "ready",
+        "guard"
+      ],
+      "fps": 6,
+      "loop": false,
+      "regionMasked": false,
+      "crawlPixelsSuppressed": 0,
+      "timing": {
+        "windupFrames": 0,
+        "hitFrame": 1,
+        "recoveryFrames": 1,
+        "hitStopMs": 64,
+        "screenShakePx": 4
+      }
+    },
+    "victory": {
+      "label": "Chiến thắng (Skyward Banner Pose)",
+      "strip": "clip-victory-strip.png",
+      "frames": [
+        "clip-victory-f0.png",
+        "clip-victory-f1.png",
+        "clip-victory-f2.png",
+        "clip-victory-f3.png"
+      ],
+      "unarmedFrames": [
+        "clip-victory-f0-unarmed.png",
+        "clip-victory-f1-unarmed.png",
+        "clip-victory-f2-unarmed.png",
+        "clip-victory-f3-unarmed.png"
+      ],
+      "framePoseTags": [
+        "ready",
+        "victory",
+        "victory",
+        "victory"
+      ],
+      "fps": 8,
+      "loop": true,
+      "regionMasked": true,
+      "crawlPixelsSuppressed": 72,
+      "timing": {
+        "windupFrames": 1,
+        "hitFrame": 2,
+        "recoveryFrames": 1,
+        "hitStopMs": 0,
+        "screenShakePx": 0
+      }
+    }
+  },
+  "vfx": {
+    "vfx-gacha-summon-ssr": {
+      "name": "Nghi Thức Triệu Hồi SSR (Summon Ritual)",
+      "category": "summon-ritual",
+      "colorStrip": "vfx-gacha-summon-ssr-color-strip.png",
+      "emissiveStrip": "vfx-gacha-summon-ssr-emissive-strip.png",
+      "compositeStrip": "vfx-gacha-summon-ssr-composite-strip.png",
+      "frames": [
+        "vfx-gacha-summon-ssr-f0.png",
+        "vfx-gacha-summon-ssr-f1.png",
+        "vfx-gacha-summon-ssr-f2.png",
+        "vfx-gacha-summon-ssr-f3.png"
+      ],
+      "fps": 8,
+      "craftChecksPassed": 22
+    },
+    "vfx-solar-slash": {
+      "name": "Kiếm Khí Thái Dương (Dual-Buffer Slash)",
+      "category": "elemental-slash",
+      "colorStrip": "vfx-solar-slash-color-strip.png",
+      "emissiveStrip": "vfx-solar-slash-emissive-strip.png",
+      "compositeStrip": "vfx-solar-slash-composite-strip.png",
+      "frames": [
+        "vfx-solar-slash-f0.png",
+        "vfx-solar-slash-f1.png",
+        "vfx-solar-slash-f2.png",
+        "vfx-solar-slash-f3.png"
+      ],
+      "fps": 12,
+      "craftChecksPassed": 22
+    }
+  },
+  "loot": [
+    {
+      "id": "loot-sunblade-ur",
+      "name": "Thái Dương Thần Kiếm",
+      "category": "sword",
+      "rarity": "ur",
+      "material": "solar-prismatic",
+      "size": 32,
+      "file": "loot-sunblade-ur.png"
+    },
+    {
+      "id": "loot-aether-staff-ssr",
+      "name": "Quyền Trượng Tinh Hà",
+      "category": "staff",
+      "rarity": "ssr",
+      "material": "arcane-gold",
+      "size": 32,
+      "file": "loot-aether-staff-ssr.png"
+    },
+    {
+      "id": "loot-fortress-shield-epic",
+      "name": "Khiên Chữ Thập Hiệp Sĩ",
+      "category": "shield",
+      "rarity": "epic",
+      "material": "amethyst-steel",
+      "size": 32,
+      "file": "loot-fortress-shield-epic.png"
+    },
+    {
+      "id": "loot-elixir-rare",
+      "name": "Huyết Dược Tinh Khiết",
+      "category": "potion",
+      "rarity": "rare",
+      "material": "sapphire-glass",
+      "size": 32,
+      "file": "loot-elixir-rare.png"
+    },
+    {
+      "id": "loot-relic-chest-ssr",
+      "name": "Rương Thánh Tích SSR",
+      "category": "chest",
+      "rarity": "ssr",
+      "material": "royal-gold",
+      "size": 32,
+      "file": "loot-relic-chest-ssr.png"
+    },
+    {
+      "id": "loot-core-sigil-common",
+      "name": "Ấn Ký Hiệp Sĩ",
+      "category": "relic",
+      "rarity": "common",
+      "material": "bronze-iron",
+      "size": 32,
+      "file": "loot-core-sigil-common.png"
+    }
+  ],
+  "world": {
+    "tilesetId": "autotile-obsidian-sanctum",
+    "tilesetName": "Thánh Điện Hắc Diện (16-Tile Wang Autotile)",
+    "biomeElement": "emerald",
+    "stageWidth": 256,
+    "stageHeight": 144,
+    "autotileSheet": "autotile-16-sheet.png",
+    "mapPreview": "autotile-map-preview.png",
+    "gridLayout": [
+      [
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "parallaxSky": "parallax-sky-far.png",
+    "parallaxRuins": "parallax-ruins-mid.png",
+    "parallaxArena": "parallax-arena-ground.png",
+    "parallaxComposite": "parallax-stage-composite.png",
+    "tileMeta": [
+      {
+        "mask": 0,
+        "binary": "0000",
+        "neighbors": {
+          "N": false,
+          "E": false,
+          "S": false,
+          "W": false
+        },
+        "sheetX": 0,
+        "sheetY": 0
+      },
+      {
+        "mask": 1,
+        "binary": "0001",
+        "neighbors": {
+          "N": true,
+          "E": false,
+          "S": false,
+          "W": false
+        },
+        "sheetX": 16,
+        "sheetY": 0
+      },
+      {
+        "mask": 2,
+        "binary": "0010",
+        "neighbors": {
+          "N": false,
+          "E": true,
+          "S": false,
+          "W": false
+        },
+        "sheetX": 32,
+        "sheetY": 0
+      },
+      {
+        "mask": 3,
+        "binary": "0011",
+        "neighbors": {
+          "N": true,
+          "E": true,
+          "S": false,
+          "W": false
+        },
+        "sheetX": 48,
+        "sheetY": 0
+      },
+      {
+        "mask": 4,
+        "binary": "0100",
+        "neighbors": {
+          "N": false,
+          "E": false,
+          "S": true,
+          "W": false
+        },
+        "sheetX": 0,
+        "sheetY": 16
+      },
+      {
+        "mask": 5,
+        "binary": "0101",
+        "neighbors": {
+          "N": true,
+          "E": false,
+          "S": true,
+          "W": false
+        },
+        "sheetX": 16,
+        "sheetY": 16
+      },
+      {
+        "mask": 6,
+        "binary": "0110",
+        "neighbors": {
+          "N": false,
+          "E": true,
+          "S": true,
+          "W": false
+        },
+        "sheetX": 32,
+        "sheetY": 16
+      },
+      {
+        "mask": 7,
+        "binary": "0111",
+        "neighbors": {
+          "N": true,
+          "E": true,
+          "S": true,
+          "W": false
+        },
+        "sheetX": 48,
+        "sheetY": 16
+      },
+      {
+        "mask": 8,
+        "binary": "1000",
+        "neighbors": {
+          "N": false,
+          "E": false,
+          "S": false,
+          "W": true
+        },
+        "sheetX": 0,
+        "sheetY": 32
+      },
+      {
+        "mask": 9,
+        "binary": "1001",
+        "neighbors": {
+          "N": true,
+          "E": false,
+          "S": false,
+          "W": true
+        },
+        "sheetX": 16,
+        "sheetY": 32
+      },
+      {
+        "mask": 10,
+        "binary": "1010",
+        "neighbors": {
+          "N": false,
+          "E": true,
+          "S": false,
+          "W": true
+        },
+        "sheetX": 32,
+        "sheetY": 32
+      },
+      {
+        "mask": 11,
+        "binary": "1011",
+        "neighbors": {
+          "N": true,
+          "E": true,
+          "S": false,
+          "W": true
+        },
+        "sheetX": 48,
+        "sheetY": 32
+      },
+      {
+        "mask": 12,
+        "binary": "1100",
+        "neighbors": {
+          "N": false,
+          "E": false,
+          "S": true,
+          "W": true
+        },
+        "sheetX": 0,
+        "sheetY": 48
+      },
+      {
+        "mask": 13,
+        "binary": "1101",
+        "neighbors": {
+          "N": true,
+          "E": false,
+          "S": true,
+          "W": true
+        },
+        "sheetX": 16,
+        "sheetY": 48
+      },
+      {
+        "mask": 14,
+        "binary": "1110",
+        "neighbors": {
+          "N": false,
+          "E": true,
+          "S": true,
+          "W": true
+        },
+        "sheetX": 32,
+        "sheetY": 48
+      },
+      {
+        "mask": 15,
+        "binary": "1111",
+        "neighbors": {
+          "N": true,
+          "E": true,
+          "S": true,
+          "W": true
+        },
+        "sheetX": 48,
+        "sheetY": 48
+      }
+    ]
+  },
+  "atlas": {
+    "diffuse": "forge-atlas-diffuse.png",
+    "normal": "forge-atlas-normal.png",
+    "emissive": "forge-atlas-emissive.png",
+    "width": 512,
+    "height": 512,
+    "extrudePx": 2,
+    "frameCount": 48,
+    "deduplicatedFrames": 5,
+    "exports": {
+      "aseprite": "forge-atlas.aseprite.json",
+      "unity": "forge-atlas.unity.json",
+      "godot": "forge-sprites.godot.tres"
+    },
+    "bundleZip": "forge-engine-bundle.zip",
+    "bundleZipBytes": 479481,
+    "frames": [
+      {
+        "id": "hero-emerald-ranger_idle_0",
+        "category": "character",
+        "clipId": "idle",
+        "durationMs": 167,
+        "deduplicated": false,
+        "frame": {
+          "x": 6,
+          "y": 6,
+          "w": 64,
+          "h": 84
+        },
+        "trimmedSourceSize": {
+          "x": 23,
+          "y": 5,
+          "w": 64,
+          "h": 84
+        },
+        "sourceSize": {
+          "w": 96,
+          "h": 96
+        },
+        "pivot": {
+          "x": 48,
+          "y": 88
+        },
+        "sockets": [
+          {
+            "id": "hand_r",
+            "x": 63,
+            "y": 57,
+            "angleDeg": 35,
+            "zOrder": 50,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "hand_l",
+            "x": 34,
+            "y": 58,
+            "angleDeg": 0,
+            "zOrder": 35,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "head",
+            "x": 48,
+            "y": 31,
+            "angleDeg": 0,
+            "zOrder": 45,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "back",
+            "x": 48,
+            "y": 52,
+            "angleDeg": 0,
+            "zOrder": 25,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "muzzle",
+            "x": 81,
+            "y": 31,
+            "angleDeg": 35,
+            "zOrder": 60,
+            "visible": true,
+            "poseTag": "ready"
+          }
+        ]
+      },
+      {
+        "id": "hero-emerald-ranger_idle_1",
+        "category": "character",
+        "clipId": "idle",
+        "durationMs": 167,
+        "deduplicated": false,
+        "frame": {
+          "x": 78,
+          "y": 6,
+          "w": 63,
+          "h": 84
+        },
+        "trimmedSourceSize": {
+          "x": 24,
+          "y": 5,
+          "w": 63,
+          "h": 84
+        },
+        "sourceSize": {
+          "w": 96,
+          "h": 96
+        },
+        "pivot": {
+          "x": 48,
+          "y": 88
+        },
+        "sockets": [
+          {
+            "id": "hand_r",
+            "x": 63,
+            "y": 57,
+            "angleDeg": 35,
+            "zOrder": 50,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "hand_l",
+            "x": 34,
+            "y": 58,
+            "angleDeg": 0,
+            "zOrder": 35,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "head",
+            "x": 48,
+            "y": 31,
+            "angleDeg": 0,
+            "zOrder": 45,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "back",
+            "x": 48,
+            "y": 52,
+            "angleDeg": 0,
+            "zOrder": 25,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "muzzle",
+            "x": 81,
+            "y": 31,
+            "angleDeg": 35,
+            "zOrder": 60,
+            "visible": true,
+            "poseTag": "ready"
+          }
+        ]
+      },
+      {
+        "id": "hero-emerald-ranger_idle_2",
+        "category": "character",
+        "clipId": "idle",
+        "durationMs": 167,
+        "deduplicated": false,
+        "frame": {
+          "x": 149,
+          "y": 6,
+          "w": 64,
+          "h": 84
+        },
+        "trimmedSourceSize": {
+          "x": 23,
+          "y": 5,
+          "w": 64,
+          "h": 84
+        },
+        "sourceSize": {
+          "w": 96,
+          "h": 96
+        },
+        "pivot": {
+          "x": 48,
+          "y": 88
+        },
+        "sockets": [
+          {
+            "id": "hand_r",
+            "x": 63,
+            "y": 57,
+            "angleDeg": 35,
+            "zOrder": 50,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "hand_l",
+            "x": 34,
+            "y": 58,
+            "angleDeg": 0,
+            "zOrder": 35,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "head",
+            "x": 48,
+            "y": 31,
+            "angleDeg": 0,
+            "zOrder": 45,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "back",
+            "x": 48,
+            "y": 52,
+            "angleDeg": 0,
+            "zOrder": 25,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "muzzle",
+            "x": 81,
+            "y": 31,
+            "angleDeg": 35,
+            "zOrder": 60,
+            "visible": true,
+            "poseTag": "ready"
+          }
+        ]
+      },
+      {
+        "id": "hero-emerald-ranger_idle_3",
+        "category": "character",
+        "clipId": "idle",
+        "durationMs": 167,
+        "deduplicated": false,
+        "frame": {
+          "x": 221,
+          "y": 6,
+          "w": 65,
+          "h": 84
+        },
+        "trimmedSourceSize": {
+          "x": 22,
+          "y": 5,
+          "w": 65,
+          "h": 84
+        },
+        "sourceSize": {
+          "w": 96,
+          "h": 96
+        },
+        "pivot": {
+          "x": 48,
+          "y": 88
+        },
+        "sockets": [
+          {
+            "id": "hand_r",
+            "x": 63,
+            "y": 57,
+            "angleDeg": 35,
+            "zOrder": 50,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "hand_l",
+            "x": 34,
+            "y": 58,
+            "angleDeg": 0,
+            "zOrder": 35,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "head",
+            "x": 48,
+            "y": 31,
+            "angleDeg": 0,
+            "zOrder": 45,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "back",
+            "x": 48,
+            "y": 52,
+            "angleDeg": 0,
+            "zOrder": 25,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "muzzle",
+            "x": 81,
+            "y": 31,
+            "angleDeg": 35,
+            "zOrder": 60,
+            "visible": true,
+            "poseTag": "ready"
+          }
+        ]
+      },
+      {
+        "id": "hero-emerald-ranger_walk_0",
+        "category": "character",
+        "clipId": "walk",
+        "durationMs": 125,
+        "deduplicated": false,
+        "frame": {
+          "x": 294,
+          "y": 6,
+          "w": 67,
+          "h": 84
+        },
+        "trimmedSourceSize": {
+          "x": 21,
+          "y": 5,
+          "w": 67,
+          "h": 84
+        },
+        "sourceSize": {
+          "w": 96,
+          "h": 96
+        },
+        "pivot": {
+          "x": 48,
+          "y": 88
+        },
+        "sockets": [
+          {
+            "id": "hand_r",
+            "x": 63,
+            "y": 57,
+            "angleDeg": 35,
+            "zOrder": 50,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "hand_l",
+            "x": 34,
+            "y": 58,
+            "angleDeg": 0,
+            "zOrder": 35,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "head",
+            "x": 48,
+            "y": 31,
+            "angleDeg": 0,
+            "zOrder": 45,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "back",
+            "x": 48,
+            "y": 52,
+            "angleDeg": 0,
+            "zOrder": 25,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "muzzle",
+            "x": 81,
+            "y": 31,
+            "angleDeg": 35,
+            "zOrder": 60,
+            "visible": true,
+            "poseTag": "ready"
+          }
+        ]
+      },
+      {
+        "id": "hero-emerald-ranger_walk_1",
+        "category": "character",
+        "clipId": "walk",
+        "durationMs": 125,
+        "deduplicated": false,
+        "frame": {
+          "x": 369,
+          "y": 6,
+          "w": 68,
+          "h": 85
+        },
+        "trimmedSourceSize": {
+          "x": 20,
+          "y": 4,
+          "w": 68,
+          "h": 85
+        },
+        "sourceSize": {
+          "w": 96,
+          "h": 96
+        },
+        "pivot": {
+          "x": 48,
+          "y": 88
+        },
+        "sockets": [
+          {
+            "id": "hand_r",
+            "x": 63,
+            "y": 57,
+            "angleDeg": 35,
+            "zOrder": 50,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "hand_l",
+            "x": 34,
+            "y": 58,
+            "angleDeg": 0,
+            "zOrder": 35,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "head",
+            "x": 48,
+            "y": 31,
+            "angleDeg": 0,
+            "zOrder": 45,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "back",
+            "x": 48,
+            "y": 52,
+            "angleDeg": 0,
+            "zOrder": 25,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "muzzle",
+            "x": 81,
+            "y": 31,
+            "angleDeg": 35,
+            "zOrder": 60,
+            "visible": true,
+            "poseTag": "ready"
+          }
+        ]
+      },
+      {
+        "id": "hero-emerald-ranger_walk_2",
+        "category": "character",
+        "clipId": "walk",
+        "durationMs": 125,
+        "deduplicated": false,
+        "frame": {
+          "x": 6,
+          "y": 99,
+          "w": 62,
+          "h": 85
+        },
+        "trimmedSourceSize": {
+          "x": 26,
+          "y": 4,
+          "w": 62,
+          "h": 85
+        },
+        "sourceSize": {
+          "w": 96,
+          "h": 96
+        },
+        "pivot": {
+          "x": 48,
+          "y": 88
+        },
+        "sockets": [
+          {
+            "id": "hand_r",
+            "x": 63,
+            "y": 57,
+            "angleDeg": 35,
+            "zOrder": 50,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "hand_l",
+            "x": 34,
+            "y": 58,
+            "angleDeg": 0,
+            "zOrder": 35,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "head",
+            "x": 48,
+            "y": 31,
+            "angleDeg": 0,
+            "zOrder": 45,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "back",
+            "x": 48,
+            "y": 52,
+            "angleDeg": 0,
+            "zOrder": 25,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "muzzle",
+            "x": 81,
+            "y": 31,
+            "angleDeg": 35,
+            "zOrder": 60,
+            "visible": true,
+            "poseTag": "ready"
+          }
+        ]
+      },
+      {
+        "id": "hero-emerald-ranger_walk_3",
+        "category": "character",
+        "clipId": "walk",
+        "durationMs": 125,
+        "deduplicated": false,
+        "frame": {
+          "x": 76,
+          "y": 99,
+          "w": 61,
+          "h": 85
+        },
+        "trimmedSourceSize": {
+          "x": 26,
+          "y": 4,
+          "w": 61,
+          "h": 85
+        },
+        "sourceSize": {
+          "w": 96,
+          "h": 96
+        },
+        "pivot": {
+          "x": 48,
+          "y": 88
+        },
+        "sockets": [
+          {
+            "id": "hand_r",
+            "x": 63,
+            "y": 57,
+            "angleDeg": 35,
+            "zOrder": 50,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "hand_l",
+            "x": 34,
+            "y": 58,
+            "angleDeg": 0,
+            "zOrder": 35,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "head",
+            "x": 48,
+            "y": 31,
+            "angleDeg": 0,
+            "zOrder": 45,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "back",
+            "x": 48,
+            "y": 52,
+            "angleDeg": 0,
+            "zOrder": 25,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "muzzle",
+            "x": 81,
+            "y": 31,
+            "angleDeg": 35,
+            "zOrder": 60,
+            "visible": true,
+            "poseTag": "ready"
+          }
+        ]
+      },
+      {
+        "id": "hero-emerald-ranger_attack_0",
+        "category": "character",
+        "clipId": "attack",
+        "durationMs": 100,
+        "deduplicated": false,
+        "frame": {
+          "x": 145,
+          "y": 99,
+          "w": 64,
+          "h": 82
+        },
+        "trimmedSourceSize": {
+          "x": 23,
+          "y": 7,
+          "w": 64,
+          "h": 82
+        },
+        "sourceSize": {
+          "w": 96,
+          "h": 96
+        },
+        "pivot": {
+          "x": 48,
+          "y": 88
+        },
+        "sockets": [
+          {
+            "id": "hand_r",
+            "x": 63,
+            "y": 57,
+            "angleDeg": 35,
+            "zOrder": 50,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "hand_l",
+            "x": 34,
+            "y": 58,
+            "angleDeg": 0,
+            "zOrder": 35,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "head",
+            "x": 48,
+            "y": 31,
+            "angleDeg": 0,
+            "zOrder": 45,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "back",
+            "x": 48,
+            "y": 52,
+            "angleDeg": 0,
+            "zOrder": 25,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "muzzle",
+            "x": 81,
+            "y": 31,
+            "angleDeg": 35,
+            "zOrder": 60,
+            "visible": true,
+            "poseTag": "ready"
+          }
+        ]
+      },
+      {
+        "id": "hero-emerald-ranger_attack_1",
+        "category": "character",
+        "clipId": "attack",
+        "durationMs": 100,
+        "deduplicated": false,
+        "frame": {
+          "x": 217,
+          "y": 99,
+          "w": 81,
+          "h": 84
+        },
+        "trimmedSourceSize": {
+          "x": 10,
+          "y": 5,
+          "w": 81,
+          "h": 84
+        },
+        "sourceSize": {
+          "w": 96,
+          "h": 96
+        },
+        "pivot": {
+          "x": 48,
+          "y": 88
+        },
+        "sockets": [
+          {
+            "id": "hand_r",
+            "x": 34,
+            "y": 24,
+            "angleDeg": -55,
+            "zOrder": 50,
+            "visible": true,
+            "poseTag": "windup"
+          },
+          {
+            "id": "hand_l",
+            "x": 34,
+            "y": 58,
+            "angleDeg": 0,
+            "zOrder": 35,
+            "visible": true,
+            "poseTag": "windup"
+          },
+          {
+            "id": "head",
+            "x": 48,
+            "y": 31,
+            "angleDeg": 0,
+            "zOrder": 45,
+            "visible": true,
+            "poseTag": "windup"
+          },
+          {
+            "id": "back",
+            "x": 48,
+            "y": 52,
+            "angleDeg": 0,
+            "zOrder": 25,
+            "visible": true,
+            "poseTag": "windup"
+          },
+          {
+            "id": "muzzle",
+            "x": 76,
+            "y": 14,
+            "angleDeg": -55,
+            "zOrder": 60,
+            "visible": true,
+            "poseTag": "windup"
+          }
+        ]
+      },
+      {
+        "id": "hero-emerald-ranger_attack_2",
+        "category": "character",
+        "clipId": "attack",
+        "durationMs": 100,
+        "deduplicated": false,
+        "frame": {
+          "x": 306,
+          "y": 99,
+          "w": 81,
+          "h": 84
+        },
+        "trimmedSourceSize": {
+          "x": 10,
+          "y": 5,
+          "w": 81,
+          "h": 84
+        },
+        "sourceSize": {
+          "w": 96,
+          "h": 96
+        },
+        "pivot": {
+          "x": 48,
+          "y": 88
+        },
+        "sockets": [
+          {
+            "id": "hand_r",
+            "x": 32,
+            "y": 48,
+            "angleDeg": 105,
+            "zOrder": 50,
+            "visible": true,
+            "poseTag": "cleave"
+          },
+          {
+            "id": "hand_l",
+            "x": 34,
+            "y": 58,
+            "angleDeg": 0,
+            "zOrder": 35,
+            "visible": true,
+            "poseTag": "cleave"
+          },
+          {
+            "id": "head",
+            "x": 48,
+            "y": 31,
+            "angleDeg": 0,
+            "zOrder": 45,
+            "visible": true,
+            "poseTag": "cleave"
+          },
+          {
+            "id": "back",
+            "x": 48,
+            "y": 52,
+            "angleDeg": 0,
+            "zOrder": 25,
+            "visible": true,
+            "poseTag": "cleave"
+          },
+          {
+            "id": "muzzle",
+            "x": 80,
+            "y": 60,
+            "angleDeg": 105,
+            "zOrder": 60,
+            "visible": true,
+            "poseTag": "cleave"
+          }
+        ]
+      },
+      {
+        "id": "hero-emerald-ranger_attack_3",
+        "category": "character",
+        "clipId": "attack",
+        "durationMs": 100,
+        "deduplicated": false,
+        "frame": {
+          "x": 395,
+          "y": 99,
+          "w": 77,
+          "h": 84
+        },
+        "trimmedSourceSize": {
+          "x": 10,
+          "y": 5,
+          "w": 77,
+          "h": 84
+        },
+        "sourceSize": {
+          "w": 96,
+          "h": 96
+        },
+        "pivot": {
+          "x": 48,
+          "y": 88
+        },
+        "sockets": [
+          {
+            "id": "hand_r",
+            "x": 63,
+            "y": 57,
+            "angleDeg": 35,
+            "zOrder": 50,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "hand_l",
+            "x": 34,
+            "y": 58,
+            "angleDeg": 0,
+            "zOrder": 35,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "head",
+            "x": 48,
+            "y": 31,
+            "angleDeg": 0,
+            "zOrder": 45,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "back",
+            "x": 48,
+            "y": 52,
+            "angleDeg": 0,
+            "zOrder": 25,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "muzzle",
+            "x": 81,
+            "y": 31,
+            "angleDeg": 35,
+            "zOrder": 60,
+            "visible": true,
+            "poseTag": "ready"
+          }
+        ]
+      },
+      {
+        "id": "hero-emerald-ranger_hurt_0",
+        "category": "character",
+        "clipId": "hurt",
+        "durationMs": 167,
+        "deduplicated": true,
+        "frame": {
+          "x": 6,
+          "y": 6,
+          "w": 64,
+          "h": 84
+        },
+        "trimmedSourceSize": {
+          "x": 23,
+          "y": 5,
+          "w": 64,
+          "h": 84
+        },
+        "sourceSize": {
+          "w": 96,
+          "h": 96
+        },
+        "pivot": {
+          "x": 48,
+          "y": 88
+        },
+        "sockets": [
+          {
+            "id": "hand_r",
+            "x": 63,
+            "y": 57,
+            "angleDeg": 35,
+            "zOrder": 50,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "hand_l",
+            "x": 34,
+            "y": 58,
+            "angleDeg": 0,
+            "zOrder": 35,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "head",
+            "x": 48,
+            "y": 31,
+            "angleDeg": 0,
+            "zOrder": 45,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "back",
+            "x": 48,
+            "y": 52,
+            "angleDeg": 0,
+            "zOrder": 25,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "muzzle",
+            "x": 81,
+            "y": 31,
+            "angleDeg": 35,
+            "zOrder": 60,
+            "visible": true,
+            "poseTag": "ready"
+          }
+        ]
+      },
+      {
+        "id": "hero-emerald-ranger_hurt_1",
+        "category": "character",
+        "clipId": "hurt",
+        "durationMs": 167,
+        "deduplicated": false,
+        "frame": {
+          "x": 6,
+          "y": 192,
+          "w": 64,
+          "h": 84
+        },
+        "trimmedSourceSize": {
+          "x": 21,
+          "y": 5,
+          "w": 64,
+          "h": 84
+        },
+        "sourceSize": {
+          "w": 96,
+          "h": 96
+        },
+        "pivot": {
+          "x": 48,
+          "y": 88
+        },
+        "sockets": [
+          {
+            "id": "hand_r",
+            "x": 60,
+            "y": 56,
+            "angleDeg": 35,
+            "zOrder": 50,
+            "visible": true,
+            "poseTag": "guard"
+          },
+          {
+            "id": "hand_l",
+            "x": 34,
+            "y": 58,
+            "angleDeg": 0,
+            "zOrder": 35,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "head",
+            "x": 48,
+            "y": 31,
+            "angleDeg": 0,
+            "zOrder": 45,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "back",
+            "x": 48,
+            "y": 52,
+            "angleDeg": 0,
+            "zOrder": 25,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "muzzle",
+            "x": 81,
+            "y": 31,
+            "angleDeg": 35,
+            "zOrder": 60,
+            "visible": true,
+            "poseTag": "ready"
+          }
+        ]
+      },
+      {
+        "id": "hero-emerald-ranger_victory_0",
+        "category": "character",
+        "clipId": "victory",
+        "durationMs": 125,
+        "deduplicated": true,
+        "frame": {
+          "x": 78,
+          "y": 6,
+          "w": 63,
+          "h": 84
+        },
+        "trimmedSourceSize": {
+          "x": 24,
+          "y": 5,
+          "w": 63,
+          "h": 84
+        },
+        "sourceSize": {
+          "w": 96,
+          "h": 96
+        },
+        "pivot": {
+          "x": 48,
+          "y": 88
+        },
+        "sockets": [
+          {
+            "id": "hand_r",
+            "x": 63,
+            "y": 57,
+            "angleDeg": 35,
+            "zOrder": 50,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "hand_l",
+            "x": 34,
+            "y": 58,
+            "angleDeg": 0,
+            "zOrder": 35,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "head",
+            "x": 48,
+            "y": 31,
+            "angleDeg": 0,
+            "zOrder": 45,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "back",
+            "x": 48,
+            "y": 52,
+            "angleDeg": 0,
+            "zOrder": 25,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "muzzle",
+            "x": 81,
+            "y": 31,
+            "angleDeg": 35,
+            "zOrder": 60,
+            "visible": true,
+            "poseTag": "ready"
+          }
+        ]
+      },
+      {
+        "id": "hero-emerald-ranger_victory_1",
+        "category": "character",
+        "clipId": "victory",
+        "durationMs": 125,
+        "deduplicated": false,
+        "frame": {
+          "x": 78,
+          "y": 192,
+          "w": 68,
+          "h": 82
+        },
+        "trimmedSourceSize": {
+          "x": 19,
+          "y": 7,
+          "w": 68,
+          "h": 82
+        },
+        "sourceSize": {
+          "w": 96,
+          "h": 96
+        },
+        "pivot": {
+          "x": 48,
+          "y": 88
+        },
+        "sockets": [
+          {
+            "id": "hand_r",
+            "x": 56,
+            "y": 36,
+            "angleDeg": -15,
+            "zOrder": 50,
+            "visible": true,
+            "poseTag": "victory"
+          },
+          {
+            "id": "hand_l",
+            "x": 34,
+            "y": 58,
+            "angleDeg": 0,
+            "zOrder": 35,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "head",
+            "x": 48,
+            "y": 31,
+            "angleDeg": 0,
+            "zOrder": 45,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "back",
+            "x": 48,
+            "y": 52,
+            "angleDeg": 0,
+            "zOrder": 25,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "muzzle",
+            "x": 81,
+            "y": 31,
+            "angleDeg": 35,
+            "zOrder": 60,
+            "visible": true,
+            "poseTag": "ready"
+          }
+        ]
+      },
+      {
+        "id": "hero-emerald-ranger_victory_2",
+        "category": "character",
+        "clipId": "victory",
+        "durationMs": 125,
+        "deduplicated": false,
+        "frame": {
+          "x": 154,
+          "y": 192,
+          "w": 68,
+          "h": 84
+        },
+        "trimmedSourceSize": {
+          "x": 19,
+          "y": 5,
+          "w": 68,
+          "h": 84
+        },
+        "sourceSize": {
+          "w": 96,
+          "h": 96
+        },
+        "pivot": {
+          "x": 48,
+          "y": 88
+        },
+        "sockets": [
+          {
+            "id": "hand_r",
+            "x": 56,
+            "y": 36,
+            "angleDeg": -15,
+            "zOrder": 50,
+            "visible": true,
+            "poseTag": "victory"
+          },
+          {
+            "id": "hand_l",
+            "x": 34,
+            "y": 58,
+            "angleDeg": 0,
+            "zOrder": 35,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "head",
+            "x": 48,
+            "y": 31,
+            "angleDeg": 0,
+            "zOrder": 45,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "back",
+            "x": 48,
+            "y": 52,
+            "angleDeg": 0,
+            "zOrder": 25,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "muzzle",
+            "x": 81,
+            "y": 31,
+            "angleDeg": 35,
+            "zOrder": 60,
+            "visible": true,
+            "poseTag": "ready"
+          }
+        ]
+      },
+      {
+        "id": "hero-emerald-ranger_victory_3",
+        "category": "character",
+        "clipId": "victory",
+        "durationMs": 125,
+        "deduplicated": false,
+        "frame": {
+          "x": 230,
+          "y": 192,
+          "w": 68,
+          "h": 85
+        },
+        "trimmedSourceSize": {
+          "x": 19,
+          "y": 4,
+          "w": 68,
+          "h": 85
+        },
+        "sourceSize": {
+          "w": 96,
+          "h": 96
+        },
+        "pivot": {
+          "x": 48,
+          "y": 88
+        },
+        "sockets": [
+          {
+            "id": "hand_r",
+            "x": 56,
+            "y": 36,
+            "angleDeg": -15,
+            "zOrder": 50,
+            "visible": true,
+            "poseTag": "victory"
+          },
+          {
+            "id": "hand_l",
+            "x": 34,
+            "y": 58,
+            "angleDeg": 0,
+            "zOrder": 35,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "head",
+            "x": 48,
+            "y": 31,
+            "angleDeg": 0,
+            "zOrder": 45,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "back",
+            "x": 48,
+            "y": 52,
+            "angleDeg": 0,
+            "zOrder": 25,
+            "visible": true,
+            "poseTag": "ready"
+          },
+          {
+            "id": "muzzle",
+            "x": 81,
+            "y": 31,
+            "angleDeg": 35,
+            "zOrder": 60,
+            "visible": true,
+            "poseTag": "ready"
+          }
+        ]
+      },
+      {
+        "id": "hero-emerald-ranger_dir_S",
+        "category": "turnaround",
+        "clipId": null,
+        "durationMs": 125,
+        "deduplicated": true,
+        "frame": {
+          "x": 6,
+          "y": 6,
+          "w": 64,
+          "h": 84
+        },
+        "trimmedSourceSize": {
+          "x": 21,
+          "y": 5,
+          "w": 64,
+          "h": 84
+        },
+        "sourceSize": {
+          "w": 96,
+          "h": 96
+        },
+        "pivot": {
+          "x": 48,
+          "y": 88
+        },
+        "sockets": []
+      },
+      {
+        "id": "hero-emerald-ranger_dir_SE",
+        "category": "turnaround",
+        "clipId": null,
+        "durationMs": 125,
+        "deduplicated": true,
+        "frame": {
+          "x": 78,
+          "y": 6,
+          "w": 63,
+          "h": 84
+        },
+        "trimmedSourceSize": {
+          "x": 22,
+          "y": 5,
+          "w": 63,
+          "h": 84
+        },
+        "sourceSize": {
+          "w": 96,
+          "h": 96
+        },
+        "pivot": {
+          "x": 48,
+          "y": 88
+        },
+        "sockets": []
+      },
+      {
+        "id": "hero-emerald-ranger_dir_E",
+        "category": "turnaround",
+        "clipId": null,
+        "durationMs": 125,
+        "deduplicated": true,
+        "frame": {
+          "x": 294,
+          "y": 6,
+          "w": 67,
+          "h": 84
+        },
+        "trimmedSourceSize": {
+          "x": 19,
+          "y": 5,
+          "w": 67,
+          "h": 84
+        },
+        "sourceSize": {
+          "w": 96,
+          "h": 96
+        },
+        "pivot": {
+          "x": 48,
+          "y": 88
+        },
+        "sockets": []
+      },
+      {
+        "id": "hero-emerald-ranger_dir_NE",
+        "category": "turnaround",
+        "clipId": null,
+        "durationMs": 125,
+        "deduplicated": false,
+        "frame": {
+          "x": 306,
+          "y": 192,
+          "w": 69,
+          "h": 85
+        },
+        "trimmedSourceSize": {
+          "x": 18,
+          "y": 4,
+          "w": 69,
+          "h": 85
+        },
+        "sourceSize": {
+          "w": 96,
+          "h": 96
+        },
+        "pivot": {
+          "x": 48,
+          "y": 88
+        },
+        "sockets": []
+      },
+      {
+        "id": "hero-emerald-ranger_dir_N",
+        "category": "turnaround",
+        "clipId": null,
+        "durationMs": 125,
+        "deduplicated": false,
+        "frame": {
+          "x": 383,
+          "y": 192,
+          "w": 47,
+          "h": 85
+        },
+        "trimmedSourceSize": {
+          "x": 29,
+          "y": 4,
+          "w": 47,
+          "h": 85
+        },
+        "sourceSize": {
+          "w": 96,
+          "h": 96
+        },
+        "pivot": {
+          "x": 48,
+          "y": 88
+        },
+        "sockets": []
+      },
+      {
+        "id": "hero-emerald-ranger_dir_NW",
+        "category": "turnaround",
+        "clipId": null,
+        "durationMs": 125,
+        "deduplicated": false,
+        "frame": {
+          "x": 6,
+          "y": 285,
+          "w": 69,
+          "h": 85
+        },
+        "trimmedSourceSize": {
+          "x": 9,
+          "y": 4,
+          "w": 69,
+          "h": 85
+        },
+        "sourceSize": {
+          "w": 96,
+          "h": 96
+        },
+        "pivot": {
+          "x": 48,
+          "y": 88
+        },
+        "sockets": []
+      },
+      {
+        "id": "hero-emerald-ranger_dir_W",
+        "category": "turnaround",
+        "clipId": null,
+        "durationMs": 125,
+        "deduplicated": false,
+        "frame": {
+          "x": 83,
+          "y": 285,
+          "w": 67,
+          "h": 84
+        },
+        "trimmedSourceSize": {
+          "x": 10,
+          "y": 5,
+          "w": 67,
+          "h": 84
+        },
+        "sourceSize": {
+          "w": 96,
+          "h": 96
+        },
+        "pivot": {
+          "x": 48,
+          "y": 88
+        },
+        "sockets": []
+      },
+      {
+        "id": "hero-emerald-ranger_dir_SW",
+        "category": "turnaround",
+        "clipId": null,
+        "durationMs": 125,
+        "deduplicated": false,
+        "frame": {
+          "x": 158,
+          "y": 285,
+          "w": 63,
+          "h": 84
+        },
+        "trimmedSourceSize": {
+          "x": 11,
+          "y": 5,
+          "w": 63,
+          "h": 84
+        },
+        "sourceSize": {
+          "w": 96,
+          "h": 96
+        },
+        "pivot": {
+          "x": 48,
+          "y": 88
+        },
+        "sockets": []
+      },
+      {
+        "id": "hero-emerald-ranger_damaged",
+        "category": "damaged",
+        "clipId": null,
+        "durationMs": 125,
+        "deduplicated": false,
+        "frame": {
+          "x": 229,
+          "y": 285,
+          "w": 64,
+          "h": 84
+        },
+        "trimmedSourceSize": {
+          "x": 21,
+          "y": 5,
+          "w": 64,
+          "h": 84
+        },
+        "sourceSize": {
+          "w": 96,
+          "h": 96
+        },
+        "pivot": {
+          "x": 48,
+          "y": 88
+        },
+        "sockets": []
+      },
+      {
+        "id": "layer_00_shadow",
+        "category": "paperdoll",
+        "clipId": null,
+        "durationMs": 125,
+        "deduplicated": false,
+        "frame": {
+          "x": 301,
+          "y": 285,
+          "w": 31,
+          "h": 5
+        },
+        "trimmedSourceSize": {
+          "x": 17,
+          "y": 59,
+          "w": 31,
+          "h": 5
+        },
+        "sourceSize": {
+          "w": 64,
+          "h": 64
+        },
+        "pivot": {
+          "x": 32,
+          "y": 62
+        },
+        "sockets": []
+      },
+      {
+        "id": "layer_10_body",
+        "category": "paperdoll",
+        "clipId": null,
+        "durationMs": 125,
+        "deduplicated": false,
+        "frame": {
+          "x": 340,
+          "y": 285,
+          "w": 40,
+          "h": 62
+        },
+        "trimmedSourceSize": {
+          "x": 15,
+          "y": 1,
+          "w": 40,
+          "h": 62
+        },
+        "sourceSize": {
+          "w": 64,
+          "h": 64
+        },
+        "pivot": {
+          "x": 32,
+          "y": 62
+        },
+        "sockets": []
+      },
+      {
+        "id": "layer_20_iris",
+        "category": "paperdoll",
+        "clipId": null,
+        "durationMs": 125,
+        "deduplicated": false,
+        "frame": {
+          "x": 388,
+          "y": 285,
+          "w": 13,
+          "h": 7
+        },
+        "trimmedSourceSize": {
+          "x": 29,
+          "y": 7,
+          "w": 13,
+          "h": 7
+        },
+        "sourceSize": {
+          "w": 64,
+          "h": 64
+        },
+        "pivot": {
+          "x": 32,
+          "y": 62
+        },
+        "sockets": []
+      },
+      {
+        "id": "layer_30_outfit",
+        "category": "paperdoll",
+        "clipId": null,
+        "durationMs": 125,
+        "deduplicated": false,
+        "frame": {
+          "x": 409,
+          "y": 285,
+          "w": 48,
+          "h": 47
+        },
+        "trimmedSourceSize": {
+          "x": 4,
+          "y": 11,
+          "w": 48,
+          "h": 47
+        },
+        "sourceSize": {
+          "w": 64,
+          "h": 64
+        },
+        "pivot": {
+          "x": 32,
+          "y": 62
+        },
+        "sockets": []
+      },
+      {
+        "id": "layer_40_hair",
+        "category": "paperdoll",
+        "clipId": null,
+        "durationMs": 125,
+        "deduplicated": false,
+        "frame": {
+          "x": 6,
+          "y": 378,
+          "w": 42,
+          "h": 30
+        },
+        "trimmedSourceSize": {
+          "x": 12,
+          "y": 8,
+          "w": 42,
+          "h": 30
+        },
+        "sourceSize": {
+          "w": 64,
+          "h": 64
+        },
+        "pivot": {
+          "x": 32,
+          "y": 62
+        },
+        "sockets": []
+      },
+      {
+        "id": "layer_50_weapon",
+        "category": "paperdoll",
+        "clipId": null,
+        "durationMs": 125,
+        "deduplicated": false,
+        "frame": {
+          "x": 56,
+          "y": 378,
+          "w": 36,
+          "h": 38
+        },
+        "trimmedSourceSize": {
+          "x": 54,
+          "y": 28,
+          "w": 36,
+          "h": 38
+        },
+        "sourceSize": {
+          "w": 96,
+          "h": 96
+        },
+        "pivot": {
+          "x": 48,
+          "y": 94
+        },
+        "sockets": []
+      },
+      {
+        "id": "layer_60_fx",
+        "category": "paperdoll",
+        "clipId": null,
+        "durationMs": 125,
+        "deduplicated": false,
+        "frame": {
+          "x": 100,
+          "y": 378,
+          "w": 73,
+          "h": 57
+        },
+        "trimmedSourceSize": {
+          "x": 11,
+          "y": 1,
+          "w": 73,
+          "h": 57
+        },
+        "sourceSize": {
+          "w": 96,
+          "h": 96
+        },
+        "pivot": {
+          "x": 48,
+          "y": 94
+        },
+        "sockets": []
+      },
+      {
+        "id": "vfx-gacha-summon-ssr_f0",
+        "category": "vfx",
+        "clipId": "vfx-gacha-summon-ssr",
+        "durationMs": 125,
+        "deduplicated": false,
+        "frame": {
+          "x": 181,
+          "y": 378,
+          "w": 47,
+          "h": 33
+        },
+        "trimmedSourceSize": {
+          "x": 9,
+          "y": 25,
+          "w": 47,
+          "h": 33
+        },
+        "sourceSize": {
+          "w": 64,
+          "h": 64
+        },
+        "pivot": {
+          "x": 32,
+          "y": 32
+        },
+        "sockets": []
+      },
+      {
+        "id": "vfx-gacha-summon-ssr_f1",
+        "category": "vfx",
+        "clipId": "vfx-gacha-summon-ssr",
+        "durationMs": 125,
+        "deduplicated": false,
+        "frame": {
+          "x": 236,
+          "y": 378,
+          "w": 47,
+          "h": 53
+        },
+        "trimmedSourceSize": {
+          "x": 9,
+          "y": 5,
+          "w": 47,
+          "h": 53
+        },
+        "sourceSize": {
+          "w": 64,
+          "h": 64
+        },
+        "pivot": {
+          "x": 32,
+          "y": 32
+        },
+        "sockets": []
+      },
+      {
+        "id": "vfx-gacha-summon-ssr_f2",
+        "category": "vfx",
+        "clipId": "vfx-gacha-summon-ssr",
+        "durationMs": 125,
+        "deduplicated": false,
+        "frame": {
+          "x": 291,
+          "y": 378,
+          "w": 47,
+          "h": 51
+        },
+        "trimmedSourceSize": {
+          "x": 9,
+          "y": 7,
+          "w": 47,
+          "h": 51
+        },
+        "sourceSize": {
+          "w": 64,
+          "h": 64
+        },
+        "pivot": {
+          "x": 32,
+          "y": 32
+        },
+        "sockets": []
+      },
+      {
+        "id": "vfx-gacha-summon-ssr_f3",
+        "category": "vfx",
+        "clipId": "vfx-gacha-summon-ssr",
+        "durationMs": 125,
+        "deduplicated": false,
+        "frame": {
+          "x": 346,
+          "y": 378,
+          "w": 47,
+          "h": 52
+        },
+        "trimmedSourceSize": {
+          "x": 9,
+          "y": 6,
+          "w": 47,
+          "h": 52
+        },
+        "sourceSize": {
+          "w": 64,
+          "h": 64
+        },
+        "pivot": {
+          "x": 32,
+          "y": 32
+        },
+        "sockets": []
+      },
+      {
+        "id": "vfx-solar-slash_f0",
+        "category": "vfx",
+        "clipId": "vfx-solar-slash",
+        "durationMs": 83,
+        "deduplicated": false,
+        "frame": {
+          "x": 401,
+          "y": 378,
+          "w": 18,
+          "h": 41
+        },
+        "trimmedSourceSize": {
+          "x": 35,
+          "y": 9,
+          "w": 18,
+          "h": 41
+        },
+        "sourceSize": {
+          "w": 64,
+          "h": 64
+        },
+        "pivot": {
+          "x": 32,
+          "y": 32
+        },
+        "sockets": []
+      },
+      {
+        "id": "vfx-solar-slash_f1",
+        "category": "vfx",
+        "clipId": "vfx-solar-slash",
+        "durationMs": 83,
+        "deduplicated": false,
+        "frame": {
+          "x": 427,
+          "y": 378,
+          "w": 29,
+          "h": 57
+        },
+        "trimmedSourceSize": {
+          "x": 27,
+          "y": 4,
+          "w": 29,
+          "h": 57
+        },
+        "sourceSize": {
+          "w": 64,
+          "h": 64
+        },
+        "pivot": {
+          "x": 32,
+          "y": 32
+        },
+        "sockets": []
+      },
+      {
+        "id": "vfx-solar-slash_f2",
+        "category": "vfx",
+        "clipId": "vfx-solar-slash",
+        "durationMs": 83,
+        "deduplicated": false,
+        "frame": {
+          "x": 464,
+          "y": 378,
+          "w": 33,
+          "h": 62
+        },
+        "trimmedSourceSize": {
+          "x": 27,
+          "y": 1,
+          "w": 33,
+          "h": 62
+        },
+        "sourceSize": {
+          "w": 64,
+          "h": 64
+        },
+        "pivot": {
+          "x": 32,
+          "y": 32
+        },
+        "sockets": []
+      },
+      {
+        "id": "vfx-solar-slash_f3",
+        "category": "vfx",
+        "clipId": "vfx-solar-slash",
+        "durationMs": 83,
+        "deduplicated": false,
+        "frame": {
+          "x": 6,
+          "y": 448,
+          "w": 25,
+          "h": 47
+        },
+        "trimmedSourceSize": {
+          "x": 33,
+          "y": 8,
+          "w": 25,
+          "h": 47
+        },
+        "sourceSize": {
+          "w": 64,
+          "h": 64
+        },
+        "pivot": {
+          "x": 32,
+          "y": 32
+        },
+        "sockets": []
+      },
+      {
+        "id": "loot-sunblade-ur",
+        "category": "loot",
+        "clipId": null,
+        "durationMs": 125,
+        "deduplicated": false,
+        "frame": {
+          "x": 39,
+          "y": 448,
+          "w": 23,
+          "h": 24
+        },
+        "trimmedSourceSize": {
+          "x": 5,
+          "y": 3,
+          "w": 23,
+          "h": 24
+        },
+        "sourceSize": {
+          "w": 32,
+          "h": 32
+        },
+        "pivot": {
+          "x": 16,
+          "y": 16
+        },
+        "sockets": []
+      },
+      {
+        "id": "loot-aether-staff-ssr",
+        "category": "loot",
+        "clipId": null,
+        "durationMs": 125,
+        "deduplicated": false,
+        "frame": {
+          "x": 70,
+          "y": 448,
+          "w": 14,
+          "h": 25
+        },
+        "trimmedSourceSize": {
+          "x": 9,
+          "y": 4,
+          "w": 14,
+          "h": 25
+        },
+        "sourceSize": {
+          "w": 32,
+          "h": 32
+        },
+        "pivot": {
+          "x": 16,
+          "y": 16
+        },
+        "sockets": []
+      },
+      {
+        "id": "loot-fortress-shield-epic",
+        "category": "loot",
+        "clipId": null,
+        "durationMs": 125,
+        "deduplicated": false,
+        "frame": {
+          "x": 92,
+          "y": 448,
+          "w": 20,
+          "h": 22
+        },
+        "trimmedSourceSize": {
+          "x": 6,
+          "y": 4,
+          "w": 20,
+          "h": 22
+        },
+        "sourceSize": {
+          "w": 32,
+          "h": 32
+        },
+        "pivot": {
+          "x": 16,
+          "y": 16
+        },
+        "sockets": []
+      },
+      {
+        "id": "loot-elixir-rare",
+        "category": "loot",
+        "clipId": null,
+        "durationMs": 125,
+        "deduplicated": false,
+        "frame": {
+          "x": 120,
+          "y": 448,
+          "w": 18,
+          "h": 23
+        },
+        "trimmedSourceSize": {
+          "x": 7,
+          "y": 4,
+          "w": 18,
+          "h": 23
+        },
+        "sourceSize": {
+          "w": 32,
+          "h": 32
+        },
+        "pivot": {
+          "x": 16,
+          "y": 16
+        },
+        "sockets": []
+      },
+      {
+        "id": "loot-relic-chest-ssr",
+        "category": "loot",
+        "clipId": null,
+        "durationMs": 125,
+        "deduplicated": false,
+        "frame": {
+          "x": 146,
+          "y": 448,
+          "w": 24,
+          "h": 19
+        },
+        "trimmedSourceSize": {
+          "x": 4,
+          "y": 8,
+          "w": 24,
+          "h": 19
+        },
+        "sourceSize": {
+          "w": 32,
+          "h": 32
+        },
+        "pivot": {
+          "x": 16,
+          "y": 16
+        },
+        "sockets": []
+      },
+      {
+        "id": "loot-core-sigil-common",
+        "category": "loot",
+        "clipId": null,
+        "durationMs": 125,
+        "deduplicated": false,
+        "frame": {
+          "x": 178,
+          "y": 448,
+          "w": 22,
+          "h": 22
+        },
+        "trimmedSourceSize": {
+          "x": 5,
+          "y": 5,
+          "w": 22,
+          "h": 22
+        },
+        "sourceSize": {
+          "w": 32,
+          "h": 32
+        },
+        "pivot": {
+          "x": 16,
+          "y": 16
+        },
+        "sockets": []
+      }
+    ]
+  },
+  "qualityReport": {
+    "score": 100,
+    "allPassed": true,
+    "checks": [
+      {
+        "id": "gate-binary-alpha",
+        "label": "Binary Alpha Contract {0, 255} Across All Assets",
+        "passed": true,
+        "detail": "masterOpaque=2707, nonBinary(master/layers/clips)=0/0/0"
+      },
+      {
+        "id": "gate-palette-cap",
+        "label": "Global Multi-Frame Palette Lock (<=24 colors)",
+        "passed": true,
+        "detail": "masterColors=18, global18FrameColors=18"
+      },
+      {
+        "id": "gate-frame-integrity",
+        "label": "Zero Duplicate Frames, Walk Stride & -damaged Bbox (<=1px)",
+        "passed": true,
+        "detail": "bboxDelta=0px, duplicates=0, walkF0F2DiffPx=2354"
+      },
+      {
+        "id": "gate-concentric-paperdoll",
+        "label": "Concentric Pivot, Foot Lock Y=88 & Zero-Leak Emissive",
+        "passed": true,
+        "detail": "body=(64, 64), weapon=(96, 96), footY=88, matteBlack=2538, emissiveLitPx=169"
+      },
+      {
+        "id": "gate-motion-vfx",
+        "label": "5 Action Clips & Dual-Buffer VFX (Color + Emissive)",
+        "passed": true,
+        "detail": "clips=['idle', 'walk', 'attack', 'hurt', 'victory'], vfxCraft=[22, 22]/22"
+      },
+      {
+        "id": "gate-multimap-atlas-vfx",
+        "label": "Extruded Multi-Map Atlas (2px Bleed) & Engine Manifest Sync",
+        "passed": true,
+        "detail": "atlas=512x512, frames=48, dedup=5, extrude=2px, godotSpriteFrames=True"
+      }
+    ],
+    "globalPaletteCount": 18,
+    "paletteRgb": [
+      [
+        11,
+        14,
+        22
+      ],
+      [
+        33,
+        28,
+        23
+      ],
+      [
+        14,
+        36,
+        44
+      ],
+      [
+        59,
+        37,
+        29
+      ],
+      [
+        17,
+        57,
+        58
+      ],
+      [
+        54,
+        54,
+        44
+      ],
+      [
+        85,
+        53,
+        36
+      ],
+      [
+        33,
+        81,
+        74
+      ],
+      [
+        94,
+        62,
+        42
+      ],
+      [
+        72,
+        86,
+        67
+      ],
+      [
+        116,
+        76,
+        47
+      ],
+      [
+        136,
+        100,
+        64
+      ],
+      [
+        157,
+        121,
+        76
+      ],
+      [
+        177,
+        145,
+        94
+      ],
+      [
+        77,
+        216,
+        190
+      ],
+      [
+        107,
+        206,
+        179
+      ],
+      [
+        227,
+        199,
+        139
+      ],
+      [
+        140,
+        240,
+        250
+      ]
+    ]
+  }
+}

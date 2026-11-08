@@ -8,55 +8,55 @@
         "slot": "01_idle_f0",
         "file": "knight_idle_f0.png",
         "label": "Frame 1: Idle Guard (F0)",
-        "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Hiệp Sĩ Thánh Quang (SSR), 3/4 front-right tactical RPG view, wearing Winged silver-steel Greathelm with glowing cyan T-visor and royal blue plume, ornate plate cuirass with gold sun cross, royal blue cape, heraldic heater shield on left arm, wielding Oversized glowing golden-cyan Greatsword in right gauntlet, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, standing combat ready pose, feet planted on baseline."
+        "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Hiệp Sĩ Thánh Quang (SSR), 3/4 front-right tactical RPG view, wearing Winged silver-steel Greathelm with glowing cyan T-visor and royal crimson plume, ornate plate cuirass with gold sun cross, royal blue cape, heraldic heater shield on left arm, wielding Oversized glowing golden-cyan Greatsword in right gauntlet, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, standing combat ready pose, feet planted on baseline Y=88."
       },
       {
         "slot": "02_idle_f1",
         "file": "knight_idle_f1.png",
         "label": "Frame 2: Idle Breath (F1)",
-        "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Hiệp Sĩ Thánh Quang (SSR), 3/4 front-right tactical RPG view, wearing Winged silver-steel Greathelm with glowing cyan T-visor and royal blue plume, ornate plate cuirass with gold sun cross, royal blue cape, heraldic heater shield on left arm, wielding Oversized glowing golden-cyan Greatsword in right gauntlet, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, subtle breathing combat stance, cape billowing slightly, weapon runes glowing brighter."
+        "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Hiệp Sĩ Thánh Quang (SSR), 3/4 front-right tactical RPG view, wearing Winged silver-steel Greathelm with glowing cyan T-visor and royal crimson plume, ornate plate cuirass with gold sun cross, royal blue cape, heraldic heater shield on left arm, wielding Oversized glowing golden-cyan Greatsword in right gauntlet, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, subtle breathing combat stance, mantle billowing slightly, runes glowing brighter."
       },
       {
         "slot": "03_walk_f0",
         "file": "knight_walk_f0.png",
         "label": "Frame 3: Walk Stride Left (F0)",
-        "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Hiệp Sĩ Thánh Quang (SSR), 3/4 front-right tactical RPG view, wearing Winged silver-steel Greathelm with glowing cyan T-visor and royal blue plume, ornate plate cuirass with gold sun cross, royal blue cape, heraldic heater shield on left arm, wielding Oversized glowing golden-cyan Greatsword in right gauntlet, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, dynamic forward walking stride with left leg stepping forward, cape flowing."
+        "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Hiệp Sĩ Thánh Quang (SSR), 3/4 front-right tactical RPG view, wearing Winged silver-steel Greathelm with glowing cyan T-visor and royal crimson plume, ornate plate cuirass with gold sun cross, royal blue cape, heraldic heater shield on left arm, wielding Oversized glowing golden-cyan Greatsword in right gauntlet, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, dynamic forward walking stride with left leg stepping forward, cloak flowing."
       },
       {
         "slot": "04_walk_f1",
         "file": "knight_walk_f1.png",
         "label": "Frame 4: Walk Stride Right (F1)",
-        "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Hiệp Sĩ Thánh Quang (SSR), 3/4 front-right tactical RPG view, wearing Winged silver-steel Greathelm with glowing cyan T-visor and royal blue plume, ornate plate cuirass with gold sun cross, royal blue cape, heraldic heater shield on left arm, wielding Oversized glowing golden-cyan Greatsword in right gauntlet, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, dynamic forward walking stride with right leg stepping forward, balanced weapon."
+        "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Hiệp Sĩ Thánh Quang (SSR), 3/4 front-right tactical RPG view, wearing Winged silver-steel Greathelm with glowing cyan T-visor and royal crimson plume, ornate plate cuirass with gold sun cross, royal blue cape, heraldic heater shield on left arm, wielding Oversized glowing golden-cyan Greatsword in right gauntlet, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, dynamic forward walking stride with right leg stepping forward, balanced weapon."
       },
       {
         "slot": "05_attack_f0",
         "file": "knight_attack_f0.png",
         "label": "Frame 5: Attack Overhead Windup (F0)",
-        "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Hiệp Sĩ Thánh Quang (SSR), 3/4 front-right tactical RPG view, wearing Winged silver-steel Greathelm with glowing cyan T-visor and royal blue plume, ornate plate cuirass with gold sun cross, royal blue cape, heraldic heater shield on left arm, wielding Oversized glowing golden-cyan Greatsword in right gauntlet, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, dramatic attack windup pose raising Oversized glowing golden-cyan Greatsword in right gauntlet high overhead charging elemental energy."
+        "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Hiệp Sĩ Thánh Quang (SSR), 3/4 front-right tactical RPG view, wearing Winged silver-steel Greathelm with glowing cyan T-visor and royal crimson plume, ornate plate cuirass with gold sun cross, royal blue cape, heraldic heater shield on left arm, wielding Oversized glowing golden-cyan Greatsword in right gauntlet, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, dramatic attack windup pose raising Oversized glowing golden-cyan Greatsword in right gauntlet high overhead charging elemental energy."
       },
       {
         "slot": "06_attack_f1",
         "file": "knight_attack_f1.png",
         "label": "Frame 6: Attack Cleave Slash (F1)",
-        "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Hiệp Sĩ Thánh Quang (SSR), 3/4 front-right tactical RPG view, wearing Winged silver-steel Greathelm with glowing cyan T-visor and royal blue plume, ornate plate cuirass with gold sun cross, royal blue cape, heraldic heater shield on left arm, wielding Oversized glowing golden-cyan Greatsword in right gauntlet, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, explosive forward cleave swing unleashing a crescent energy slash arc."
+        "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Hiệp Sĩ Thánh Quang (SSR), 3/4 front-right tactical RPG view, wearing Winged silver-steel Greathelm with glowing cyan T-visor and royal crimson plume, ornate plate cuirass with gold sun cross, royal blue cape, heraldic heater shield on left arm, wielding Oversized glowing golden-cyan Greatsword in right gauntlet, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, explosive forward cleave swing unleashing a crescent energy slash arc."
       },
       {
         "slot": "07_victory_f0",
         "file": "knight_victory_f0.png",
         "label": "Frame 7: Victory Pose",
-        "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Hiệp Sĩ Thánh Quang (SSR), 3/4 front-right tactical RPG view, wearing Winged silver-steel Greathelm with glowing cyan T-visor and royal blue plume, ornate plate cuirass with gold sun cross, royal blue cape, heraldic heater shield on left arm, wielding Oversized glowing golden-cyan Greatsword in right gauntlet, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, triumphant victory pose raising Oversized glowing golden-cyan Greatsword in right gauntlet skyward with radiant aura burst."
+        "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Hiệp Sĩ Thánh Quang (SSR), 3/4 front-right tactical RPG view, wearing Winged silver-steel Greathelm with glowing cyan T-visor and royal crimson plume, ornate plate cuirass with gold sun cross, royal blue cape, heraldic heater shield on left arm, wielding Oversized glowing golden-cyan Greatsword in right gauntlet, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, triumphant victory pose raising Oversized glowing golden-cyan Greatsword in right gauntlet skyward with radiant aura burst."
       },
       {
         "slot": "08_paperdoll_kit",
         "file": "knight_paperdoll_kit.png",
         "label": "Frame 8: Modular Paper-Doll 2×2 Kit",
-        "prompt": "16-bit pixel art modular RPG equipment sprite sheet for Hiệp Sĩ Thánh Quang divided into 4 distinct quadrants on solid pure green #00FF00: Top-Left: Base body in tunic and greaves without headgear or weapon; Top-Right: Headgear (Winged silver-steel Greathelm with glowing cyan T-visor and royal blue plume, ornate plate cuirass with gold sun cross, royal blue cape, heraldic heater shield on left arm) isolated; Bottom-Left: Off-hand shield/grimoire & armor mantle isolated; Bottom-Right: Primary weapon (Oversized glowing golden-cyan Greatsword in right gauntlet) isolated."
+        "prompt": "16-bit pixel art modular RPG equipment sprite sheet for Hiệp Sĩ Thánh Quang divided into 4 distinct quadrants on solid pure green #00FF00: Top-Left: Base body in class tunic & boots without headgear or weapon; Top-Right: Headgear (Winged silver-steel Greathelm with glowing cyan T-visor and royal plume) isolated; Bottom-Left: Off-hand shield/grimoire/quiver & mantle isolated; Bottom-Right: Primary weapon (Oversized glowing golden-cyan Greatsword in right gauntlet) isolated."
       },
       {
         "slot": "09_loot_sheet",
         "file": "knight_loot_sheet.png",
         "label": "Frame 9: 3×2 RPG Weapon & Relic Sheet",
-        "prompt": "16-bit pixel art RPG item icon sheet arranged in a 3x2 grid (6 distinct items) for Hiệp Sĩ Thánh Quang on solid pure green #00FF00: Row 1: Mythic UR Primary Weapon, SSR Arcane Staff, Epic Heraldic Shield; Row 2: Rare Elixir Potion, SSR Relic Chest, Sacred Crest Sigil."
+        "prompt": "16-bit pixel art RPG item icon sheet arranged in a 3x2 grid (6 distinct items) for Hiệp Sĩ Thánh Quang on solid pure green #00FF00: Row 1: Mythic UR Primary Weapon, SSR Arcane Staff, Epic Off-Hand Crest; Row 2: Rare Elixir Potion, SSR Relic Chest, Class Sigil."
       },
       {
         "slot": "10_arena_stage",
@@ -75,19 +75,19 @@
         "slot": "01_idle_f0",
         "file": "knight_idle_f0.png",
         "label": "Frame 1: Idle Guard (F0)",
-        "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Chiến Thần Huyết Vũ (UR), 3/4 front-right tactical RPG view, wearing Winged crimson-gold Valkyrie diadem, obsidian dragon-scale breastplate, flowing phoenix-feather mantle, floating flame Buckler on left arm, wielding Oversized blazing Dragon-Slayer Halberd in right hand, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, standing combat ready pose, feet planted on baseline."
+        "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Chiến Thần Huyết Vũ (UR), 3/4 front-right tactical RPG view, wearing Winged crimson-gold Valkyrie diadem, obsidian dragon-scale breastplate, flowing phoenix-feather mantle, floating flame Buckler on left arm, wielding Oversized blazing Dragon-Slayer Halberd in right hand, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, standing combat ready pose, feet planted on baseline Y=88."
       },
       {
         "slot": "02_idle_f1",
         "file": "knight_idle_f1.png",
         "label": "Frame 2: Idle Breath (F1)",
-        "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Chiến Thần Huyết Vũ (UR), 3/4 front-right tactical RPG view, wearing Winged crimson-gold Valkyrie diadem, obsidian dragon-scale breastplate, flowing phoenix-feather mantle, floating flame Buckler on left arm, wielding Oversized blazing Dragon-Slayer Halberd in right hand, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, subtle breathing combat stance, cape billowing slightly, weapon runes glowing brighter."
+        "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Chiến Thần Huyết Vũ (UR), 3/4 front-right tactical RPG view, wearing Winged crimson-gold Valkyrie diadem, obsidian dragon-scale breastplate, flowing phoenix-feather mantle, floating flame Buckler on left arm, wielding Oversized blazing Dragon-Slayer Halberd in right hand, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, subtle breathing combat stance, mantle billowing slightly, runes glowing brighter."
       },
       {
         "slot": "03_walk_f0",
         "file": "knight_walk_f0.png",
         "label": "Frame 3: Walk Stride Left (F0)",
-        "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Chiến Thần Huyết Vũ (UR), 3/4 front-right tactical RPG view, wearing Winged crimson-gold Valkyrie diadem, obsidian dragon-scale breastplate, flowing phoenix-feather mantle, floating flame Buckler on left arm, wielding Oversized blazing Dragon-Slayer Halberd in right hand, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, dynamic forward walking stride with left leg stepping forward, cape flowing."
+        "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Chiến Thần Huyết Vũ (UR), 3/4 front-right tactical RPG view, wearing Winged crimson-gold Valkyrie diadem, obsidian dragon-scale breastplate, flowing phoenix-feather mantle, floating flame Buckler on left arm, wielding Oversized blazing Dragon-Slayer Halberd in right hand, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, dynamic forward walking stride with left leg stepping forward, cloak flowing."
       },
       {
         "slot": "04_walk_f1",
@@ -117,13 +117,13 @@
         "slot": "08_paperdoll_kit",
         "file": "knight_paperdoll_kit.png",
         "label": "Frame 8: Modular Paper-Doll 2×2 Kit",
-        "prompt": "16-bit pixel art modular RPG equipment sprite sheet for Chiến Thần Huyết Vũ divided into 4 distinct quadrants on solid pure green #00FF00: Top-Left: Base body in tunic and greaves without headgear or weapon; Top-Right: Headgear (Winged crimson-gold Valkyrie diadem, obsidian dragon-scale breastplate, flowing phoenix-feather mantle, floating flame Buckler on left arm) isolated; Bottom-Left: Off-hand shield/grimoire & armor mantle isolated; Bottom-Right: Primary weapon (Oversized blazing Dragon-Slayer Halberd in right hand) isolated."
+        "prompt": "16-bit pixel art modular RPG equipment sprite sheet for Chiến Thần Huyết Vũ divided into 4 distinct quadrants on solid pure green #00FF00: Top-Left: Base body in class tunic & boots without headgear or weapon; Top-Right: Headgear (Winged crimson-gold Valkyrie diadem with twin flame plumes) isolated; Bottom-Left: Off-hand shield/grimoire/quiver & mantle isolated; Bottom-Right: Primary weapon (Oversized blazing Dragon-Slayer Halberd in right hand) isolated."
       },
       {
         "slot": "09_loot_sheet",
         "file": "knight_loot_sheet.png",
         "label": "Frame 9: 3×2 RPG Weapon & Relic Sheet",
-        "prompt": "16-bit pixel art RPG item icon sheet arranged in a 3x2 grid (6 distinct items) for Chiến Thần Huyết Vũ on solid pure green #00FF00: Row 1: Mythic UR Primary Weapon, SSR Arcane Staff, Epic Heraldic Shield; Row 2: Rare Elixir Potion, SSR Relic Chest, Sacred Crest Sigil."
+        "prompt": "16-bit pixel art RPG item icon sheet arranged in a 3x2 grid (6 distinct items) for Chiến Thần Huyết Vũ on solid pure green #00FF00: Row 1: Mythic UR Primary Weapon, SSR Arcane Staff, Epic Off-Hand Crest; Row 2: Rare Elixir Potion, SSR Relic Chest, Class Sigil."
       },
       {
         "slot": "10_arena_stage",
@@ -142,19 +142,19 @@
         "slot": "01_idle_f0",
         "file": "knight_idle_f0.png",
         "label": "Frame 1: Idle Guard (F0)",
-        "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Pháp Sư Băng Vương (SSR), 3/4 front-right tactical RPG view, wearing Tall astral frost-crystal mitre hat, silver-embroidered glacial robe, floating ice-rune grimoire on left hand, wielding Oversized celestial sapphire Aether Staff in right hand, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, standing combat ready pose, feet planted on baseline."
+        "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Pháp Sư Băng Vương (SSR), 3/4 front-right tactical RPG view, wearing Tall astral frost-crystal mitre hat, silver-embroidered glacial robe, floating ice-rune grimoire on left hand, wielding Oversized celestial sapphire Aether Staff in right hand, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, standing combat ready pose, feet planted on baseline Y=88."
       },
       {
         "slot": "02_idle_f1",
         "file": "knight_idle_f1.png",
         "label": "Frame 2: Idle Breath (F1)",
-        "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Pháp Sư Băng Vương (SSR), 3/4 front-right tactical RPG view, wearing Tall astral frost-crystal mitre hat, silver-embroidered glacial robe, floating ice-rune grimoire on left hand, wielding Oversized celestial sapphire Aether Staff in right hand, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, subtle breathing combat stance, cape billowing slightly, weapon runes glowing brighter."
+        "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Pháp Sư Băng Vương (SSR), 3/4 front-right tactical RPG view, wearing Tall astral frost-crystal mitre hat, silver-embroidered glacial robe, floating ice-rune grimoire on left hand, wielding Oversized celestial sapphire Aether Staff in right hand, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, subtle breathing combat stance, mantle billowing slightly, runes glowing brighter."
       },
       {
         "slot": "03_walk_f0",
         "file": "knight_walk_f0.png",
         "label": "Frame 3: Walk Stride Left (F0)",
-        "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Pháp Sư Băng Vương (SSR), 3/4 front-right tactical RPG view, wearing Tall astral frost-crystal mitre hat, silver-embroidered glacial robe, floating ice-rune grimoire on left hand, wielding Oversized celestial sapphire Aether Staff in right hand, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, dynamic forward walking stride with left leg stepping forward, cape flowing."
+        "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Pháp Sư Băng Vương (SSR), 3/4 front-right tactical RPG view, wearing Tall astral frost-crystal mitre hat, silver-embroidered glacial robe, floating ice-rune grimoire on left hand, wielding Oversized celestial sapphire Aether Staff in right hand, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, dynamic forward walking stride with left leg stepping forward, cloak flowing."
       },
       {
         "slot": "04_walk_f1",
@@ -184,13 +184,13 @@
         "slot": "08_paperdoll_kit",
         "file": "knight_paperdoll_kit.png",
         "label": "Frame 8: Modular Paper-Doll 2×2 Kit",
-        "prompt": "16-bit pixel art modular RPG equipment sprite sheet for Pháp Sư Băng Vương divided into 4 distinct quadrants on solid pure green #00FF00: Top-Left: Base body in tunic and greaves without headgear or weapon; Top-Right: Headgear (Tall astral frost-crystal mitre hat, silver-embroidered glacial robe, floating ice-rune grimoire on left hand) isolated; Bottom-Left: Off-hand shield/grimoire & armor mantle isolated; Bottom-Right: Primary weapon (Oversized celestial sapphire Aether Staff in right hand) isolated."
+        "prompt": "16-bit pixel art modular RPG equipment sprite sheet for Pháp Sư Băng Vương divided into 4 distinct quadrants on solid pure green #00FF00: Top-Left: Base body in class tunic & boots without headgear or weapon; Top-Right: Headgear (Tall astral frost-crystal mitre crown with sapphire core) isolated; Bottom-Left: Off-hand shield/grimoire/quiver & mantle isolated; Bottom-Right: Primary weapon (Oversized celestial sapphire Aether Staff in right hand) isolated."
       },
       {
         "slot": "09_loot_sheet",
         "file": "knight_loot_sheet.png",
         "label": "Frame 9: 3×2 RPG Weapon & Relic Sheet",
-        "prompt": "16-bit pixel art RPG item icon sheet arranged in a 3x2 grid (6 distinct items) for Pháp Sư Băng Vương on solid pure green #00FF00: Row 1: Mythic UR Primary Weapon, SSR Arcane Staff, Epic Heraldic Shield; Row 2: Rare Elixir Potion, SSR Relic Chest, Sacred Crest Sigil."
+        "prompt": "16-bit pixel art RPG item icon sheet arranged in a 3x2 grid (6 distinct items) for Pháp Sư Băng Vương on solid pure green #00FF00: Row 1: Mythic UR Primary Weapon, SSR Arcane Staff, Epic Off-Hand Crest; Row 2: Rare Elixir Potion, SSR Relic Chest, Class Sigil."
       },
       {
         "slot": "10_arena_stage",
@@ -209,55 +209,55 @@
         "slot": "01_idle_f0",
         "file": "knight_idle_f0.png",
         "label": "Frame 1: Idle Guard (F0)",
-        "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Sát Thủ Hắc Ám (EPIC), 3/4 front-right tactical RPG view, wearing Hooded void-stalker cowl with glowing violet eyes, dark leather &obsidian shadow-plate, tattered phantom scarf, wielding Oversized crescent Void Scythe & twinabyssal daggers, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, standing combat ready pose, feet planted on baseline."
+        "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Sát Thủ Hắc Ám (EPIC), 3/4 front-right tactical RPG view, wearing Hooded void-stalker cowl with glowing violet eyes, dark leather & obsidian shadow-plate, tattered phantom scarf, wielding Oversized crescent Void Scythe & twin abyssal daggers, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, standing combat ready pose, feet planted on baseline Y=88."
       },
       {
         "slot": "02_idle_f1",
         "file": "knight_idle_f1.png",
         "label": "Frame 2: Idle Breath (F1)",
-        "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Sát Thủ Hắc Ám (EPIC), 3/4 front-right tactical RPG view, wearing Hooded void-stalker cowl with glowing violet eyes, dark leather &obsidian shadow-plate, tattered phantom scarf, wielding Oversized crescent Void Scythe & twinabyssal daggers, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, subtle breathing combat stance, cape billowing slightly, weapon runes glowing brighter."
+        "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Sát Thủ Hắc Ám (EPIC), 3/4 front-right tactical RPG view, wearing Hooded void-stalker cowl with glowing violet eyes, dark leather & obsidian shadow-plate, tattered phantom scarf, wielding Oversized crescent Void Scythe & twin abyssal daggers, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, subtle breathing combat stance, mantle billowing slightly, runes glowing brighter."
       },
       {
         "slot": "03_walk_f0",
         "file": "knight_walk_f0.png",
         "label": "Frame 3: Walk Stride Left (F0)",
-        "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Sát Thủ Hắc Ám (EPIC), 3/4 front-right tactical RPG view, wearing Hooded void-stalker cowl with glowing violet eyes, dark leather &obsidian shadow-plate, tattered phantom scarf, wielding Oversized crescent Void Scythe & twinabyssal daggers, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, dynamic forward walking stride with left leg stepping forward, cape flowing."
+        "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Sát Thủ Hắc Ám (EPIC), 3/4 front-right tactical RPG view, wearing Hooded void-stalker cowl with glowing violet eyes, dark leather & obsidian shadow-plate, tattered phantom scarf, wielding Oversized crescent Void Scythe & twin abyssal daggers, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, dynamic forward walking stride with left leg stepping forward, cloak flowing."
       },
       {
         "slot": "04_walk_f1",
         "file": "knight_walk_f1.png",
         "label": "Frame 4: Walk Stride Right (F1)",
-        "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Sát Thủ Hắc Ám (EPIC), 3/4 front-right tactical RPG view, wearing Hooded void-stalker cowl with glowing violet eyes, dark leather &obsidian shadow-plate, tattered phantom scarf, wielding Oversized crescent Void Scythe & twinabyssal daggers, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, dynamic forward walking stride with right leg stepping forward, balanced weapon."
+        "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Sát Thủ Hắc Ám (EPIC), 3/4 front-right tactical RPG view, wearing Hooded void-stalker cowl with glowing violet eyes, dark leather & obsidian shadow-plate, tattered phantom scarf, wielding Oversized crescent Void Scythe & twin abyssal daggers, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, dynamic forward walking stride with right leg stepping forward, balanced weapon."
       },
       {
         "slot": "05_attack_f0",
         "file": "knight_attack_f0.png",
         "label": "Frame 5: Attack Overhead Windup (F0)",
-        "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Sát Thủ Hắc Ám (EPIC), 3/4 front-right tactical RPG view, wearing Hooded void-stalker cowl with glowing violet eyes, dark leather &obsidian shadow-plate, tattered phantom scarf, wielding Oversized crescent Void Scythe & twinabyssal daggers, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, dramatic attack windup pose raising Oversized crescent Void Scythe & twinabyssal daggers high overhead charging elemental energy."
+        "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Sát Thủ Hắc Ám (EPIC), 3/4 front-right tactical RPG view, wearing Hooded void-stalker cowl with glowing violet eyes, dark leather & obsidian shadow-plate, tattered phantom scarf, wielding Oversized crescent Void Scythe & twin abyssal daggers, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, dramatic attack windup pose raising Oversized crescent Void Scythe & twin abyssal daggers high overhead charging elemental energy."
       },
       {
         "slot": "06_attack_f1",
         "file": "knight_attack_f1.png",
         "label": "Frame 6: Attack Cleave Slash (F1)",
-        "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Sát Thủ Hắc Ám (EPIC), 3/4 front-right tactical RPG view, wearing Hooded void-stalker cowl with glowing violet eyes, dark leather &obsidian shadow-plate, tattered phantom scarf, wielding Oversized crescent Void Scythe & twinabyssal daggers, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, explosive forward cleave swing unleashing a crescent energy slash arc."
+        "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Sát Thủ Hắc Ám (EPIC), 3/4 front-right tactical RPG view, wearing Hooded void-stalker cowl with glowing violet eyes, dark leather & obsidian shadow-plate, tattered phantom scarf, wielding Oversized crescent Void Scythe & twin abyssal daggers, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, explosive forward cleave swing unleashing a crescent energy slash arc."
       },
       {
         "slot": "07_victory_f0",
         "file": "knight_victory_f0.png",
         "label": "Frame 7: Victory Pose",
-        "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Sát Thủ Hắc Ám (EPIC), 3/4 front-right tactical RPG view, wearing Hooded void-stalker cowl with glowing violet eyes, dark leather &obsidian shadow-plate, tattered phantom scarf, wielding Oversized crescent Void Scythe & twinabyssal daggers, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, triumphant victory pose raising Oversized crescent Void Scythe & twinabyssal daggers skyward with radiant aura burst."
+        "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Sát Thủ Hắc Ám (EPIC), 3/4 front-right tactical RPG view, wearing Hooded void-stalker cowl with glowing violet eyes, dark leather & obsidian shadow-plate, tattered phantom scarf, wielding Oversized crescent Void Scythe & twin abyssal daggers, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, triumphant victory pose raising Oversized crescent Void Scythe & twin abyssal daggers skyward with radiant aura burst."
       },
       {
         "slot": "08_paperdoll_kit",
         "file": "knight_paperdoll_kit.png",
         "label": "Frame 8: Modular Paper-Doll 2×2 Kit",
-        "prompt": "16-bit pixel art modular RPG equipment sprite sheet for Sát Thủ Hắc Ám divided into 4 distinct quadrants on solid pure green #00FF00: Top-Left: Base body in tunic and greaves without headgear or weapon; Top-Right: Headgear (Hooded void-stalker cowl with glowing violet eyes, dark leather &obsidian shadow-plate, tattered phantom scarf) isolated; Bottom-Left: Off-hand shield/grimoire & armor mantle isolated; Bottom-Right: Primary weapon (Oversized crescent Void Scythe & twinabyssal daggers) isolated."
+        "prompt": "16-bit pixel art modular RPG equipment sprite sheet for Sát Thủ Hắc Ám divided into 4 distinct quadrants on solid pure green #00FF00: Top-Left: Base body in class tunic & boots without headgear or weapon; Top-Right: Headgear (Hooded void-stalker cowl with glowing violet eyes) isolated; Bottom-Left: Off-hand shield/grimoire/quiver & mantle isolated; Bottom-Right: Primary weapon (Oversized crescent Void Scythe & twin abyssal daggers) isolated."
       },
       {
         "slot": "09_loot_sheet",
         "file": "knight_loot_sheet.png",
         "label": "Frame 9: 3×2 RPG Weapon & Relic Sheet",
-        "prompt": "16-bit pixel art RPG item icon sheet arranged in a 3x2 grid (6 distinct items) for Sát Thủ Hắc Ám on solid pure green #00FF00: Row 1: Mythic UR Primary Weapon, SSR Arcane Staff, Epic Heraldic Shield; Row 2: Rare Elixir Potion, SSR Relic Chest, Sacred Crest Sigil."
+        "prompt": "16-bit pixel art RPG item icon sheet arranged in a 3x2 grid (6 distinct items) for Sát Thủ Hắc Ám on solid pure green #00FF00: Row 1: Mythic UR Primary Weapon, SSR Arcane Staff, Epic Off-Hand Crest; Row 2: Rare Elixir Potion, SSR Relic Chest, Class Sigil."
       },
       {
         "slot": "10_arena_stage",
@@ -276,19 +276,19 @@
         "slot": "01_idle_f0",
         "file": "knight_idle_f0.png",
         "label": "Frame 1: Idle Guard (F0)",
-        "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Xạ Thủ Cổ Mộc (SSR), 3/4 front-right tactical RPG view, wearing Golden-antlered sylvan circlet, emerald leaf-mail tunic, hooded forest cloak, enchanted quiver on back, wielding Oversized glowing World-Tree Greatbow with emerald energy arrow, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, standing combat ready pose, feet planted on baseline."
+        "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Xạ Thủ Cổ Mộc (SSR), 3/4 front-right tactical RPG view, wearing Golden-antlered sylvan circlet, emerald leaf-mail tunic, hooded forest cloak, enchanted quiver on back, wielding Oversized glowing World-Tree Greatbow with emerald energy arrow, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, standing combat ready pose, feet planted on baseline Y=88."
       },
       {
         "slot": "02_idle_f1",
         "file": "knight_idle_f1.png",
         "label": "Frame 2: Idle Breath (F1)",
-        "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Xạ Thủ Cổ Mộc (SSR), 3/4 front-right tactical RPG view, wearing Golden-antlered sylvan circlet, emerald leaf-mail tunic, hooded forest cloak, enchanted quiver on back, wielding Oversized glowing World-Tree Greatbow with emerald energy arrow, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, subtle breathing combat stance, cape billowing slightly, weapon runes glowing brighter."
+        "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Xạ Thủ Cổ Mộc (SSR), 3/4 front-right tactical RPG view, wearing Golden-antlered sylvan circlet, emerald leaf-mail tunic, hooded forest cloak, enchanted quiver on back, wielding Oversized glowing World-Tree Greatbow with emerald energy arrow, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, subtle breathing combat stance, mantle billowing slightly, runes glowing brighter."
       },
       {
         "slot": "03_walk_f0",
         "file": "knight_walk_f0.png",
         "label": "Frame 3: Walk Stride Left (F0)",
-        "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Xạ Thủ Cổ Mộc (SSR), 3/4 front-right tactical RPG view, wearing Golden-antlered sylvan circlet, emerald leaf-mail tunic, hooded forest cloak, enchanted quiver on back, wielding Oversized glowing World-Tree Greatbow with emerald energy arrow, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, dynamic forward walking stride with left leg stepping forward, cape flowing."
+        "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Xạ Thủ Cổ Mộc (SSR), 3/4 front-right tactical RPG view, wearing Golden-antlered sylvan circlet, emerald leaf-mail tunic, hooded forest cloak, enchanted quiver on back, wielding Oversized glowing World-Tree Greatbow with emerald energy arrow, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, dynamic forward walking stride with left leg stepping forward, cloak flowing."
       },
       {
         "slot": "04_walk_f1",
@@ -318,13 +318,13 @@
         "slot": "08_paperdoll_kit",
         "file": "knight_paperdoll_kit.png",
         "label": "Frame 8: Modular Paper-Doll 2×2 Kit",
-        "prompt": "16-bit pixel art modular RPG equipment sprite sheet for Xạ Thủ Cổ Mộc divided into 4 distinct quadrants on solid pure green #00FF00: Top-Left: Base body in tunic and greaves without headgear or weapon; Top-Right: Headgear (Golden-antlered sylvan circlet, emerald leaf-mail tunic, hooded forest cloak, enchanted quiver on back) isolated; Bottom-Left: Off-hand shield/grimoire & armor mantle isolated; Bottom-Right: Primary weapon (Oversized glowing World-Tree Greatbow with emerald energy arrow) isolated."
+        "prompt": "16-bit pixel art modular RPG equipment sprite sheet for Xạ Thủ Cổ Mộc divided into 4 distinct quadrants on solid pure green #00FF00: Top-Left: Base body in class tunic & boots without headgear or weapon; Top-Right: Headgear (Golden-antlered sylvan circlet with leaf crest) isolated; Bottom-Left: Off-hand shield/grimoire/quiver & mantle isolated; Bottom-Right: Primary weapon (Oversized glowing World-Tree Greatbow with emerald energy arrow) isolated."
       },
       {
         "slot": "09_loot_sheet",
         "file": "knight_loot_sheet.png",
         "label": "Frame 9: 3×2 RPG Weapon & Relic Sheet",
-        "prompt": "16-bit pixel art RPG item icon sheet arranged in a 3x2 grid (6 distinct items) for Xạ Thủ Cổ Mộc on solid pure green #00FF00: Row 1: Mythic UR Primary Weapon, SSR Arcane Staff, Epic Heraldic Shield; Row 2: Rare Elixir Potion, SSR Relic Chest, Sacred Crest Sigil."
+        "prompt": "16-bit pixel art RPG item icon sheet arranged in a 3x2 grid (6 distinct items) for Xạ Thủ Cổ Mộc on solid pure green #00FF00: Row 1: Mythic UR Primary Weapon, SSR Arcane Staff, Epic Off-Hand Crest; Row 2: Rare Elixir Potion, SSR Relic Chest, Class Sigil."
       },
       {
         "slot": "10_arena_stage",

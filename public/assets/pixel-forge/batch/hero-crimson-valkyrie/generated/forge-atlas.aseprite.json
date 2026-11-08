@@ -2,81 +2,165 @@
   "frames": {
     "hero-crimson-valkyrie_idle_0": {
       "frame": {
-        "x": 0,
-        "y": 0,
-        "w": 96,
-        "h": 96
+        "x": 6,
+        "y": 6,
+        "w": 86,
+        "h": 83
       },
       "rotated": false,
       "trimmed": true,
       "spriteSourceSize": {
-        "x": 24,
-        "y": 5,
-        "w": 67,
-        "h": 84
+        "x": 10,
+        "y": 6,
+        "w": 86,
+        "h": 83
       },
       "sourceSize": {
         "w": 96,
         "h": 96
       },
-      "duration": 125
+      "duration": 167
     },
     "hero-crimson-valkyrie_idle_1": {
       "frame": {
-        "x": 96,
-        "y": 0,
-        "w": 96,
-        "h": 96
+        "x": 100,
+        "y": 6,
+        "w": 86,
+        "h": 84
       },
       "rotated": false,
       "trimmed": true,
       "spriteSourceSize": {
-        "x": 19,
+        "x": 10,
         "y": 5,
-        "w": 72,
+        "w": 86,
         "h": 84
       },
       "sourceSize": {
         "w": 96,
         "h": 96
       },
-      "duration": 125
+      "duration": 167
     },
     "hero-crimson-valkyrie_idle_2": {
       "frame": {
-        "x": 192,
-        "y": 0,
-        "w": 96,
-        "h": 96
+        "x": 194,
+        "y": 6,
+        "w": 86,
+        "h": 84
       },
       "rotated": false,
       "trimmed": true,
       "spriteSourceSize": {
-        "x": 24,
+        "x": 10,
         "y": 5,
-        "w": 67,
+        "w": 86,
         "h": 84
       },
       "sourceSize": {
         "w": 96,
         "h": 96
       },
-      "duration": 125
+      "duration": 167
     },
     "hero-crimson-valkyrie_idle_3": {
       "frame": {
         "x": 288,
-        "y": 0,
-        "w": 96,
-        "h": 96
+        "y": 6,
+        "w": 86,
+        "h": 83
       },
       "rotated": false,
       "trimmed": true,
       "spriteSourceSize": {
-        "x": 19,
-        "y": 5,
-        "w": 72,
+        "x": 10,
+        "y": 6,
+        "w": 86,
+        "h": 83
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 167
+    },
+    "hero-crimson-valkyrie_walk_0": {
+      "frame": {
+        "x": 382,
+        "y": 6,
+        "w": 88,
         "h": 84
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 8,
+        "y": 5,
+        "w": 88,
+        "h": 84
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 125
+    },
+    "hero-crimson-valkyrie_walk_1": {
+      "frame": {
+        "x": 6,
+        "y": 98,
+        "w": 88,
+        "h": 85
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 8,
+        "y": 4,
+        "w": 88,
+        "h": 85
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 125
+    },
+    "hero-crimson-valkyrie_walk_2": {
+      "frame": {
+        "x": 102,
+        "y": 98,
+        "w": 86,
+        "h": 85
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 10,
+        "y": 4,
+        "w": 86,
+        "h": 85
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 125
+    },
+    "hero-crimson-valkyrie_walk_3": {
+      "frame": {
+        "x": 196,
+        "y": 98,
+        "w": 86,
+        "h": 85
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 10,
+        "y": 4,
+        "w": 86,
+        "h": 85
       },
       "sourceSize": {
         "w": 96,
@@ -86,38 +170,143 @@
     },
     "hero-crimson-valkyrie_attack_0": {
       "frame": {
-        "x": 0,
-        "y": 96,
-        "w": 96,
-        "h": 96
+        "x": 290,
+        "y": 98,
+        "w": 86,
+        "h": 81
       },
       "rotated": false,
       "trimmed": true,
       "spriteSourceSize": {
-        "x": 24,
-        "y": 5,
-        "w": 67,
-        "h": 84
+        "x": 10,
+        "y": 8,
+        "w": 86,
+        "h": 81
       },
       "sourceSize": {
         "w": 96,
         "h": 96
       },
-      "duration": 125
+      "duration": 100
     },
     "hero-crimson-valkyrie_attack_1": {
       "frame": {
-        "x": 96,
-        "y": 96,
-        "w": 96,
-        "h": 96
+        "x": 384,
+        "y": 98,
+        "w": 89,
+        "h": 84
       },
       "rotated": false,
       "trimmed": true,
       "spriteSourceSize": {
-        "x": 16,
+        "x": 7,
         "y": 5,
-        "w": 69,
+        "w": 89,
+        "h": 84
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 100
+    },
+    "hero-crimson-valkyrie_attack_2": {
+      "frame": {
+        "x": 6,
+        "y": 191,
+        "w": 87,
+        "h": 84
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 9,
+        "y": 5,
+        "w": 87,
+        "h": 84
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 100
+    },
+    "hero-crimson-valkyrie_attack_3": {
+      "frame": {
+        "x": 101,
+        "y": 191,
+        "w": 85,
+        "h": 84
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 9,
+        "y": 5,
+        "w": 85,
+        "h": 84
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 100
+    },
+    "hero-crimson-valkyrie_hurt_0": {
+      "frame": {
+        "x": 6,
+        "y": 6,
+        "w": 86,
+        "h": 83
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 10,
+        "y": 6,
+        "w": 86,
+        "h": 83
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 167
+    },
+    "hero-crimson-valkyrie_hurt_1": {
+      "frame": {
+        "x": 194,
+        "y": 191,
+        "w": 86,
+        "h": 83
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 9,
+        "y": 6,
+        "w": 86,
+        "h": 83
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 167
+    },
+    "hero-crimson-valkyrie_victory_0": {
+      "frame": {
+        "x": 100,
+        "y": 6,
+        "w": 86,
+        "h": 84
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 10,
+        "y": 5,
+        "w": 86,
         "h": 84
       },
       "sourceSize": {
@@ -126,17 +315,38 @@
       },
       "duration": 125
     },
-    "hero-crimson-valkyrie_attack_2": {
+    "hero-crimson-valkyrie_victory_1": {
       "frame": {
-        "x": 192,
-        "y": 96,
-        "w": 96,
-        "h": 96
+        "x": 288,
+        "y": 191,
+        "w": 84,
+        "h": 82
       },
       "rotated": false,
       "trimmed": true,
       "spriteSourceSize": {
-        "x": 6,
+        "x": 11,
+        "y": 7,
+        "w": 84,
+        "h": 82
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 125
+    },
+    "hero-crimson-valkyrie_victory_2": {
+      "frame": {
+        "x": 380,
+        "y": 191,
+        "w": 84,
+        "h": 84
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 11,
         "y": 5,
         "w": 84,
         "h": 84
@@ -147,19 +357,61 @@
       },
       "duration": 125
     },
-    "hero-crimson-valkyrie_attack_3": {
+    "hero-crimson-valkyrie_victory_3": {
       "frame": {
-        "x": 288,
-        "y": 96,
-        "w": 96,
-        "h": 96
+        "x": 6,
+        "y": 283,
+        "w": 84,
+        "h": 85
       },
       "rotated": false,
       "trimmed": true,
       "spriteSourceSize": {
-        "x": 19,
+        "x": 11,
+        "y": 4,
+        "w": 84,
+        "h": 85
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 125
+    },
+    "hero-crimson-valkyrie_dir_S": {
+      "frame": {
+        "x": 6,
+        "y": 6,
+        "w": 86,
+        "h": 83
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 9,
+        "y": 6,
+        "w": 86,
+        "h": 83
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 125
+    },
+    "hero-crimson-valkyrie_dir_SE": {
+      "frame": {
+        "x": 100,
+        "y": 6,
+        "w": 86,
+        "h": 84
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 9,
         "y": 5,
-        "w": 72,
+        "w": 86,
         "h": 84
       },
       "sourceSize": {
@@ -167,19 +419,645 @@
         "h": 96
       },
       "duration": 125
+    },
+    "hero-crimson-valkyrie_dir_E": {
+      "frame": {
+        "x": 382,
+        "y": 6,
+        "w": 88,
+        "h": 84
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 7,
+        "y": 5,
+        "w": 88,
+        "h": 84
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 125
+    },
+    "hero-crimson-valkyrie_dir_NE": {
+      "frame": {
+        "x": 98,
+        "y": 283,
+        "w": 87,
+        "h": 86
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 8,
+        "y": 4,
+        "w": 87,
+        "h": 86
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 125
+    },
+    "hero-crimson-valkyrie_dir_N": {
+      "frame": {
+        "x": 193,
+        "y": 283,
+        "w": 61,
+        "h": 85
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 27,
+        "y": 5,
+        "w": 61,
+        "h": 85
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 125
+    },
+    "hero-crimson-valkyrie_dir_NW": {
+      "frame": {
+        "x": 262,
+        "y": 283,
+        "w": 87,
+        "h": 86
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 1,
+        "y": 4,
+        "w": 87,
+        "h": 86
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 125
+    },
+    "hero-crimson-valkyrie_dir_W": {
+      "frame": {
+        "x": 357,
+        "y": 283,
+        "w": 88,
+        "h": 84
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 1,
+        "y": 5,
+        "w": 88,
+        "h": 84
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 125
+    },
+    "hero-crimson-valkyrie_dir_SW": {
+      "frame": {
+        "x": 6,
+        "y": 377,
+        "w": 86,
+        "h": 84
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 1,
+        "y": 5,
+        "w": 86,
+        "h": 84
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 125
+    },
+    "hero-crimson-valkyrie_damaged": {
+      "frame": {
+        "x": 100,
+        "y": 377,
+        "w": 86,
+        "h": 83
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 9,
+        "y": 6,
+        "w": 86,
+        "h": 83
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 125
+    },
+    "layer_00_shadow": {
+      "frame": {
+        "x": 194,
+        "y": 377,
+        "w": 31,
+        "h": 5
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 17,
+        "y": 59,
+        "w": 31,
+        "h": 5
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 64
+      },
+      "duration": 125
+    },
+    "layer_10_body": {
+      "frame": {
+        "x": 233,
+        "y": 377,
+        "w": 44,
+        "h": 62
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 8,
+        "y": 1,
+        "w": 44,
+        "h": 62
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 64
+      },
+      "duration": 125
+    },
+    "layer_20_iris": {
+      "frame": {
+        "x": 285,
+        "y": 377,
+        "w": 11,
+        "h": 2
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 29,
+        "y": 7,
+        "w": 11,
+        "h": 2
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 64
+      },
+      "duration": 125
+    },
+    "layer_30_outfit": {
+      "frame": {
+        "x": 304,
+        "y": 377,
+        "w": 51,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 1,
+        "y": 11,
+        "w": 51,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 64
+      },
+      "duration": 125
+    },
+    "layer_40_hair": {
+      "frame": {
+        "x": 363,
+        "y": 377,
+        "w": 42,
+        "h": 28
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 12,
+        "y": 11,
+        "w": 42,
+        "h": 28
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 64
+      },
+      "duration": 125
+    },
+    "layer_50_weapon": {
+      "frame": {
+        "x": 413,
+        "y": 377,
+        "w": 34,
+        "h": 42
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 56,
+        "y": 25,
+        "w": 34,
+        "h": 42
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 125
+    },
+    "layer_60_fx": {
+      "frame": {
+        "x": 6,
+        "y": 469,
+        "w": 73,
+        "h": 57
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 11,
+        "y": 1,
+        "w": 73,
+        "h": 57
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 125
+    },
+    "vfx-gacha-summon-ssr_f0": {
+      "frame": {
+        "x": 87,
+        "y": 469,
+        "w": 47,
+        "h": 33
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 9,
+        "y": 25,
+        "w": 47,
+        "h": 33
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 64
+      },
+      "duration": 125
+    },
+    "vfx-gacha-summon-ssr_f1": {
+      "frame": {
+        "x": 142,
+        "y": 469,
+        "w": 47,
+        "h": 53
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 9,
+        "y": 5,
+        "w": 47,
+        "h": 53
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 64
+      },
+      "duration": 125
+    },
+    "vfx-gacha-summon-ssr_f2": {
+      "frame": {
+        "x": 197,
+        "y": 469,
+        "w": 47,
+        "h": 51
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 9,
+        "y": 7,
+        "w": 47,
+        "h": 51
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 64
+      },
+      "duration": 125
+    },
+    "vfx-gacha-summon-ssr_f3": {
+      "frame": {
+        "x": 252,
+        "y": 469,
+        "w": 47,
+        "h": 52
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 9,
+        "y": 6,
+        "w": 47,
+        "h": 52
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 64
+      },
+      "duration": 125
+    },
+    "vfx-solar-slash_f0": {
+      "frame": {
+        "x": 307,
+        "y": 469,
+        "w": 18,
+        "h": 41
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 35,
+        "y": 9,
+        "w": 18,
+        "h": 41
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 64
+      },
+      "duration": 83
+    },
+    "vfx-solar-slash_f1": {
+      "frame": {
+        "x": 333,
+        "y": 469,
+        "w": 29,
+        "h": 57
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 27,
+        "y": 4,
+        "w": 29,
+        "h": 57
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 64
+      },
+      "duration": 83
+    },
+    "vfx-solar-slash_f2": {
+      "frame": {
+        "x": 370,
+        "y": 469,
+        "w": 33,
+        "h": 62
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 27,
+        "y": 1,
+        "w": 33,
+        "h": 62
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 64
+      },
+      "duration": 83
+    },
+    "vfx-solar-slash_f3": {
+      "frame": {
+        "x": 411,
+        "y": 469,
+        "w": 25,
+        "h": 47
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 33,
+        "y": 8,
+        "w": 25,
+        "h": 47
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 64
+      },
+      "duration": 83
+    },
+    "loot-sunblade-ur": {
+      "frame": {
+        "x": 444,
+        "y": 469,
+        "w": 23,
+        "h": 24
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 3,
+        "w": 23,
+        "h": 24
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 32
+      },
+      "duration": 125
+    },
+    "loot-aether-staff-ssr": {
+      "frame": {
+        "x": 475,
+        "y": 469,
+        "w": 14,
+        "h": 25
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 9,
+        "y": 4,
+        "w": 14,
+        "h": 25
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 32
+      },
+      "duration": 125
+    },
+    "loot-fortress-shield-epic": {
+      "frame": {
+        "x": 6,
+        "y": 539,
+        "w": 20,
+        "h": 22
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 6,
+        "y": 4,
+        "w": 20,
+        "h": 22
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 32
+      },
+      "duration": 125
+    },
+    "loot-elixir-rare": {
+      "frame": {
+        "x": 34,
+        "y": 539,
+        "w": 18,
+        "h": 23
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 7,
+        "y": 4,
+        "w": 18,
+        "h": 23
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 32
+      },
+      "duration": 125
+    },
+    "loot-relic-chest-ssr": {
+      "frame": {
+        "x": 60,
+        "y": 539,
+        "w": 24,
+        "h": 19
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 4,
+        "y": 8,
+        "w": 24,
+        "h": 19
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 32
+      },
+      "duration": 125
+    },
+    "loot-core-sigil-common": {
+      "frame": {
+        "x": 92,
+        "y": 539,
+        "w": 22,
+        "h": 22
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 5,
+        "w": 22,
+        "h": 22
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 32
+      },
+      "duration": 125
     }
   },
   "meta": {
     "app": "https://github.com/pixel-ui-design-system/pixel-forge",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "image": "forge-atlas-diffuse.png",
     "normalMap": "forge-atlas-normal.png",
     "emissiveMap": "forge-atlas-emissive.png",
     "format": "RGBA8888",
     "size": {
-      "w": 384,
-      "h": 192
+      "w": 512,
+      "h": 1024
     },
-    "scale": "1"
+    "extrudePx": 2,
+    "scale": "1",
+    "frameTags": [
+      {
+        "name": "idle",
+        "from": 0,
+        "to": 3,
+        "direction": "forward",
+        "repeat": "0"
+      },
+      {
+        "name": "walk",
+        "from": 4,
+        "to": 7,
+        "direction": "forward",
+        "repeat": "0"
+      },
+      {
+        "name": "attack",
+        "from": 8,
+        "to": 11,
+        "direction": "forward",
+        "repeat": "1"
+      },
+      {
+        "name": "hurt",
+        "from": 12,
+        "to": 13,
+        "direction": "forward",
+        "repeat": "1"
+      },
+      {
+        "name": "victory",
+        "from": 14,
+        "to": 17,
+        "direction": "forward",
+        "repeat": "0"
+      }
+    ]
   }
 }

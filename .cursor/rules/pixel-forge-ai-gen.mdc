@@ -1,0 +1,14 @@
+---
+description: Generate #00FF00 chroma-key pixel-art sprites from [PIXEL-FORGE-IDE-TASK] prompts, save to raw_ai, and run pixel-forge build-unit to hot-reload the Web Studio UI.
+globs:
+alwaysApply: false
+---
+
+# Pixel Forge IDE AI-Gen Protocol (`@pixel-forge-ai-gen`)
+
+When the user pastes a `[PIXEL-FORGE-IDE-TASK]` block or asks to generate AI sprites for Pixel Forge:
+
+1. Read `skills/pixel-forge-ai-gen/SKILL.md` for full slot specifications.
+2. If a `register-unit` command or `REGISTER_SPEC_JSON` block is present, execute `python scripts/pixel-forge.py register-unit ...` to register/update `forge-roster.json` and create `rawAiDir`.
+3. Generate the requested `#00FF00` chroma-key PNG plates (using available image generation MCP/tools, or a crisp `PIL` 16-bit pixel-art script fallback if no image model tool is connected) and save them directly to `<rawAiDir>/<slug>_*.png`.
+4. Execute `python scripts/pixel-forge.py build-unit --unit "<unit-id>"` and verify `[PASS 100/100]` so `public/assets/pixel-forge/batch-manifest.json` updates its `buildRevision` and hot-reloads in the browser UI.

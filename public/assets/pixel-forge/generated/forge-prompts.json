@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "selectedProvider": "codeart2d",
   "availableProviders": [
     {
@@ -73,58 +73,64 @@
   ],
   "negativePrompt": "anti-aliasing, blurry edges, sub-pixel rendering, mixels, inconsistent pixel grid, soft gradients, airbrush shading, lens flare, Gaussian blur, semi-transparent halo, pillow shading, baked text, watermark, cropped weapon tip, floating feet",
   "stages": {
-    "masterStill": {
-      "title": "1. Master Still (Chế độ hibit 8×8 Majority-Vote)",
-      "prompt": "[HIBIT MASTER STILL SPEC] Character: Hiệp Sĩ Thánh Quang (Thánh Kỵ Sĩ Giáp Bạc), rarity=SSR, element=solar. Render flat unoutlined cel-shaded regions with strictly <= 3 discrete shades per material for 8x8 majority-vote downscaling to a 64x64 logical canvas. Top-left directional lighting. Lock both feet on horizontal baseline Y=88 (pivot=32,56). Solid chroma key background (#00FF00) with zero color spill. Leave >=8px silhouette padding around extremities.",
+    "stage1RawChroma": {
+      "title": "Công Đoạn 1: Ảnh AI Gốc 10 Khung & Khử Nền CIELAB",
+      "prompt": "[STAGE 01: 10-FRAME CHROMA-KEY & LUT SPEC] Character: Hiệp Sĩ Thánh Quang (Thánh Kỵ Sĩ Giáp Bạc), rarity=SSR, element=solar. Author 10 synchronized AI source plates on solid #00FF00 pure green chroma background (7 character keyframes + 2x2 modular equipment kit + 3x2 RPG loot sheet + HD-2D cathedral arena). Run CIELAB Delta-E chroma removal BEFORE shared 20-color Master Palette quantization, locking boots strictly to baseline Y=88 on a 96x96 canvas.",
       "constraints": [
-        "Canvas: 64×64px (Pivot: 32, 56)",
-        "Foot Baseline Lock: Y = 88px",
-        "Max shades per material: 3 | Max palette: 16 colors",
-        "Chroma Key BEFORE Quantize | Binary Alpha {0, 255}"
+        "10 tấm AI gốc (#00FF00): 7 keyframe nhân vật + Kit 2×2 + Loot 3×2 + Sàn đấu 256×144",
+        "Khóa bàn chân: Y = 88px | Tối đa 20 màu Master LUT",
+        "Chroma Key CIELAB chạy TRƯỚC khi lượng tử hóa bảng màu | Binary Alpha {0, 255}"
       ]
     },
-    "characterBible": {
-      "title": "2. Character Bible 23 Khung & 8 Hướng Đối Xứng",
-      "prompt": "[CHARACTER BIBLE 23-PANEL SPEC] Subject: Hiệp Sĩ Thánh Quang. Generate a synchronized 23-panel design sheet: 5 orthographic turnaround views (S, SW, W, NW, N; derive SE, E, NE via deterministic horizontal mirror flip to save 37.5% generation cost), 6 dialogue expressions (neutral, determined, victory, hurt, arcane-trance, command), 3 combat action keyposes, 3 ascension skins (vanguard-armor, astral-robe, crimson-awakened), 1 chibi form, and a '-damaged' variant whose bounding box deviates by <=1px from the base pose.",
+    "stage2Paperdoll": {
+      "title": "Công Đoạn 2: Paper-Doll 7 Lớp, 5 Socket & Nhuộm Greyscale",
+      "prompt": "[STAGE 02: CONCENTRIC PAPERDOLL 7-LAYER & GREYSCALE TINT SPEC] Decompose Hiệp Sĩ Thánh Quang into 7 bit-exact RGBA layers sharing ground baseline Y=88: lower layers (00_shadow, 10_body, 20_iris, 30_outfit) on 64x64 at offset (16,26), headgear (40_hair) at (16,4), and oversized combat layers (50_weapon, 60_fx) on 96x96 with 4 runtime greyscale tint masks.",
       "constraints": [
-        "5 hướng sinh gốc (S, SW, W, NW, N) + 3 hướng lật gương (SE, E, NE) → tiết kiệm 37,5% chi phí",
-        "6 biểu cảm hội thoại + 3 Skin tiến hóa + 1 Chibi + biến thể -damaged lệch khung bao <= 1px"
+        "7 lớp RGBA: 00_shadow, 10_body, 20_iris, 30_outfit, 40_hair (64×64), 50_weapon & 60_fx (96×96)",
+        "4 mặt nạ Greyscale (10_body, 20_iris, 30_outfit, 40_hair) nhuộm màu runtime không lem"
       ]
     },
-    "paperdoll": {
-      "title": "3. Paper-Doll 7 Lớp & Khung Vũ Khí Quá Khổ 96×96",
-      "prompt": "[CONCENTRIC PAPERDOLL 7-LAYER SPEC] Decompose Hiệp Sĩ Thánh Quang into 7 bit-exact RGBA layers sharing a concentric ground pivot: body layers (00_shadow, 10_body greyscale-tintable, 20_iris green-key isolated, 30_outfit, 40_hair) on 64x64 canvas (pivot=(32, 56)), and oversized equipment layers (50_weapon, 60_fx) on 96x96 canvas (pivot=(48, 72)) so broadswords and polearms never clip during swing arcs.",
+    "stage3Motion": {
+      "title": "Công Đoạn 3: Hoạt Ảnh 5 Clip, Hit-Stop & VFX Kép",
+      "prompt": "[STAGE 03: 5-CLIP MOTION, CRAWL KILLER & DUAL-BUFFER VFX SPEC] Generate 5 combat clips (idle, walk, attack, hurt, victory) plus unarmed swap variants and 25 pre-baked socket weapon poses. Apply Region-Masked Idle, Temporal Hysteresis (commit_frames=2, max_hold=3), Hit-Stop / Screen-Shake timing metadata, and Dual-Buffer VFX (color + emissive).",
       "constraints": [
-        "7 lớp RGBA: 00_shadow, 10_body, 20_iris, 30_outfit, 40_hair, 50_weapon (96×96), 60_fx (96×96)",
-        "Tách riêng tròng mắt (Iris Key) và lớp cơ sở trắng xám để đổi màu runtime không lem"
+        "5 clip chiến đấu + bản Unarmed tay không + 25 pose vũ khí xoay góc integer",
+        "Crawl Killer (commit=2, max_hold=3), Hit-Stop & Screen-Shake + Dual-Buffer VFX (Color/Emissive)"
       ]
     },
-    "motion": {
-      "title": "4. Hoạt Ảnh, Khử Bò Viền (Crawl Killer) & Khóa Bàn Chân",
-      "prompt": "[I2V & REGION-MASK MOTION SPEC] Generate 5 game-ready clips (idle, walk, attack, hurt, victory). For 'idle', apply anatomical breathing and cape oscillation strictly inside region masks while preserving resting torso pixels 100% byte-identical. For 'walk' and 'attack', run CIELAB chroma key BEFORE palette quantization, enforce Temporal Hysteresis (Crawl Killer: commit_frames=2, max_hold=3 starvation escape), and lock contact foot to Y=88 with Alpha-Weighted Centroid stabilization.",
+    "stage4Bible": {
+      "title": "Công Đoạn 4: Character Bible 23 Ô, La Bàn 8 Hướng & Gacha",
+      "prompt": "[STAGE 04: CHARACTER BIBLE 23-PANEL & COMPASS TURNAROUND SPEC] Subject: Hiệp Sĩ Thánh Quang. Assemble 23 synchronized panels: 8-way spatial turnaround (5 source views S, SE, E, NW, N + 3 mirror flips SW, W, NE saving 37.5% cost), 6 portrait expressions (neutral, determined, victory, hurt, arcane-trance, command), 5 action keyposes, 3 ascension skins (vanguard-armor, astral-robe, crimson-awakened), and 1 SD chibi form, plus a '-damaged' variant (bbox delta <=1px).",
       "constraints": [
-        "Temporal Hysteresis: commit_frames = 2, max_hold = 3 (chống nhấp nháy viền)",
-        "Region-Masked Idle: giữ nguyên 100% byte vùng thân đứng yên",
-        "Dual-Buffer VFX: kênh color + kênh emissive_light tách biệt kèm metadata act"
+        "La bàn 8 hướng chuẩn không gian (S, SE, E, NW, N + lật gương SW, W, NE tiết kiệm 37,5%)",
+        "6 biểu cảm chân dung (48×48) + 3 Skin tiến hóa (96×96) + 1 Chibi SD (64×64) + Giáp hư hại (<=1px)"
       ]
     },
-    "world": {
-      "title": "5. Bản Đồ 16-Tile Wang Autotile, Parallax & 2.5D Normals",
-      "prompt": "[WANG 16-AUTOTILE & PARALLAX SPEC] Biome: Thánh Điện Hắc Diện (16-Tile Wang Autotile) (obsidian-Sanctum). Construct a 16-tile Wang/Blob autotile set (16x16px per tile) with crisp stepped stone/rune transitions, paired with a 3-layer parallax battle stage (sky_far, ruins_mid, arena_ground) using a disciplined 14-color palette and 2.5D normal/specular/emissive maps.",
+    "stage5World": {
+      "title": "Công Đoạn 5: Thế Giới Wang 16-Autotile, Parallax & Ánh Sáng 2.5D",
+      "prompt": "[STAGE 05: WANG 16-AUTOTILE, SEAMLESS PARALLAX & 2.5D LIGHTING SPEC] Biome: Thánh Điện Hắc Diện (16-Tile Wang Autotile) (obsidian-sanctum). Construct a 16-tile Wang/Blob autotile set (16x16px per tile) paired with a seamless 3-layer 256x144 parallax stage (sky_far, ruins_mid, arena_ground) and 2.5D SDF normal/specular/emissive maps.",
       "constraints": [
-        "16 biến thể bitmask (0..15) ghép liền mạch không vết nối",
-        "3 lớp Parallax Battle Stage + bộ 3 bản đồ ánh sáng (_normal, _specular, _emissive)"
+        "16 biến thể bitmask (0..15) đồng bộ trực tiếp với gridLayout của Sân Thánh Đường",
+        "3 lớp Parallax cuộn liền mạch không hở viền đen + 3 bản đồ ánh sáng 2.5D (_normal, _specular, _emissive)"
+      ]
+    },
+    "stage6Atlas": {
+      "title": "Công Đoạn 6: Đóng Gói Multi-Map Atlas & Xuất Engine",
+      "prompt": "[STAGE 06: MULTI-MAP EXTRUDED ATLAS & ENGINE EXPORT SPEC] Pack trimmed character clips, 8 directions, 7 paper-doll layers, full 4-frame VFX sequences, damaged state, and 6 loot icons into synchronized Diffuse/Normal/Emissive power-of-two atlases with 2px edge extrusion, exporting valid Godot 4 SpriteFrames (.tres), Unity 6 SpriteAtlas (.json), and Aseprite frameTags (.json).",
+      "constraints": [
+        "Đóng gói Alpha-Trimmed + 2px Edge Extrusion trên đủ 3 kênh Diffuse / Normal / Emissive",
+        "Xuất chuẩn Godot 4 SpriteFrames (.tres SubResource AtlasTexture), Unity 6 (.json) & Aseprite (.json)"
       ]
     }
   },
   "lootPrompts": [
     {
       "id": "loot-sunblade-ur",
-      "name": "Đại Kiếm Thánh Quang",
+      "name": "Thái Dương Thần Kiếm",
       "rarity": "ur",
       "category": "sword",
       "canvas": "32x32",
-      "prompt": "[LOOT ICON 32x32] Đại Kiếm Thánh Quang (sword), rarity=UR, material=solar-prismatic. Centered inventory icon with 1px selective dark outline, top-left specular glint, binary alpha (0/255), <=12 colors."
+      "prompt": "[LOOT ICON 32x32] Thái Dương Thần Kiếm (sword), rarity=UR, material=solar-prismatic. Centered inventory icon with 1px selective dark outline, top-left specular glint, binary alpha (0/255), <=12 colors."
     },
     {
       "id": "loot-aether-staff-ssr",

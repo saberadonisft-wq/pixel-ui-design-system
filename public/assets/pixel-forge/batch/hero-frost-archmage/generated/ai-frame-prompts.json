@@ -1,61 +1,61 @@
 [
   {
     "slot": "01_idle_f0",
-    "file": "knight_idle_f0.png",
+    "file": "frost_archmage_idle_f0.png",
     "label": "Frame 1: Idle Guard (F0)",
-    "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Pháp Sư Băng Vương (SSR), 3/4 front-right tactical RPG view, wearing Tall astral frost-crystal mitre hat, silver-embroidered glacial robe, floating ice-rune grimoire on left hand, wielding Oversized celestial sapphire Aether Staff in right hand, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, standing combat ready pose, feet planted on baseline."
+    "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Pháp Sư Băng Vương (SSR), 3/4 front-right tactical RPG view, wearing Tall astral frost-crystal mitre hat, silver-embroidered glacial robe, floating ice-rune grimoire on left hand, wielding Oversized celestial sapphire Aether Staff in right hand, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, standing combat ready pose, feet planted on baseline Y=88."
   },
   {
     "slot": "02_idle_f1",
-    "file": "knight_idle_f1.png",
+    "file": "frost_archmage_idle_f1.png",
     "label": "Frame 2: Idle Breath (F1)",
-    "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Pháp Sư Băng Vương (SSR), 3/4 front-right tactical RPG view, wearing Tall astral frost-crystal mitre hat, silver-embroidered glacial robe, floating ice-rune grimoire on left hand, wielding Oversized celestial sapphire Aether Staff in right hand, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, subtle breathing combat stance, cape billowing slightly, weapon runes glowing brighter."
+    "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Pháp Sư Băng Vương (SSR), 3/4 front-right tactical RPG view, wearing Tall astral frost-crystal mitre hat, silver-embroidered glacial robe, floating ice-rune grimoire on left hand, wielding Oversized celestial sapphire Aether Staff in right hand, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, subtle breathing combat stance, mantle billowing slightly, runes glowing brighter."
   },
   {
     "slot": "03_walk_f0",
-    "file": "knight_walk_f0.png",
+    "file": "frost_archmage_walk_f0.png",
     "label": "Frame 3: Walk Stride Left (F0)",
-    "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Pháp Sư Băng Vương (SSR), 3/4 front-right tactical RPG view, wearing Tall astral frost-crystal mitre hat, silver-embroidered glacial robe, floating ice-rune grimoire on left hand, wielding Oversized celestial sapphire Aether Staff in right hand, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, dynamic forward walking stride with left leg stepping forward, cape flowing."
+    "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Pháp Sư Băng Vương (SSR), 3/4 front-right tactical RPG view, wearing Tall astral frost-crystal mitre hat, silver-embroidered glacial robe, floating ice-rune grimoire on left hand, wielding Oversized celestial sapphire Aether Staff in right hand, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, dynamic forward walking stride with left leg stepping forward, cloak flowing."
   },
   {
     "slot": "04_walk_f1",
-    "file": "knight_walk_f1.png",
+    "file": "frost_archmage_walk_f1.png",
     "label": "Frame 4: Walk Stride Right (F1)",
     "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Pháp Sư Băng Vương (SSR), 3/4 front-right tactical RPG view, wearing Tall astral frost-crystal mitre hat, silver-embroidered glacial robe, floating ice-rune grimoire on left hand, wielding Oversized celestial sapphire Aether Staff in right hand, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, dynamic forward walking stride with right leg stepping forward, balanced weapon."
   },
   {
     "slot": "05_attack_f0",
-    "file": "knight_attack_f0.png",
+    "file": "frost_archmage_attack_f0.png",
     "label": "Frame 5: Attack Overhead Windup (F0)",
     "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Pháp Sư Băng Vương (SSR), 3/4 front-right tactical RPG view, wearing Tall astral frost-crystal mitre hat, silver-embroidered glacial robe, floating ice-rune grimoire on left hand, wielding Oversized celestial sapphire Aether Staff in right hand, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, dramatic attack windup pose raising Oversized celestial sapphire Aether Staff in right hand high overhead charging elemental energy."
   },
   {
     "slot": "06_attack_f1",
-    "file": "knight_attack_f1.png",
+    "file": "frost_archmage_attack_f1.png",
     "label": "Frame 6: Attack Cleave Slash (F1)",
     "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Pháp Sư Băng Vương (SSR), 3/4 front-right tactical RPG view, wearing Tall astral frost-crystal mitre hat, silver-embroidered glacial robe, floating ice-rune grimoire on left hand, wielding Oversized celestial sapphire Aether Staff in right hand, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, explosive forward cleave swing unleashing a crescent energy slash arc."
   },
   {
     "slot": "07_victory_f0",
-    "file": "knight_victory_f0.png",
+    "file": "frost_archmage_victory_f0.png",
     "label": "Frame 7: Victory Pose",
     "prompt": "16-bit SNES/GBA pixel art RPG character sprite of Pháp Sư Băng Vương (SSR), 3/4 front-right tactical RPG view, wearing Tall astral frost-crystal mitre hat, silver-embroidered glacial robe, floating ice-rune grimoire on left hand, wielding Oversized celestial sapphire Aether Staff in right hand, crisp pixel art clusters, dark pixel outlines, isolated on solid flat pure bright green chroma key background #00FF00, triumphant victory pose raising Oversized celestial sapphire Aether Staff in right hand skyward with radiant aura burst."
   },
   {
     "slot": "08_paperdoll_kit",
-    "file": "knight_paperdoll_kit.png",
+    "file": "frost_archmage_paperdoll_kit.png",
     "label": "Frame 8: Modular Paper-Doll 2×2 Kit",
-    "prompt": "16-bit pixel art modular RPG equipment sprite sheet for Pháp Sư Băng Vương divided into 4 distinct quadrants on solid pure green #00FF00: Top-Left: Base body in tunic and greaves without headgear or weapon; Top-Right: Headgear (Tall astral frost-crystal mitre hat, silver-embroidered glacial robe, floating ice-rune grimoire on left hand) isolated; Bottom-Left: Off-hand shield/grimoire & armor mantle isolated; Bottom-Right: Primary weapon (Oversized celestial sapphire Aether Staff in right hand) isolated."
+    "prompt": "16-bit pixel art modular RPG equipment sprite sheet for Pháp Sư Băng Vương divided into 4 distinct quadrants on solid pure green #00FF00: Top-Left: Base body in class tunic & boots without headgear or weapon; Top-Right: Headgear (Tall astral frost-crystal mitre crown with sapphire core) isolated; Bottom-Left: Off-hand shield/grimoire/quiver & mantle isolated; Bottom-Right: Primary weapon (Oversized celestial sapphire Aether Staff in right hand) isolated."
   },
   {
     "slot": "09_loot_sheet",
-    "file": "knight_loot_sheet.png",
+    "file": "frost_archmage_loot_sheet.png",
     "label": "Frame 9: 3×2 RPG Weapon & Relic Sheet",
-    "prompt": "16-bit pixel art RPG item icon sheet arranged in a 3x2 grid (6 distinct items) for Pháp Sư Băng Vương on solid pure green #00FF00: Row 1: Mythic UR Primary Weapon, SSR Arcane Staff, Epic Heraldic Shield; Row 2: Rare Elixir Potion, SSR Relic Chest, Sacred Crest Sigil."
+    "prompt": "16-bit pixel art RPG item icon sheet arranged in a 3x2 grid (6 distinct items) for Pháp Sư Băng Vương on solid pure green #00FF00: Row 1: Mythic UR Primary Weapon, SSR Arcane Staff, Epic Off-Hand Crest; Row 2: Rare Elixir Potion, SSR Relic Chest, Class Sigil."
   },
   {
     "slot": "10_arena_stage",
-    "file": "knight_arena_stage.png",
+    "file": "frost_archmage_arena_stage.png",
     "label": "Frame 10: HD-2D Battle Arena Stage",
     "prompt": "16-bit SNES/Octopath HD-2D pixel art RPG battle arena background for Pháp Sư Băng Vương, wide side-view perspective, ornate stone pillars, stained-glass arches, flat stone battle floor in lower third, crisp pixel art clusters."
   }

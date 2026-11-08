@@ -2,59 +2,101 @@
   "frames": {
     "hero-frost-archmage_idle_0": {
       "frame": {
-        "x": 0,
-        "y": 0,
-        "w": 96,
-        "h": 96
+        "x": 6,
+        "y": 6,
+        "w": 77,
+        "h": 84
       },
       "rotated": false,
       "trimmed": true,
       "spriteSourceSize": {
-        "x": 24,
+        "x": 14,
         "y": 5,
-        "w": 67,
+        "w": 77,
         "h": 84
       },
       "sourceSize": {
         "w": 96,
         "h": 96
       },
-      "duration": 125
+      "duration": 167
     },
     "hero-frost-archmage_idle_1": {
       "frame": {
-        "x": 96,
-        "y": 0,
-        "w": 96,
-        "h": 96
+        "x": 91,
+        "y": 6,
+        "w": 76,
+        "h": 84
       },
       "rotated": false,
       "trimmed": true,
       "spriteSourceSize": {
-        "x": 19,
+        "x": 15,
         "y": 5,
-        "w": 72,
+        "w": 76,
         "h": 84
       },
       "sourceSize": {
         "w": 96,
         "h": 96
       },
-      "duration": 125
+      "duration": 167
     },
     "hero-frost-archmage_idle_2": {
       "frame": {
-        "x": 192,
-        "y": 0,
-        "w": 96,
-        "h": 96
+        "x": 175,
+        "y": 6,
+        "w": 76,
+        "h": 84
       },
       "rotated": false,
       "trimmed": true,
       "spriteSourceSize": {
-        "x": 24,
+        "x": 15,
         "y": 5,
-        "w": 67,
+        "w": 76,
+        "h": 84
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 167
+    },
+    "hero-frost-archmage_idle_3": {
+      "frame": {
+        "x": 259,
+        "y": 6,
+        "w": 77,
+        "h": 84
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 14,
+        "y": 5,
+        "w": 77,
+        "h": 84
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 167
+    },
+    "hero-frost-archmage_walk_0": {
+      "frame": {
+        "x": 344,
+        "y": 6,
+        "w": 77,
+        "h": 84
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 15,
+        "y": 5,
+        "w": 77,
         "h": 84
       },
       "sourceSize": {
@@ -63,20 +105,62 @@
       },
       "duration": 125
     },
-    "hero-frost-archmage_idle_3": {
+    "hero-frost-archmage_walk_1": {
       "frame": {
-        "x": 288,
-        "y": 0,
-        "w": 96,
-        "h": 96
+        "x": 6,
+        "y": 98,
+        "w": 77,
+        "h": 85
       },
       "rotated": false,
       "trimmed": true,
       "spriteSourceSize": {
-        "x": 19,
-        "y": 5,
-        "w": 72,
-        "h": 84
+        "x": 15,
+        "y": 4,
+        "w": 77,
+        "h": 85
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 125
+    },
+    "hero-frost-archmage_walk_2": {
+      "frame": {
+        "x": 91,
+        "y": 98,
+        "w": 76,
+        "h": 85
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 15,
+        "y": 4,
+        "w": 76,
+        "h": 85
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 125
+    },
+    "hero-frost-archmage_walk_3": {
+      "frame": {
+        "x": 175,
+        "y": 98,
+        "w": 76,
+        "h": 85
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 15,
+        "y": 4,
+        "w": 76,
+        "h": 85
       },
       "sourceSize": {
         "w": 96,
@@ -86,17 +170,143 @@
     },
     "hero-frost-archmage_attack_0": {
       "frame": {
-        "x": 0,
-        "y": 96,
-        "w": 96,
-        "h": 96
+        "x": 259,
+        "y": 98,
+        "w": 77,
+        "h": 82
       },
       "rotated": false,
       "trimmed": true,
       "spriteSourceSize": {
-        "x": 24,
+        "x": 14,
+        "y": 7,
+        "w": 77,
+        "h": 82
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 100
+    },
+    "hero-frost-archmage_attack_1": {
+      "frame": {
+        "x": 344,
+        "y": 98,
+        "w": 79,
+        "h": 84
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 12,
         "y": 5,
-        "w": 67,
+        "w": 79,
+        "h": 84
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 100
+    },
+    "hero-frost-archmage_attack_2": {
+      "frame": {
+        "x": 6,
+        "y": 191,
+        "w": 79,
+        "h": 84
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 12,
+        "y": 5,
+        "w": 79,
+        "h": 84
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 100
+    },
+    "hero-frost-archmage_attack_3": {
+      "frame": {
+        "x": 93,
+        "y": 191,
+        "w": 79,
+        "h": 82
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 12,
+        "y": 7,
+        "w": 79,
+        "h": 82
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 100
+    },
+    "hero-frost-archmage_hurt_0": {
+      "frame": {
+        "x": 6,
+        "y": 6,
+        "w": 77,
+        "h": 84
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 14,
+        "y": 5,
+        "w": 77,
+        "h": 84
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 167
+    },
+    "hero-frost-archmage_hurt_1": {
+      "frame": {
+        "x": 180,
+        "y": 191,
+        "w": 77,
+        "h": 84
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 12,
+        "y": 5,
+        "w": 77,
+        "h": 84
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 167
+    },
+    "hero-frost-archmage_victory_0": {
+      "frame": {
+        "x": 91,
+        "y": 6,
+        "w": 76,
+        "h": 84
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 15,
+        "y": 5,
+        "w": 76,
         "h": 84
       },
       "sourceSize": {
@@ -105,19 +315,40 @@
       },
       "duration": 125
     },
-    "hero-frost-archmage_attack_1": {
+    "hero-frost-archmage_victory_1": {
       "frame": {
-        "x": 96,
-        "y": 96,
+        "x": 265,
+        "y": 191,
+        "w": 75,
+        "h": 82
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 16,
+        "y": 7,
+        "w": 75,
+        "h": 82
+      },
+      "sourceSize": {
         "w": 96,
         "h": 96
+      },
+      "duration": 125
+    },
+    "hero-frost-archmage_victory_2": {
+      "frame": {
+        "x": 348,
+        "y": 191,
+        "w": 75,
+        "h": 84
       },
       "rotated": false,
       "trimmed": true,
       "spriteSourceSize": {
         "x": 16,
         "y": 5,
-        "w": 69,
+        "w": 75,
         "h": 84
       },
       "sourceSize": {
@@ -126,19 +357,166 @@
       },
       "duration": 125
     },
-    "hero-frost-archmage_attack_2": {
+    "hero-frost-archmage_victory_3": {
       "frame": {
-        "x": 192,
-        "y": 96,
+        "x": 6,
+        "y": 283,
+        "w": 75,
+        "h": 85
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 16,
+        "y": 4,
+        "w": 75,
+        "h": 85
+      },
+      "sourceSize": {
         "w": 96,
         "h": 96
+      },
+      "duration": 125
+    },
+    "hero-frost-archmage_dir_S": {
+      "frame": {
+        "x": 6,
+        "y": 6,
+        "w": 77,
+        "h": 84
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 12,
+        "y": 5,
+        "w": 77,
+        "h": 84
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 125
+    },
+    "hero-frost-archmage_dir_SE": {
+      "frame": {
+        "x": 91,
+        "y": 6,
+        "w": 76,
+        "h": 84
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 13,
+        "y": 5,
+        "w": 76,
+        "h": 84
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 125
+    },
+    "hero-frost-archmage_dir_E": {
+      "frame": {
+        "x": 344,
+        "y": 6,
+        "w": 77,
+        "h": 84
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 13,
+        "y": 5,
+        "w": 77,
+        "h": 84
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 125
+    },
+    "hero-frost-archmage_dir_NE": {
+      "frame": {
+        "x": 89,
+        "y": 283,
+        "w": 73,
+        "h": 85
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 18,
+        "y": 4,
+        "w": 73,
+        "h": 85
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 125
+    },
+    "hero-frost-archmage_dir_N": {
+      "frame": {
+        "x": 170,
+        "y": 283,
+        "w": 57,
+        "h": 85
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 28,
+        "y": 4,
+        "w": 57,
+        "h": 85
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 125
+    },
+    "hero-frost-archmage_dir_NW": {
+      "frame": {
+        "x": 235,
+        "y": 283,
+        "w": 73,
+        "h": 85
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 4,
+        "w": 73,
+        "h": 85
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 125
+    },
+    "hero-frost-archmage_dir_W": {
+      "frame": {
+        "x": 316,
+        "y": 283,
+        "w": 77,
+        "h": 84
       },
       "rotated": false,
       "trimmed": true,
       "spriteSourceSize": {
         "x": 6,
         "y": 5,
-        "w": 84,
+        "w": 77,
         "h": 84
       },
       "sourceSize": {
@@ -147,39 +525,539 @@
       },
       "duration": 125
     },
-    "hero-frost-archmage_attack_3": {
+    "hero-frost-archmage_dir_SW": {
       "frame": {
-        "x": 288,
-        "y": 96,
-        "w": 96,
-        "h": 96
+        "x": 401,
+        "y": 283,
+        "w": 76,
+        "h": 84
       },
       "rotated": false,
       "trimmed": true,
       "spriteSourceSize": {
-        "x": 19,
+        "x": 7,
         "y": 5,
-        "w": 72,
+        "w": 76,
         "h": 84
       },
       "sourceSize": {
         "w": 96,
         "h": 96
+      },
+      "duration": 125
+    },
+    "hero-frost-archmage_damaged": {
+      "frame": {
+        "x": 6,
+        "y": 376,
+        "w": 77,
+        "h": 84
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 12,
+        "y": 5,
+        "w": 77,
+        "h": 84
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 125
+    },
+    "layer_00_shadow": {
+      "frame": {
+        "x": 91,
+        "y": 376,
+        "w": 31,
+        "h": 5
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 17,
+        "y": 59,
+        "w": 31,
+        "h": 5
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 64
+      },
+      "duration": 125
+    },
+    "layer_10_body": {
+      "frame": {
+        "x": 130,
+        "y": 376,
+        "w": 35,
+        "h": 62
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 15,
+        "y": 1,
+        "w": 35,
+        "h": 62
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 64
+      },
+      "duration": 125
+    },
+    "layer_20_iris": {
+      "frame": {
+        "x": 173,
+        "y": 376,
+        "w": 18,
+        "h": 3
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 25,
+        "y": 2,
+        "w": 18,
+        "h": 3
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 64
+      },
+      "duration": 125
+    },
+    "layer_30_outfit": {
+      "frame": {
+        "x": 199,
+        "y": 376,
+        "w": 51,
+        "h": 47
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 1,
+        "y": 11,
+        "w": 51,
+        "h": 47
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 64
+      },
+      "duration": 125
+    },
+    "layer_40_hair": {
+      "frame": {
+        "x": 258,
+        "y": 376,
+        "w": 26,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 20,
+        "y": 1,
+        "w": 26,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 64
+      },
+      "duration": 125
+    },
+    "layer_50_weapon": {
+      "frame": {
+        "x": 292,
+        "y": 376,
+        "w": 36,
+        "h": 39
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 54,
+        "y": 27,
+        "w": 36,
+        "h": 39
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 125
+    },
+    "layer_60_fx": {
+      "frame": {
+        "x": 336,
+        "y": 376,
+        "w": 73,
+        "h": 57
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 11,
+        "y": 1,
+        "w": 73,
+        "h": 57
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 125
+    },
+    "vfx-gacha-summon-ssr_f0": {
+      "frame": {
+        "x": 417,
+        "y": 376,
+        "w": 47,
+        "h": 33
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 9,
+        "y": 25,
+        "w": 47,
+        "h": 33
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 64
+      },
+      "duration": 125
+    },
+    "vfx-gacha-summon-ssr_f1": {
+      "frame": {
+        "x": 6,
+        "y": 468,
+        "w": 47,
+        "h": 53
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 9,
+        "y": 5,
+        "w": 47,
+        "h": 53
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 64
+      },
+      "duration": 125
+    },
+    "vfx-gacha-summon-ssr_f2": {
+      "frame": {
+        "x": 61,
+        "y": 468,
+        "w": 47,
+        "h": 51
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 9,
+        "y": 7,
+        "w": 47,
+        "h": 51
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 64
+      },
+      "duration": 125
+    },
+    "vfx-gacha-summon-ssr_f3": {
+      "frame": {
+        "x": 116,
+        "y": 468,
+        "w": 47,
+        "h": 52
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 9,
+        "y": 6,
+        "w": 47,
+        "h": 52
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 64
+      },
+      "duration": 125
+    },
+    "vfx-solar-slash_f0": {
+      "frame": {
+        "x": 171,
+        "y": 468,
+        "w": 18,
+        "h": 41
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 35,
+        "y": 9,
+        "w": 18,
+        "h": 41
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 64
+      },
+      "duration": 83
+    },
+    "vfx-solar-slash_f1": {
+      "frame": {
+        "x": 197,
+        "y": 468,
+        "w": 29,
+        "h": 57
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 27,
+        "y": 4,
+        "w": 29,
+        "h": 57
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 64
+      },
+      "duration": 83
+    },
+    "vfx-solar-slash_f2": {
+      "frame": {
+        "x": 234,
+        "y": 468,
+        "w": 33,
+        "h": 62
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 27,
+        "y": 1,
+        "w": 33,
+        "h": 62
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 64
+      },
+      "duration": 83
+    },
+    "vfx-solar-slash_f3": {
+      "frame": {
+        "x": 275,
+        "y": 468,
+        "w": 25,
+        "h": 47
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 33,
+        "y": 8,
+        "w": 25,
+        "h": 47
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 64
+      },
+      "duration": 83
+    },
+    "loot-sunblade-ur": {
+      "frame": {
+        "x": 308,
+        "y": 468,
+        "w": 23,
+        "h": 24
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 3,
+        "w": 23,
+        "h": 24
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 32
+      },
+      "duration": 125
+    },
+    "loot-aether-staff-ssr": {
+      "frame": {
+        "x": 339,
+        "y": 468,
+        "w": 14,
+        "h": 25
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 9,
+        "y": 4,
+        "w": 14,
+        "h": 25
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 32
+      },
+      "duration": 125
+    },
+    "loot-fortress-shield-epic": {
+      "frame": {
+        "x": 361,
+        "y": 468,
+        "w": 20,
+        "h": 22
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 6,
+        "y": 4,
+        "w": 20,
+        "h": 22
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 32
+      },
+      "duration": 125
+    },
+    "loot-elixir-rare": {
+      "frame": {
+        "x": 389,
+        "y": 468,
+        "w": 18,
+        "h": 23
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 7,
+        "y": 4,
+        "w": 18,
+        "h": 23
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 32
+      },
+      "duration": 125
+    },
+    "loot-relic-chest-ssr": {
+      "frame": {
+        "x": 415,
+        "y": 468,
+        "w": 24,
+        "h": 19
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 4,
+        "y": 8,
+        "w": 24,
+        "h": 19
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 32
+      },
+      "duration": 125
+    },
+    "loot-core-sigil-common": {
+      "frame": {
+        "x": 447,
+        "y": 468,
+        "w": 22,
+        "h": 22
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 5,
+        "w": 22,
+        "h": 22
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 32
       },
       "duration": 125
     }
   },
   "meta": {
     "app": "https://github.com/pixel-ui-design-system/pixel-forge",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "image": "forge-atlas-diffuse.png",
     "normalMap": "forge-atlas-normal.png",
     "emissiveMap": "forge-atlas-emissive.png",
     "format": "RGBA8888",
     "size": {
-      "w": 384,
-      "h": 192
+      "w": 512,
+      "h": 1024
     },
-    "scale": "1"
+    "extrudePx": 2,
+    "scale": "1",
+    "frameTags": [
+      {
+        "name": "idle",
+        "from": 0,
+        "to": 3,
+        "direction": "forward",
+        "repeat": "0"
+      },
+      {
+        "name": "walk",
+        "from": 4,
+        "to": 7,
+        "direction": "forward",
+        "repeat": "0"
+      },
+      {
+        "name": "attack",
+        "from": 8,
+        "to": 11,
+        "direction": "forward",
+        "repeat": "1"
+      },
+      {
+        "name": "hurt",
+        "from": 12,
+        "to": 13,
+        "direction": "forward",
+        "repeat": "1"
+      },
+      {
+        "name": "victory",
+        "from": 14,
+        "to": 17,
+        "direction": "forward",
+        "repeat": "0"
+      }
+    ]
   }
 }

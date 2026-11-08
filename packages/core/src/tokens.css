@@ -21,8 +21,8 @@
   --px-canvas-icon-lg: 48px;
   --px-canvas-actor: 64px;
   --px-canvas-weapon-oversize: 96px;
-  --px-stage-preview-w: 160px;
-  --px-stage-preview-h: 96px;
+  --px-stage-preview-w: 256px;
+  --px-stage-preview-h: 144px;
   --px-rarity-common: var(--px-border-light);
   --px-rarity-rare: var(--px-accent);
   --px-rarity-epic: var(--px-accent-highlight);
@@ -107,6 +107,52 @@
   --px-success: #65d47a;
   --px-warning: #ffd166;
   --px-danger: #ff5c66;
+  --px-focus: var(--px-warning);
+  --px-chroma-key: #00ff00;
+
+  /* Theme-reactive Ornamental Nine-Slice fallbacks (overridden with 5-shade ramps in ornamental.css) */
+  --px-orn-neutral-hi: var(--px-border-light);
+  --px-orn-neutral-bright: var(--px-text-muted);
+  --px-orn-neutral-base: var(--px-border-base);
+  --px-orn-neutral-shadow: var(--px-panel-dark);
+  --px-orn-neutral-deep: var(--px-border-dark);
+
+  --px-orn-market-hi: var(--px-selected);
+  --px-orn-market-bright: var(--px-warning);
+  --px-orn-market-base: var(--px-accent-dark);
+  --px-orn-market-shadow: var(--px-panel-dark);
+  --px-orn-market-deep: var(--px-border-dark);
+
+  --px-orn-research-hi: var(--px-accent-highlight);
+  --px-orn-research-bright: var(--px-danger);
+  --px-orn-research-base: var(--px-border-base);
+  --px-orn-research-shadow: var(--px-panel-dark);
+  --px-orn-research-deep: var(--px-border-dark);
+
+  --px-orn-capital-hi: var(--px-accent-highlight);
+  --px-orn-capital-bright: var(--px-accent);
+  --px-orn-capital-base: var(--px-accent-dark);
+  --px-orn-capital-shadow: var(--px-panel-dark);
+  --px-orn-capital-deep: var(--px-border-dark);
+
+  --px-orn-intelligence-hi: var(--px-accent-highlight);
+  --px-orn-intelligence-bright: var(--px-accent);
+  --px-orn-intelligence-base: var(--px-accent-dark);
+  --px-orn-intelligence-shadow: var(--px-panel-dark);
+  --px-orn-intelligence-deep: var(--px-border-dark);
+
+  --px-orn-currency-hi: var(--px-accent-highlight);
+  --px-orn-currency-bright: var(--px-accent);
+  --px-orn-currency-base: var(--px-border-base);
+  --px-orn-currency-shadow: var(--px-panel-dark);
+  --px-orn-currency-deep: var(--px-border-dark);
+
+  --px-orn-gold-hi: var(--px-selected);
+  --px-orn-gold-bright: var(--px-warning);
+  --px-orn-gold-base: var(--px-border-base);
+  --px-orn-gold-shadow: var(--px-panel-dark);
+  --px-orn-gold-deep: var(--px-border-dark);
+
   --px-font-display: "Pixel Operator", "Press Start 2P", "Cascadia Mono", monospace;
   --px-font-body: system-ui, "Segoe UI", sans-serif;
   --px-font-data: "Cascadia Mono", "SFMono-Regular", monospace;
@@ -148,6 +194,71 @@
   --px-component-height-sm: var(--px-control-sm);
   --px-component-height-md: var(--px-control-md);
   --px-component-height-lg: var(--px-control-lg);
+
+  /* Studio Workbench & Asset Inspector theme-reactive semantic tokens */
+  --px-studio-bg: var(--px-canvas);
+  --px-studio-surface: var(--px-panel-mid);
+  --px-studio-surface-subtle: var(--px-panel-dark);
+  --px-studio-surface-hover: var(--px-panel-light);
+  --px-studio-surface-glass: var(--px-panel-mid);
+  --px-studio-checker-a: var(--px-panel-dark);
+  --px-studio-checker-b: var(--px-panel-mid);
+  --px-studio-checker-light-a: #e2e8f0;
+  --px-studio-checker-light-b: #cbd5e1;
+  --px-studio-checker-dark-a: #090d16;
+  --px-studio-checker-dark-b: #131b2c;
+  --px-studio-obsidian: #05060b;
+  --px-studio-stage-dark: #0b1120;
+  --px-studio-amber-bg: var(--px-panel-dark);
+  --px-studio-amber-border: var(--px-warning);
+  --px-studio-amber-ink: var(--px-warning);
+  --px-studio-text: var(--px-text-primary);
+  --px-studio-text-strong: var(--px-text-primary);
+  --px-studio-text-body: var(--px-text-primary);
+  --px-studio-text-muted: var(--px-text-muted);
+  --px-studio-text-subtle: var(--px-text-muted);
+  --px-studio-text-inverse: var(--px-accent-ink);
+  --px-studio-border: var(--px-border-base);
+  --px-studio-border-strong: var(--px-border-light);
+  --px-studio-border-hover: var(--px-accent);
+  --px-studio-border-subtle: var(--px-border-dark);
+  --px-studio-accent: var(--px-accent);
+  --px-studio-accent-strong: var(--px-accent-highlight);
+  --px-studio-accent-bg: var(--px-panel-light);
+  --px-studio-accent-border: var(--px-accent);
+  --px-studio-success: var(--px-success);
+  --px-studio-success-strong: var(--px-success);
+  --px-studio-success-bg: var(--px-panel-dark);
+  --px-studio-success-border: var(--px-success);
+  --px-studio-danger: var(--px-danger);
+  --px-studio-guide-x: var(--px-accent);
+  --px-studio-guide-y: var(--px-danger);
+  --px-studio-rarity-common-border: var(--px-border-base);
+  --px-studio-rarity-common-bg: var(--px-panel-dark);
+  --px-studio-rarity-common-ink: var(--px-text-muted);
+  --px-studio-rarity-rare-border: var(--px-accent);
+  --px-studio-rarity-rare-bg: var(--px-panel-dark);
+  --px-studio-rarity-rare-ink: var(--px-accent-highlight);
+  --px-studio-rarity-epic-border: var(--px-accent-highlight);
+  --px-studio-rarity-epic-bg: var(--px-panel-dark);
+  --px-studio-rarity-epic-ink: var(--px-accent-highlight);
+  --px-studio-rarity-ssr-border: var(--px-warning);
+  --px-studio-rarity-ssr-bg: var(--px-panel-dark);
+  --px-studio-rarity-ssr-ink: var(--px-warning);
+  --px-studio-rarity-ur-border: var(--px-danger);
+  --px-studio-rarity-ur-bg: var(--px-panel-dark);
+  --px-studio-rarity-ur-ink: var(--px-danger);
+  --px-studio-shadow-xs: var(--px-half-grid) var(--px-half-grid) 0 var(--px-border-dark);
+  --px-studio-shadow-sm: var(--px-shadow-offset) var(--px-shadow-offset) 0 var(--px-border-dark);
+  --px-studio-shadow-md: var(--px-frame-shadow);
+  --px-studio-shadow-lg: var(--px-shadow-offset-lg) var(--px-shadow-offset-lg) 0 var(--px-border-dark);
+  --px-studio-shadow-stage: var(--px-frame-shadow);
+  --px-studio-shadow-inset: inset var(--px-border-thin) var(--px-border-thin) 0 var(--px-border-dark);
+  --px-studio-shadow-active: inset 0 calc(var(--px-border-thick) * -1) 0 var(--px-selected);
+  --px-studio-shadow-ring: inset 0 0 0 var(--px-border-thin) var(--px-accent);
+  --px-studio-shadow-ring-lg: inset 0 0 0 var(--px-border-thick) var(--px-accent);
+  --px-studio-font-sans: var(--px-font-body);
+  --px-studio-font-mono: var(--px-font-data);
 }
 
 [data-px-grid="2"] { --px-grid: 2px; }
